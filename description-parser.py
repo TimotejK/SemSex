@@ -1,4 +1,5 @@
 import re
+from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS
 
 class Concept:
     def __init__(self, line):
@@ -10,6 +11,7 @@ class Concept:
         self.children = []
         self.links = []
         self.relations = {}
+        self.parent = None
 
     def add_parent(self, concepts):
         if self.index[:-1] in concepts:
@@ -56,7 +58,34 @@ def parse_descriptions(text):
 
     for index in concepts:
         concepts[index].add_parent(concepts)
-    pass
+
+    build_knowledge_graph(concepts)
+
+def build_knowledge_graph(concepts):
+    def untuple(t):
+        return ".".join([str(x) for x in t])
+    g = Graph()
+    concepts_ns = Namespace("http://example.org/concepts/")
+    relations_ns = Namespace("http://example.org/relations/")
+    concept_object = concepts_ns['concept']
+    g.add((concept_object, RDFS.subClassOf, RDF.object))
+    for index in concepts:
+        concept = concepts[index]
+        concept_id = concepts_ns[untuple(index)]
+        if (concept.parent is not None):
+            g.add((concept_id, RDFS.subClassOf, concepts_ns[untuple(concept.parent.index)]))
+        else:
+            g.add((concept_id, RDFS.subClassOf, concept_object))
+        g.add((concept_id, relations_ns.name, Literal(concept.name)))
+        for link in concept.links:
+            g.add((concept_id, relations_ns.source_link, Literal(link)))
+        for child in concept.children:
+            g.add((concept_id, relations_ns.child, concepts_ns[untuple(child.index)]))
+        for relation in concept.relations:
+            g.add((concept_id, relations_ns[relation], concepts_ns[untuple(concept.relations[relation])]))
+    v = g.serialize(format="turtle")
+    with open('test_ontology.ttl', 'w') as f:
+        f.write(v)
 
 if __name__ == '__main__':
     text_file = open("test-descriptions.txt", "r")
