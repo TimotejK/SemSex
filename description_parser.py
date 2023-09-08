@@ -1,6 +1,7 @@
 import re
 import json
-from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS
+from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS, OWL, FOAF
+from rdflib.extras.infixowl import Restriction
 
 
 class Concept:
@@ -50,8 +51,9 @@ class Concept:
 def concepts_from_json(lists):
     concepts={}
     for l in lists:
+        concept_dict = l
         concept = Concept()
-        concept.from_dict(l)
+        concept.from_dict(concept_dict)
         concepts[concept.index] = concept
     for ind in concepts:
         concepts[ind].replace_references(concepts)
@@ -102,42 +104,81 @@ def parse_descriptions(text):
     s = json.dumps(entities_list)
     with open("ontologija.json", "w") as outfile:
         outfile.write(s)
-    # load from json
-    con = concepts_from_json(json.loads(s))
 
     build_knowledge_graph(concepts)
 
+def create_relation(g, source, relation, target):
+    restrictionNode = BNode()
+    g.add((restrictionNode, RDF.type, OWL.Restriction))
+    # g.add((source, RDF.type, OWL.Class))
+    g.add((source, RDFS.subClassOf, restrictionNode))
+    g.add((restrictionNode, OWL.onProperty, relation))
+    g.add((restrictionNode, OWL.someValuesFrom, target))
 
 def build_knowledge_graph(concepts):
     def untuple(t):
         return ".".join([str(x) for x in t])
 
+    def address_from_name(name):
+        name = "-".join([a.strip() for a in name.split("/")])
+        name = name.lower().strip().replace(" ", "_")
+        name = name.replace("č", "c")
+        name = name.replace("š", "s")
+        name = name.replace("ž", "z")
+        return name
+
     g = Graph()
     concepts_ns = Namespace("http://example.org/concepts/")
     relations_ns = Namespace("http://example.org/relations/")
-    concept_object = concepts_ns['concept']
-    g.add((concept_object, RDFS.subClassOf, RDF.object))
+    all_relations = set()
+
+    g.add((relations_ns.child, RDF.type, OWL.ObjectProperty))
+    g.add((relations_ns.child, RDFS.label, Literal("otrok")))
+
+    g.add((relations_ns.source_link, RDF.type, OWL.ObjectProperty))
+
+    g.add((relations_ns.name, RDF.type, OWL.ObjectProperty))
+
+    g.add((relations_ns.ind, RDF.type, OWL.annotatedProperty))
+    g.add((relations_ns.ind, RDFS.label, Literal("Oznaka")))
+
+    g.add((relations_ns.source_link, RDF.type, OWL.annotatedProperty))
+    g.add((relations_ns.source_link, RDFS.label, Literal("Source link")))
+
     for index in concepts:
         concept = concepts[index]
-        concept_id = concepts_ns[untuple(index)]
+        concept_address = address_from_name(concept.name)
+        concept_id = concepts_ns[concept_address]
         if (concept.parent is not None):
-            g.add((concept_id, RDFS.subClassOf, concepts_ns[untuple(concept.parent.index)]))
+            g.add((concept_id, RDFS.subClassOf, concepts_ns[address_from_name(concept.parent.name)]))
         else:
-            g.add((concept_id, RDFS.subClassOf, concept_object))
-        g.add((concept_id, relations_ns.name, Literal(concept.name)))
+            g.add((concept_id, RDFS.subClassOf, RDF.object))
+
+        g.add((concept_id, relations_ns.ind, Literal(untuple(index))))
+        g.add((concept_id, RDFS.label, Literal(concept.name)))
         for link in concept.links:
             g.add((concept_id, relations_ns.source_link, Literal(link)))
         for child in concept.children:
-            g.add((concept_id, relations_ns.child, concepts_ns[untuple(child.index)]))
+            g.add((concept_id, relations_ns.child, concepts_ns[address_from_name(child.name)]))
+            # create_relation(g, concept_id, relations_ns.child, concepts_ns[address_from_name(child.name)])
+
+        # relations
         for relation in concept.relations:
-            g.add((concept_id, relations_ns[relation], concepts_ns[untuple(concept.relations[relation])]))
+            related_concept = concepts[concept.relations[relation]]
+            if relation not in all_relations:
+                all_relations.add(relation)
+                g.add((relations_ns[relation], RDF.type, OWL.ObjectProperty))
+
+            # g.add((concept_id, relations_ns[relation], concepts_ns[address_from_name(related_concept.name)]))
+            create_relation(g, concept_id, relations_ns[relation], concepts_ns[address_from_name(related_concept.name)])
     v = g.serialize(format="turtle")
     with open('test_ontology.ttl', 'w') as f:
         f.write(v)
 
 
 if __name__ == '__main__':
-    text_file = open("test-descriptions.txt", "r")
+    # text_file = open("test-descriptions.txt", "r")
+    text_file = open("descriptions2.txt", "r")
     text = text_file.read()
     text_file.close()
 
