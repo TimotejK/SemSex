@@ -1,6 +1,6 @@
 import re
 import json
-from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS, OWL, FOAF
+from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS, OWL, FOAF, SKOS
 from rdflib.extras.infixowl import Restriction
 
 
@@ -135,15 +135,15 @@ def build_knowledge_graph(concepts):
     g.add((relations_ns.child, RDF.type, OWL.ObjectProperty))
     g.add((relations_ns.child, RDFS.label, Literal("otrok")))
 
-    g.add((relations_ns.source_link, RDF.type, OWL.ObjectProperty))
+    # g.add((relations_ns.source_link, RDF.type, OWL.ObjectProperty))
 
     g.add((relations_ns.name, RDF.type, OWL.ObjectProperty))
 
-    g.add((relations_ns.ind, RDF.type, OWL.annotatedProperty))
-    g.add((relations_ns.ind, RDFS.label, Literal("Oznaka")))
+    # g.add((relations_ns.ind, RDF.type, OWL.annotatedProperty))
+    # g.add((relations_ns.ind, RDFS.label, Literal("Oznaka")))
 
-    g.add((relations_ns.source_link, RDF.type, OWL.annotatedProperty))
-    g.add((relations_ns.source_link, RDFS.label, Literal("Source link")))
+    # g.add((relations_ns.source_link, RDF.type, OWL.annotatedProperty))
+    # g.add((relations_ns.source_link, RDFS.label, Literal("Source link")))
 
     for index in concepts:
         concept = concepts[index]
@@ -154,10 +154,12 @@ def build_knowledge_graph(concepts):
         else:
             g.add((concept_id, RDFS.subClassOf, RDF.object))
 
-        g.add((concept_id, relations_ns.ind, Literal(untuple(index))))
+        # g.add((concept_id, relations_ns.ind, Literal(untuple(index))))
+        g.add((concept_id, SKOS.altLabel, Literal(untuple(index))))
         g.add((concept_id, RDFS.label, Literal(concept.name)))
         for link in concept.links:
-            g.add((concept_id, relations_ns.source_link, Literal(link)))
+            # g.add((concept_id, relations_ns.source_link, Literal(link)))
+            g.add((concept_id, SKOS.definition, Literal(link)))
         for child in concept.children:
             g.add((concept_id, relations_ns.child, concepts_ns[address_from_name(child.name)]))
             # create_relation(g, concept_id, relations_ns.child, concepts_ns[address_from_name(child.name)])
@@ -178,7 +180,7 @@ def build_knowledge_graph(concepts):
 
 if __name__ == '__main__':
     # text_file = open("test-descriptions.txt", "r")
-    text_file = open("descriptions2.txt", "r")
+    text_file = open("descriptions3.txt", "r")
     text = text_file.read()
     text_file.close()
 

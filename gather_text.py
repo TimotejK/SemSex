@@ -2,7 +2,7 @@ import json
 import wikipedia
 
 from description_parser import concepts_from_json
-from text_translateion import translate_from_english
+from text_translation import translate_from_english
 
 
 def name_formatter(name):
