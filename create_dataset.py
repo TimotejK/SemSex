@@ -15,7 +15,7 @@ def create_dataset():
             for sentence in sentences:
                 rows.append([sentence, target_class])
     df = pd.DataFrame(rows, columns=['text', 'category'])
-    df.to_csv('datasaet.csv')
+    df.to_csv('dataset.csv')
 
 if __name__ == '__main__':
     create_dataset()
