@@ -29,7 +29,7 @@ le.fit(df[label_column_name].tolist())
 df['label'] = le.transform(df[label_column_name].tolist())
 number_of_classes = len(le.classes_)
 
-df_train,df_test = train_test_split(df,test_size=test_size)
+df_train,df_test = train_test_split(df, test_size=test_size)
 
 train_dataset = Dataset.from_pandas(df_train)
 test_dataset = Dataset.from_pandas(df_test)

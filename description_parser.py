@@ -79,6 +79,9 @@ def parse_descriptions(text):
             elif re.match("https://.+", line):
                 current_concept.links.append(line)
                 current_relation = None
+            elif re.match("http://.+", line):
+                current_concept.links.append(line)
+                current_relation = None
             elif re.match("(.+): ?((?:\d+\.)+)", line):
                 result = re.match("(.+): ?((?:\d+\.)+)", line)
                 relation = result[1]
@@ -180,7 +183,7 @@ def build_knowledge_graph(concepts):
 
 if __name__ == '__main__':
     # text_file = open("test-descriptions.txt", "r")
-    text_file = open("descriptions3.txt", "r")
+    text_file = open("descriptions4.txt", "r")
     text = text_file.read()
     text_file.close()
 
