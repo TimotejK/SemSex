@@ -29,7 +29,7 @@ le.fit(df[label_column_name].tolist())
 df['label'] = le.transform(df[label_column_name].tolist())
 number_of_classes = len(le.classes_)
 
-df_train,df_test = train_test_split(df, test_size=test_size)
+df_train, df_test = train_test_split(df, test_size=test_size)
 
 train_dataset = Dataset.from_pandas(df_train)
 test_dataset = Dataset.from_pandas(df_test)
@@ -54,8 +54,8 @@ def compute_metrics(eval_pred):
 training_args = TrainingArguments(
     output_dir="./results",
     learning_rate=2e-4,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
+    per_device_train_batch_size=2,
+    per_device_eval_batch_size=2,
     num_train_epochs=5,
     weight_decay=0.01,
     evaluation_strategy="epoch",

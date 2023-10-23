@@ -21,6 +21,58 @@ def name_formatter(name, lang):
         name = "Sexz"
     elif name == "Intersex" and lang == "en":
         name = "Intersexx"
+    elif name == "Gay" and lang == "en":
+        name = "gGay"
+    elif name == "Drag_(entertainment)" and lang == "en":
+        name = "Drag (entertainment)"
+    elif name == "Masturbation" and lang == "en":
+        name = "Masturbationn"
+    elif name == "Virtual_sex" and lang == "en":
+        name = "Virtual_sexx"
+    elif name == "Monogamy" and lang == "en":
+        name = "Monogamyn"
+    elif name == "Gang_bang" and lang == "en":
+        name = "Gang_bangn"
+    elif name == "Orgy" and lang == "en":
+        name = "Orgyy"
+    elif name == "Non-penetrative_sex" and lang == "en":
+        name = "penetrative_sexx"
+    elif name == "Sex_work" and lang == "en":
+        name = "Sex_workk"
+    elif name == "Prostitution" and lang == "en":
+        name = "Prostitutionn"
+    elif name == "Consent" and lang == "en":
+        name = "Consentt"
+    elif name == "Puberty" and lang == "en":
+        name = "Pubertyy"
+    elif name == "Human_reproduction" and lang == "en":
+        name = "Human rreproduction"
+    elif name == "Male" and lang == "en":
+        name = "Malee"
+    elif name == "Penis" and lang == "en":
+        name = "Peniss"
+    elif name == "Foreskin" and lang == "en":
+        name = "Foreskinn"
+    elif name == "Glans_penis" and lang == "en":
+        name = "Glans_peniss"
+    elif name == "Prostate" and lang == "en":
+        name = "Prostatee"
+    elif name == "Bartholin%27s_gland" and lang == "en":
+        name = "Bartholins gland"
+    elif name == "Cervix" and lang == "en":
+        name = "cCervix"
+    elif name == "Vagina" and lang == "en":
+        name = "Vaginaa"
+    elif name == "Labia" and lang == "en":
+        name = "Labiaa"
+    elif name == "G-spot" and lang == "en":
+        name = "Gspot"
+    elif name == "Orgasm" and lang == "en":
+        name = "Orgaasm"
+    elif name == "Ejaculation" and lang == "en":
+        name = "Ejaculationn"
+    elif name == "Semen" and lang == "en":
+        name = "Semenn"
     return name
 
 def add_text_sources():
@@ -37,12 +89,18 @@ def add_text_sources():
             if link.startswith("https://en.wikipedia.org/wiki/"):
                 name = link[len("https://en.wikipedia.org/wiki/"):]
                 wikipedia.set_lang("en")
-                text = wikipedia.summary(name_formatter(name, lang="en"))
-                text = translate_from_english(text)
+                try:
+                    text = wikipedia.page(name_formatter(name, lang="en")).content
+                    text = translate_from_english(text)
+                except:
+                    text = "napaka EN"
             elif link.startswith("https://sl.wikipedia.org/wiki/"):
                 name = link[len("https://sl.wikipedia.org/wiki/"):]
                 wikipedia.set_lang("sl")
-                text = wikipedia.summary(name_formatter(name, lang="sl"))
+                try:
+                    text = wikipedia.page(name_formatter(name, lang="sl")).content
+                except:
+                    text = "napaka SL"
             else:
                 print(link)
             if text is not None:
@@ -70,7 +128,7 @@ def add_text_sources():
 #     pass
 
 def write_to_text_file():
-    f = open('ontologija_opisi.json')
+    f = open('ontologija_opisi-dolgi.json')
     con = concepts_from_json(json.load(f))
     f.close()
 
