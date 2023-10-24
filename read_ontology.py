@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 import wikipedia
 from rdflib import Graph, URIRef, BNode, Literal, Namespace, RDF, RDFS, OWL, FOAF, SKOS, XSD
@@ -223,12 +224,12 @@ def write_data_properties(graph):
     }
     for property_uri in usedProperties:
         graph.add((property_uri, RDF.type, OWL.DatatypeProperty))
-        graph.add((property_uri, RDF.type, Literal(usedProperties[property_uri][0], lang='sl')))
-        graph.add((property_uri, RDF.type, Literal(usedProperties[property_uri][1], lang='en')))
         graph.add((property_uri, SKOS.definition, Literal("TODO", lang='sl')))
         graph.add((property_uri, SKOS.definition, Literal("TODO", lang='en')))
         graph.add((property_uri, RDFS.domain, OWL.Thing))
         graph.add((property_uri, RDFS.range, XSD.string))
+        graph.add((property_uri, RDF.type, Literal(usedProperties[property_uri][0], lang='sl')))
+        graph.add((property_uri, RDF.type, Literal(usedProperties[property_uri][1], lang='en')))
 
 
 def write_classes(graph, classes):
@@ -257,6 +258,9 @@ def write_classes(graph, classes):
         for property, target in cls_object['objectProperties']:
             graph.add((cls_uri, translage_url_string(property), translage_url_string(target)))
 
+def edit_serialization(turtle_string):
+    turtle_string = re.sub('([A-Z:a-z])+ a owl:DatatypeProperty,\s+"([^"]+)"@en *,\s+"([^"]+)"@sl *;', '\\1 a owl:DatatypeProperty;\n    rdfs:label "\\2"@en,\n    rdfs:label "\\3"@sl ;', turtle_string)
+    return turtle_string
 
 def generate_nice_ontology():
     object_propoerties, classes = read_ontology('ontologies/SemSEX1.ttl', 'ontologies/json_ontology_descriptions.json')
@@ -267,6 +271,7 @@ def generate_nice_ontology():
     write_classes(graph, classes)
 
     v = graph.serialize(format="turtle")
+    v = edit_serialization(v)
     with open('ontologies/result.ttl', 'w') as f:
         f.write(v)
 

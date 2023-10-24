@@ -1,0 +1,288 @@
+@prefix   dcat: <http://www.w3.org/ns/dcat#> .
+@prefix    dct: <http://purl.org/dc/terms/> .
+@prefix    dce: <http://purl.org/dc/elements/1.1/> .
+@prefix   foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix    owl: <http://www.w3.org/2002/07/owl#> .
+@prefix    rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix   rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix   adms: <http://www.w3.org/ns/adms#> .
+@prefix   prov: <http://www.w3.org/ns/prov#> .
+@prefix   vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <https://schema.org/> .
+@prefix     sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix   skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix   vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix     cc: <http://creativecommons.org/ns#> .
+@prefix   csvw: <http://www.w3.org/ns/csvw#> .
+@prefix    xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix  vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix    cnb: <http://onto.mju.gov.si/centralni-besednjak-core#> .
+@prefix    dqv: <http://www.w3.org/ns/dqv#> .
+@prefix    duv: <http://www.w3.org/ns/duv#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix   spdx: <http://spdx.org/rdf/terms#> .
+@prefix   odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix   locn: <http://w3.org/ns/locn#> .
+@prefix     pz: <http://onto.mju.gov.si/podatkovni-zemljevid#> .
+@prefix     pz: <http://onto.mju.gov.si/podatkovni-zemljevid#> .
+@prefix ns1: <http://onto.clarin.si/semsex#> .
+
+###############################################################################
+##  Classes
+###############################################################################
+
+dcat:Catalog
+  a owl:Class ;
+  rdfs:label "Catalog"@en ;
+  rdfs:label "Katalog"@sl ;
+  skos:definition "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ;
+  skos:definition "A catalogue or repository that hosts the Datasets or Data Services being described."@en ;
+  vann:example "Portal Odprti podatki Slovenije (OPSI)."@sl,
+    "Open data of Slovenia Portal (OPSI)"@en ;
+  vaem:rationale "The concept was added to the ontology to represent the root concept that includes all the datasets along with the distributions within an open data portal, which is represented using this concept."@en,
+    "Koncept je bil dodan v ontologijo, da predstavlja korenski koncept, ki vključuje vse nabore podatkov in distribucije v okviru portala odprtih podatkov. Koncept predstavlja ta portal."@sl ;
+  skos:definition "Repozitorij, ki gosti nabore podatkov ali podatkovne storitve."@sl .
+
+dcat:Dataset
+  a owl:Class ;
+  rdfs:label "Dataset"@en ;
+  rdfs:label "Nabor podatkov"@sl ;
+  skos:definition "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en ;
+  skos:definition "A conceptual entity that represents the information published."@en ;
+  skos:definition "Nabor podatkov predstavlja objavljeno informacijo."@sl .
+
+dcat:Distribution
+  a owl:Class ;
+  rdfs:label "Distribution"@en ;
+  rdfs:label "Distribucija"@sl ;
+  skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
+  skos:definition "A physical embodiment of the Dataset in a particular format."@en ;
+  skos:definition "Fizična oblika nabora podatkov v določenem formatu."@sl .
+
+dcat:DataService
+  a owl:Class ;
+  rdfs:label "Data service"@en ;
+  rdfs:label "Podatkovna storitev"@sl ;
+  skos:definition "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ;
+  skos:definition "A collection of operations that provides access to one or more datasets or data processing functions."@en ;
+  skos:definition "Zbirka operacij, ki omogoča dostop do nabora podatkov ali obdelave podatkov."@sl .
+
+dcat:CatalogRecord
+  a owl:Class ;
+  rdfs:label "Catalog Record"@en ;
+  rdfs:label "Zapis v katalogu"@sl ;
+  skos:definition "A record in a data catalog, describing the registration of a single dataset or data service."@en ;
+  skos:definition "Zapis v podatkovnem katalogu, ki opisuje registracijo enega podatkovnega vira ali storitve."@sl .
+
+pz:Harvesting
+  a owl:Class ;
+  rdfs:subClassOf prov:Activity ;
+  rdfs:label "Harvesting"@en ;
+  rdfs:label "Način zbiranja podatkov"@sl ;
+  skos:definition "Description and metadata regarding data retrieval and ingestion into CKAN."@en ;
+  skos:definition "Opis in metapodatki o pridobivanju in vstavljanju podatkov v CKAN."@sl .
+
+adms:Identifier
+  a owl:Class ;
+  rdfs:label "Identifier"@en,
+    "Identifikator"@sl ;
+  skos:definition "A complex type (UN/CEFACT) that enables definition of unique identifiers."@en,
+    "Kompleksni tip (UN/CEFACT), ki omogoča definicijo zapisa enoličnih identifikatorjev."@sl .
+
+dct:Location
+  a owl:Class ;
+  rdfs:label "Location"@en,
+    "Lokacija"@sl ;
+  skos:definition "A spatial region or named place."@en,
+    "Prostorska regija ali imenovan kraj."@sl .
+
+foaf:Agent
+  a owl:Class ;
+  rdfs:label "Agent"@en,
+    "Agent"@sl ;
+  skos:definition "An agent (eg. person, group, software or physical artifact). "@en,
+    "Agent (npr. oseba, skupina, programski ali fizični artefakt)."@sl .
+
+skos:Concept
+  a owl:Class ;
+  rdfs:label "Concept"@en,
+    "Koncept"@sl ;
+  skos:definition "A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive."@en,
+    "SKOS koncept je lahko predstavljen kot ideja ali pojem; enota misli. Čeprav je v tem smislu lahko subjektiven, je njegova definicija bolj sugestivna kot restriktivna."@sl .
+
+skos:ConceptScheme
+  a owl:Class ;
+  rdfs:label "Concept scheme"@en,
+    "Konceptualna shema"@sl ;
+  skos:definition "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme. This definition is, however, meant to be suggestive rather than restrictive, and there is some flexibility in the formal data model."@en,
+    "Konceptualna shema SKOS je lahko predstavljena kot agregacija enega ali več konceptov SKOS. Semantične povezave med koncepti so lahko tudi del konceptualne sheme. Ta definicija je bolj sugestivna kot restriktivna in omogoča nekaj fleksibilnosti v formalnem podatkovnem modelu."@sl .
+
+dct:RightsStatement
+  a owl:Class ;
+  rdfs:label "Rights statement"@en,
+    "Izjava o pravicah"@sl ;
+  skos:definition "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en,
+    "Izjava o intelektualnih pravicah (IPR) v in o podatkovnem viru. Uraden dokument, ki podeljuje pravice za določen tip dela z virom ali izjava o pravicah dostopa."@sl .
+
+dct:LicenseDocument
+  a owl:Class ;
+  rdfs:subClassOf dct:RightsStatement ;
+  rdfs:label "License document"@en,
+    "Licenčni dokument"@sl ;
+  skos:definition "A legal document giving official permission to do something with a resource."@en,
+    "Uradni dokument, ki uradno podeljuje pravice za delo z virom."@sl .
+
+pz:LegalGround
+  a owl:Class ;
+  rdfs:subClassOf dct:RightsStatement ;
+  rdfs:label "Legal ground"@en,
+    "Pravna podlaga"@sl ;
+  skos:definition "Legal grounds for publicly available dataset."@en,
+    "Pravna podlaga za javno objavljeno zbirko podatkov."@sl .
+
+prov:Activity
+  a owl:Class ;
+  rdfs:label "Activity"@en,
+    "Aktivnost"@sl ;
+  skos:definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en,
+    "Aktivnost je nekaj, kar se zgodi v določenem časovnem obdobju in vpliva na entitete. Vključuje lahko uporabo, procesiranje, transformacijo, spreminjanje, premikanje ali generiranje novih entitet."@sl .
+
+dqv:QualityMeasurement
+  a owl:Class ;
+  rdfs:label "Quality measurement"@en,
+    "Meritev kakovosti"@sl ;
+  skos:definition "Represents the evaluation of a given dataset (or dataset distribution) against a specific quality metric."@en,
+    "Predstavlja evalvacijo podatkovnega vira (ali distribucije) glede na specifične metrike kvalitete."@sl .
+
+dqv:Metric
+  a owl:Class ;
+  rdfs:label "Metric"@en,
+    "Metrika"@sl ;
+  skos:definition "Represents a standard to measure a quality dimension. An observation (instance of dqv:QualityMeasurement) assigns a value in a given unit to a Metric."@en,
+    "Predstavlja standard za merjenje izbrane dimenzije kvalitete. Opazovana vrednost (primerek dqv:QualityMeasurement) priredi vrednost v izbrani enoti primerku tipa Metrika."@sl .
+
+dqv:Dimension
+  a owl:Class ;
+  rdfs:label "Dimension"@en,
+    "Dimenzija"@sl ;
+  skos:definition "Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property."@en,
+    "Predstavlja kriterije, relevantne za preverjanje kvalitete. Vsaka dimenzija kvalitete mora imeti eno ali več metrik za njeno merjenje. Dimenzija je povezana s kategorijo preko lastnosti dqv:inCategory."@sl .
+
+dct:Standard
+  a owl:Class ;
+  rdfs:label "Standard"@en,
+    "Standard"@sl ;
+  skos:definition "A reference point against which other things can be evaluated or compared."@en,
+    "Referenčna točka glede na katero se izvaja evalvacijo ali primerjave."@sl .
+
+duv:UserFeedback
+  a owl:Class ;
+  rdfs:label "User feedback"@en,
+    "Uporabniški odziv"@sl ;
+  skos:definition "User feedback on a dataset or distribution."@en,
+    "Uporabniški odziv za podatkovni vir ali distribucijo."@sl .
+
+duv:RatingFeedback
+  a owl:Class ;
+  rdfs:label "Rating feedback"@en,
+    "Odziv ocenjevanja"@sl ;
+  skos:definition "Predefined criteria used to express a user opinion about a dataset or distribution using a discrete range of values."@en,
+    "Vnaprej določeni kriteriji za izražanje mnenja uporabnikov o podatkovnem viru ali distribuciji z uporabo diskretnih vrednosti."@sl .
+
+duv:Usage
+  a owl:Class ;
+  rdfs:label "Usage"@en,
+    "Uporaba"@sl ;
+  skos:definition "Actions that can be performed on a given dataset or distribution."@en,
+    "Akcije, ki se lahko izvajajo na danem podatkovnem viru ali distribuciji."@sl .
+
+duv:UsageTool
+  a owl:Class ;
+  rdfs:label "Usage tool"@en,
+    "Orodje uporabe"@sl ;
+  skos:definition "A tool that can use a dataset or distribution."@en,
+    "Orodje, ki lahko uporablja podatkovni vir ali distribucijo."@sl .
+
+csvw:Schema
+  a owl:Class ;
+  rdfs:label "Schema"@en,
+    "Shema"@sl ;
+  skos:definition "A Schema is a definition of a tabular format that may be common to multiple tables."@en,
+    "Shema je definicija podatkov v tabelaričnem formatu, ki je lahko enak večim tabelam."@sl .
+
+csvw:Column
+  a owl:Class ;
+  rdfs:label "Column"@en,
+    "Stolpec"@sl ;
+  skos:definition "A Column represents a vertical arrangement of Cells within a Table."@en,
+    "Stolpec predstavlja vertikalno razporeditev celic v tabeli."@sl .
+
+csvw:uriTemplate
+  a owl:Class ;
+  rdfs:subClassOf xsd:string ;
+  rdfs:label "URI template"@en,
+    "predloga za URI"@sl .
+
+vcard:Kind
+  a owl:Class ;
+  rdfs:label "Kind"@en ;
+  rdfs:label "Vrsta kontakta"@sl ;
+  skos:definition "The kind of object the vCard represents."@en ,
+    "Vrsta kontakta, ki ga predstavlja vCard."@sl .
+
+prov:Agent
+  a owl:Class ;
+  rdfs:label "Agent"@en , "Agent"@sl ;
+  skos:definition "Bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."@en ,
+    "Nosi določeno obliko odgovornosti za dejavnost, ki se izvaja, za obstoj entitete ali za dejavnost drugega agenta."@sl .
+
+csvw:Table
+  a owl:Class ;
+  rdfs:label "Table"@en , "Tabela"@sl ;
+  skos:definition "An annotated table with additional metadata."@en ,
+    "Označena tabela z dodatnimi metapodatki."@sl .
+
+foaf:Organization
+  a owl:Class ;
+  rdfs:label "Organization"@en , "Organizacija"@sl ;
+  skos:definition "Social instititutions such as companies, societies etc."@en ,
+    "Socialne institucije, kot so podjetja, društva itd."@sl .
+
+cnb:UpravnaEnota
+  a owl:Class ;
+  rdfs:label "Administrative unit"@en , "Upravna enota"@sl .
+
+pz:Object
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Object (instance)"@en,
+    "Objekt (primerek)"@sl ;
+  skos:definition "An object that is a specific instance in a distribution."@en,
+    "Objekt, ki predstavlja specifičen primerek v distribuciji."@sl .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ns1:l a owl:DatatypeProperty;
+    rdfs:label "Label"@en;
+    rdfs:label "Oznaka"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "tod"@en;
+    skos:definition "tod"@sl .
