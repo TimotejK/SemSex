@@ -3,7 +3,7 @@ import pandas as pd
 import nltk.data
 
 def create_dataset():
-    f = open('ontologija_opisi.json')
+    f = open('ontologies/json_ontology_descriptions.json')
     data = json.load(f)
     tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 

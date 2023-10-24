@@ -6,7 +6,7 @@ from text_translation import translate_from_english
 
 
 def name_formatter(name, lang):
-    print(name)
+    print(name, lang)
     if name == "HIV":
         name += "v"
     elif name.lower() == "condom":
@@ -73,6 +73,10 @@ def name_formatter(name, lang):
         name = "Ejaculationn"
     elif name == "Semen" and lang == "en":
         name = "Semenn"
+    elif name == "Skene%27s_gland" and lang == "en":
+        name = "Skenes gland"
+    elif name == "Sex_toy" and lang == "en":
+        name = "Sex toyy"
     return name
 
 def add_text_sources():
@@ -111,7 +115,7 @@ def add_text_sources():
         concept = con[index]
         entities_list.append(concept.to_dict())
     s = json.dumps(entities_list)
-    with open("ontologija_opisi.json", "w") as outfile:
+    with open("ontologies/json_ontology_descriptions.json", "w") as outfile:
         outfile.write(s)
 
 # from wikidata.client import Client
