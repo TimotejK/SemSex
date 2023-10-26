@@ -1,7 +1,7 @@
 #!/bin/bash
 
 /usr/lib/jvm/java-17-openjdk-amd64/bin/java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar \
-    -ontFile ../ontologies/result.ttl \
+    -ontFile ../ontologies/SemSEX3.ttl \
     -outFolder ../docs/SemSEX \
     -getOntologyMetadata \
     -oops \

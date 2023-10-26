@@ -68,6 +68,82 @@ skos.definition a owl:DatatypeProperty;
 
 
 ##############################################
+# Object properties
+##############################################
+
+ss:homologno a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "homologno"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:je a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "je"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:je_proti a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "je_proti"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:je_sorodno a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "je_sorodno"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:pomembno_za a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "pomembno za"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:povezano_z a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "povezano z"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:se_sprosti_ob a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "se sprosti ob"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:vpliva_na a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "Vpliva na"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+ss:zascita a owl:ObjectProperty ;
+    rdfs:label "TODO"@en,
+        "zaščita"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range owl:Thing ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+##############################################
 # Classes
 ##############################################
 
@@ -79,8 +155,7 @@ ss:abstieneca a owl:Class ;
     rdfs:subClassOf <http://onto.clarin.si/semsex#vedenjska_»naravna«> ;
     owl:sameAs <http://wikidata.org/entity/Q598443> ;
     skos:altLabel "1.2.5.1"@sl ;
-    skos:definition """Sexual abstinence or sexual restraint is the practice of refraining from some or all aspects of sexual activity for medical, psychological, legal, social, philosophical, moral, religious or other reasons. Sexual abstinence is distinct from asexuality, which is a sexual orientation where people feel little or no sexual attraction. Celibacy is sexual abstinence generally motivated by factors such as an individual's personal or religious beliefs.  Sexual abstinence before marriage is required in some societies by social norms, or by law in some countries. It is a part of chastity.
-Abstinence may be voluntary (when an individual chooses not to engage in sexual activity due to moral, religious, philosophical, or other reasons), an involuntary result of social circumstances (when one cannot find any willing sexual partners), or legally mandated (e.g. in countries where sexual activity outside marriage is illegal, in prisons etc.)."""@en,
+    skos:definition """Sexual abstinence or sexual restraint is the practice of refraining from some or all aspects of sexual activity for medical, psychological, legal, social, philosophical, moral, religious or other reasons. Sexual abstinence is distinct from asexuality, which is a sexual orientation where people feel little or no sexual attraction. Celibacy is sexual abstinence generally motivated by factors such as an individual's personal or religious beliefs.  Sexual abstinence before marriage is required in some societies by social norms, or by law in some countries. It is a part of chastity. Abstinence may be voluntary (when an individual chooses not to engage in sexual activity due to moral, religious, philosophical, or other reasons), an involuntary result of social circumstances (when one cannot find any willing sexual partners), or legally mandated (e.g. in countries where sexual activity outside marriage is illegal, in prisons etc.)."""@en,
         "Abstinenca (iz lat.) vzdržnost; odpoved nekaterim užitkom, predvsem alkoholnim pijačam (alkoholizem) in spolnim odnosom; prid. abstinenčen. – Abstinenčni pojavi, motnje, ki nastanejo po nenadni odtegnitvi snovi, ki povzroča zasvojenost: nespečnost, razbijanje srca, znojenje, občutek strahu in halucinacije; v hudih primerih abstinenčni delirij, ki se lahko konča s smrtjo."@sl .
 
 ss:ameba-entamoeba_histolytica a owl:Class ;
@@ -476,17 +551,9 @@ William B. Hyman (1814–1884), Louisiana Supreme Court justice
 Zach Hyman (born 1992), Canadian ice hockey player and author
 
 """@en,
-        """Himen ali deviška kožica je tanka, prožna opna, ki delno zapira vhod v nožnico. 
-Himen ni neprepustna zapora, saj med mesečnim perilom dovoljuje normalno odtekanje krvi. V preteklosti je veljalo, da je deviška kožica dokaz nedolžnosti, kar se je v nekaterih okoljih ohranilo še do danes. Medicina pa je takšna prepričanja dokazala za zmotna, saj se lahko zgodi, da se ob velikem telesnem naporu ali pri športu, npr. pri jahanju ali kolesarjenju, raztrga sama od sebe. 
+        """Himen ali deviška kožica je tanka, prožna opna, ki delno zapira vhod v nožnico.
+Himen ni neprepustna zapora, saj med mesečnim perilom dovoljuje normalno odtekanje krvi. V preteklosti je veljalo, da je deviška kožica dokaz nedolžnosti, kar se je v nekaterih okoljih ohranilo še do danes. Medicina pa je takšna prepričanja dokazala za zmotna, saj se lahko zgodi, da se ob velikem telesnem naporu ali pri športu, npr. pri jahanju ali kolesarjenju, raztrga sama od sebe.
 Po navadi se sicer ta opna pretrga pri prvem spolnem odnosu. V primeru, da je himen neobičajno močan, ga ni mogoče naravno raztrgati. Takrat je potreben manjši kirurški poseg."""@sl .
-
-ss:homologno a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "homologno"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
 
 ss:interspolnost a owl:Class ;
     rdfs:label "Intersex"@en,
@@ -512,7 +579,7 @@ ss:jajcevod a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1233836> ;
     skos:altLabel "8.3.2"@sl ;
     skos:definition "The fallopian tubes, also known as uterine tubes, oviducts or salpinges (SG: salpinx), are paired tubes in the human female body that stretch from the uterus to the ovaries. The fallopian tubes are part of the female reproductive system. In other mammals they are only called oviducts.Each tube is a muscular hollow organ that is on average between 10 and 14 cm (3.9 and 5.5 in) in length, with an external diameter of 1 cm (0.39 in). It has four described parts: the intramural part, isthmus, ampulla, and infundibulum with associated fimbriae.  Each tube has two openings a proximal opening nearest and opening to the uterus, and a distal opening furthest and opening to the abdomen. The fallopian tubes are held in place by the mesosalpinx, a part of the broad ligament mesentery that wraps around the tubes. Another part of the broad ligament, the mesovarium suspends the ovaries in place.An egg cell is transported from an ovary to a fallopian tube where it may be fertilized in the ampulla of the tube. The fallopian tubes are lined with simple columnar epithelium with hairlike extensions called cilia which together with peristaltic contractions from the muscular layer, move the fertilized egg (zygote) along the tube. On its journey to the uterus the zygote undergoes cell divisions that changes it to a blastocyst an early embryo, in readiness for implantation.Almost a third of cases of infertility are caused by fallopian tube pathologies. These include inflammation, and tubal obstructions. A number of tubal pathologies cause damage to the cilia of the tube which can impede movement of the sperm or egg.The name comes from the Italian Catholic priest and anatomist Gabriele Falloppio, for whom other anatomical structures are also named."@en,
-        """Jajcevod je del ženskih spolnih organov. Jajcevoda sta parni cevki, dolgi približno 10 cm. Proti jajčniku je jajcevod lijakasto razširjen, proti maternici pa je vedno ožji in se od strani odpira v maternično votlino. Stena jajcevoda je iz gladkega mišičja, znotraj pa ga prekriva močno nagubana sluznica z migetalčnim epitelijem. Jajcevod je znaj prekrit s peritonejem. 
+        """Jajcevod je del ženskih spolnih organov. Jajcevoda sta parni cevki, dolgi približno 10 cm. Proti jajčniku je jajcevod lijakasto razširjen, proti maternici pa je vedno ožji in se od strani odpira v maternično votlino. Stena jajcevoda je iz gladkega mišičja, znotraj pa ga prekriva močno nagubana sluznica z migetalčnim epitelijem. Jajcevod je znaj prekrit s peritonejem.
 Lijakasto razširjen jajcevod se končuje z resicami. Te ujamejo zrelo jajčece, ki ga izloči folikel. Jajčece potuje s pomočjo peristaltike in utripanja migetalk po jajcevodu do maternične votline."""@sl .
 
 ss:jajcniki a owl:Class ;
@@ -529,30 +596,6 @@ ss:jajcniki a owl:Class ;
 """@en,
         """Jajčnik (latinsko Ovarium) je del ženskih spolnih organov. Ležita levo in desno ob maternici v mali medenici. Jajčnik je za mandelj velika žleza, v kateri nastajajo spolne celice in spolni hormoni. Leži v široki maternični vezi, ki se razteza od maternice proti stranskima stenama male medenice. Z dvema vezema je na eni strani pritrjen na zgorni del materničnega telesa, na drugi pa na steno medenice.
 Jajčnik je sestavljen iz skorje in sredice. V sredici so bogati prepleti žil, mezgovnic in živcev. Ob rojstvu je v skorji med vezivom na tisoče nezrelih jajčnih mehurčkov (foliklov), od katerih kasneje številni propadejo. Folikel obdaja enostojni epitelij, ki izloča ženske spolne hormore (estrogene), v nostranjosti mehurčka pa je spolna celica. Estrogen vpliva na razvoj in delovanje spolovil. Dozorevanje folikla spodbuja hipofiza. Po puberteti približno na vsakih 28 dni dozori jajčni folikel. Ko je zrel, se njegova votlinica odpre (ovulacija) in jajčece ulovijo resice jajcevoda, po katerem potuje proti maternici. Ovulacija je v sredini med dvema menstruacijama. Po ovulaciji nastane na tem mestu, pod vplivom hipofize rumeno telesce, ki izloča progesteron, ki spolne organe pripravlja na nosečnost."""@sl .
-
-ss:je a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "je"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
-
-ss:je_proti a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "je_proti"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
-
-ss:je_sorodno a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "je_sorodno"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
 
 ss:kastrat a owl:Class ;
     rdfs:label "Castration"@en,
@@ -901,8 +944,8 @@ ss:obrezovanje a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "8.2.3.2.1."@sl ;
     skos:definition "Circumcision is a procedure that removes the foreskin from the human penis. In the most common form of the operation, the foreskin is extended with forceps, then a circumcision device may be placed, after which the foreskin is excised. Topical or locally injected anesthesia is generally used to reduce pain and physiologic stress. Circumcision is generally electively performed, most commonly done as a form of preventive healthcare, as a religious obligation, or as a cultural practice. It is also an option for cases of phimosis, other pathologies that do not resolve with other treatments, and chronic urinary tract infections (UTIs). The procedure is contraindicated in cases of certain genital structure abnormalities or poor general health.Circumcision is associated with reduced rates of sexually transmitted infections and urinary tract infections. This includes decreasing the incidence of cancer-causing forms of human papillomavirus (HPV) and significantly reducing HIV transmission among heterosexual men within high-risk populations. The World Health Organization (WHO) and UNAIDS recommend circumcision as part of a comprehensive HIV transmission program in areas with high endemic rates of HIV. The WHO does not recommend circumcision for HIV prevention in men who have sex with men; effectiveness of using circumcision to prevent HIV in the developed world is unclear. Neonatal circumcision also decreases the risk of penile cancer. Complication rates are higher when the procedure is performed on older people. A 2010 review found circumcisions performed by medical providers to have a typical complication rate of 1.5% for babies and 6% for older children, with few cases of severe complications. Bleeding, infection, and the removal of either too much or too little foreskin are the most common acute complications. Meatal stenosis is the most common long-term complication. Major medical organizations hold variant perspectives on the prophylactic efficacy of the elective circumcision of minors. The WHO, UNAIDS, and American medical organizations take the position that it carries prophylactic health benefits which outweigh the risks, while European medical organizations generally hold the belief that in these situations its medical benefits are not counterbalanced by risk.Circumcision is one of the world's most common and oldest medical procedures. Prophylactic usage originated in England during the 1850s, becoming established as a way to prevent sexually transmitted infections. Beyond use as a prophylactic or treatment option in healthcare, circumcision plays a major role in many of the world's cultures and religions, most prominently Judaism and Islam. Circumcision is among the most important commandments in Judaism. Historically, campaigns of Jewish persecution have included bans on the practice as a means of forceful assimilation, conversion, and ethnocide. Variant medical, cultural, religious, and ethical views have led to a widely diverging incidence and prevalence within polities. It is widespread in Australia, Canada, the United States, South Korea, most of Africa, and parts of Asia. It is relatively rare for non-religious reasons in parts of Southern Africa, Latin America, Europe, and parts of Asia. The origin of circumcision is not known with certainty; the oldest documentation comes from ancient Egypt."@en,
-        """Obrezovanje moških ali cirkumcizija (latinsko circumcisio) je postopek, pri katerem moškemu (pogosto še dečku) odrežejo prednjo kožico (prepucij) na spolnem udu. Postopek pogosto izvajajo zaradi verskih razlogov, zlasti v 
-judovstvu in islamu. Postopek medicinsko ni zelo zapleten niti ni pretirano boleč, zato se ga šteje bolj za 
+        """Obrezovanje moških ali cirkumcizija (latinsko circumcisio) je postopek, pri katerem moškemu (pogosto še dečku) odrežejo prednjo kožico (prepucij) na spolnem udu. Postopek pogosto izvajajo zaradi verskih razlogov, zlasti v
+judovstvu in islamu. Postopek medicinsko ni zelo zapleten niti ni pretirano boleč, zato se ga šteje bolj za
 simbolno dejanje.Postopek obrezovanja moških je zelo star, najstarejše slikovne upodobitve obrezovanja izvirajo iz kamene dobe. Zgodovinarji, ki so se ukvarjali s tem obredom, po navadi navajajo, da je bilo obrezovanje obredno žrtvovanje dela svojega telesa bogovom. Po drugi razlagi gre lahko tudi za znak sužnosti (sužnji so obrezani zato, da se ločijo od gospodarjev, ki niso).
 V današnjem času je v Evropi obrezovanje moških zlasti znak verske pripadnosti (v Ameriki je pogostejše tudi obrezovanje zaradi higienskih razlogov). Za judovske moške je obrezanost eden od temeljnih znakov pripadnosti judovski veri. Dečke obrežejo praviloma na osmi dan po rojstvu. To imajo za znamenje zaveze tega dečka z Bogom, podobno kot je tudi očak Abraham svojo zavezo z Bogom potrdil tako, da se je obrezal. Šele po obrezovanju deček postane zares Jud in takrat dobi tudi ime. (primerjaj 1 Mz 17,9-27)
 Tudi v islamu je obrezovanje moških splošno razširjeno, čeprav Koran tega nikjer izrecno ne omenja. Ker muslimani upoštevajo poleg Korana tudi Sveto pismo stare zaveze, štejejo obrezovanje moških za dolžnost po Abrahamovi zavezi (tako kot Judje). Čas obrezovanja ni tako točno določen kot pri Judih: v Pakistanu obrezujejo dečke na sedmi dan po rojstvu, v večini drugih muslimanskih držav pa je bolj običajno obrezovanje v starosti 6 do 11 let oziroma ob prehodu iz otroštva v odraslost.
@@ -933,7 +976,7 @@ ss:orgije a owl:Class ;
     skos:altLabel "4.2.5"@sl ;
     skos:definition """In modern usage, an orgy is a sex party where guests freely engage in open and unrestrained sexual activity or group sex.
 Swingers' parties do not always conform to this designation, because at many swinger parties the sexual partners may all know each other or at least have some commonality among economic class, educational attainment or other shared attributes. Some swingers contend that an orgy, as opposed to a sex party, requires some anonymity of sexual partners in complete sexual abandon. Other kinds of "sex party" may fare less well with this labeling.
-Participation in an "orgy" is a common sexual fantasy, and group sex targeting such consumers is a subgenre in pornographic films. 
+Participation in an "orgy" is a common sexual fantasy, and group sex targeting such consumers is a subgenre in pornographic films.
 The term is also used metaphorically in expressions, such as an "orgy of colour" or an "orgy of destruction" to indicate excess, overabundance. The term "orgiastic" does not generally connote group sex and is closer to the classical roots and this metaphorical usage.
 
 """@en,
@@ -1044,14 +1087,6 @@ Worldwide, different societies variously encourage, accept or outlaw polygamy. I
 """@en,
         "TODO"@sl .
 
-ss:pomembno_za a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "pomembno za"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
-
 ss:pornografija a owl:Class ;
     rdfs:label "Pornography"@en,
         "Pornografija"@sl ;
@@ -1088,14 +1123,6 @@ Kdor prisili osebo drugega ali istega spola k spolnemu občevanju tako, da upora
 Če je dejanje iz prejšnjega odstavka storjeno na grozovit ali na posebno poniževalen način ali če je dejanje storilo več oseb zaporedoma, ali nad obsojenci, ki prestajajo kazen zapora v zaprtih ali polodprtih zavodih za prestajanje kazni zapora, se storilec kaznuje z zaporom najmanj treh let.
 Kdor prisili osebo drugega ali istega spola k spolnemu občevanju tako, da ji zagrozi, da bo o njej ali njenih bližnjih odkril, kar bi škodovalo njeni ali njihovi časti ali dobremu imenu, ali da bo njej ali njenim bližnjim povzročil veliko premoženjsko škodo, se kaznuje z zaporom od šestih mesecev do petih let.
 Če sta bili dejanji iz prvega ali tretjega odstavka tega člena storjeni proti osebi, s katero storilec živi v zakonski ali zunajzakonski skupnosti, se pregon začne na predlog."""@sl .
-
-ss:povezano_z a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "povezano z"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
 
 ss:privoljenje a owl:Class ;
     rdfs:label "Consent"@en,
@@ -1188,14 +1215,6 @@ ss:romanticna_usmerjenost a owl:Class ;
 For asexual people, romantic orientation is often considered a more useful measure of attraction than sexual orientation.The relationship between sexual attraction and romantic attraction is still under debate. Sexual and romantic attractions are often studied in conjunction. Even though studies of sexual and romantic spectrums are shedding light onto this under-researched subject, much is still not fully understood.
 
 """@en,
-        "TODO"@sl .
-
-ss:se_sprosti_ob a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "se sprosti ob"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
         "TODO"@sl .
 
 ss:seksologija a owl:Class ;
@@ -1556,27 +1575,11 @@ ss:virtualni_seks a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q626268> ;
     skos:altLabel "3.2.3.2"@sl ;
     skos:definition """Cybersex, also called computer sex, Internet sex, netsex and, colloquially, cyber or cybering, is a virtual sex encounter in which two or more people have long distance sex via electronic video communication (webcams, VR headsets, etc) and other electronics (such as teledildonics) connected to a computer network.Cybersex can also mean sending each other sexually explicit messages without having sex, and simply describing a sexual experience (also known as "sexting"). Cybersex is a sub-type of technology-mediated sexual interactions. In one form, this is accomplished by the participants describing their actions and responding to their chat partners in a mostly written form designed to stimulate their own sexual feelings and fantasies. Cybersex often includes real life masturbation.
-Environments in which cybersex takes place are not necessarily exclusively devoted to that subject, and participants in any Internet chat may suddenly receive a message of invitation. 
+Environments in which cybersex takes place are not necessarily exclusively devoted to that subject, and participants in any Internet chat may suddenly receive a message of invitation.
 Non-marital, adult, consensual paid cybersex counts as illegal solicitation of prostitution and illegal prostitution in multiple US states. Non-consensual cybersex sometimes occurs in cybersex trafficking crimes.  There also has been at least one rape conviction for purely virtual sexual encounters.
 
 """@en,
         "Kiberseks (cybersex) je seks preko priključenega sistema za klepetanje."@sl .
-
-ss:vpliva_na a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "Vpliva na"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
-
-ss:zascita a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
-        "zaščita"@sl ;
-    rdfs:domain owl:Thing ;
-    rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
 
 ss:zenski_notranji a owl:Class ;
     rdfs:label "Condom"@en,
@@ -1749,7 +1752,7 @@ ss:klitoris a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q873072> ;
     skos:altLabel "8.3.7.2"@sl ;
     skos:definition "The clitoris (  or  ; PL: clitorises or clitorides) is a female sex organ present in mammals, ostriches, and a limited number of other animals. In humans, the visible portion – the glans – is at the front junction of the labia minora (inner lips), above the opening of the urethra. Unlike the penis, the male homologue (equivalent) to the clitoris, it usually does not contain the distal portion (or opening) of the urethra and is therefore not used for urination. In most species, the clitoris lacks any reproductive function. While few animals urinate through the clitoris or use it reproductively, the spotted hyena, which has an especially large clitoris, urinates, mates, and gives birth via the organ. Some other mammals, such as lemurs and spider monkeys, also have a large clitoris.The clitoris is the human female's most sensitive erogenous zone and generally the primary anatomical source of human female sexual pleasure. In humans and other mammals, it develops from an outgrowth in the embryo called the genital tubercle. Initially undifferentiated, the tubercle develops into either a penis or a clitoris during the development of the reproductive system depending on exposure to androgens (which are primarily male hormones). The clitoris is a complex structure, and its size and sensitivity can vary. The glans (head) of the human clitoris is roughly the size and shape of a pea and is estimated to have 8,000, and possibly more than 10,000, sensory nerve endings.Sexological, medical, and psychological debate has focused on the clitoris, and it has been subject to social constructionist analyses and studies. Such discussions range from anatomical accuracy, gender inequality, female genital mutilation, and orgasmic factors and their physiological explanation for the G-spot. Although, in humans, the only known purpose of the clitoris is to provide sexual pleasure, whether the clitoris is vestigial, an adaptation, or serves a reproductive function has been debated. Social perceptions of the clitoris include the significance of its role in female sexual pleasure, assumptions about its true size and depth, and varying beliefs regarding genital modification such as clitoris enlargement, clitoris piercing and clitoridectomy. Genital modification may be for aesthetic, medical or cultural reasons.Knowledge of the clitoris is significantly affected by cultural perceptions of the organ. Studies suggest that knowledge of its existence and anatomy is scant in comparison with that of other sexual organs and that more education about it could help alleviate social stigmas associated with the female body and female sexual pleasure. Examples of stigma include the ideas that the clitoris and vulva in general are visually unappealing, that female masturbation is taboo, or that men should be expected to master and control women's orgasms."@en,
-        """Ščegetávček ali klítoris je nabrekljiv organ zunanjih ženskih spolovil in je najpomembnejša erogena cona pri ženski. 
+        """Ščegetávček ali klítoris je nabrekljiv organ zunanjih ženskih spolovil in je najpomembnejša erogena cona pri ženski.
 Sestavlja ga notranji del - telo ščegetavčka in glavica, ki jo prekriva ščegetavčkova kožica.
 Klitoris se nahaja približno 2 centimetra nad nožnično odprtino, približno tam, kjer se začnejo oziroma stikajo notranje (male) sramne ustnice. Ščegetavček ima enak embrionalni izvor kot moški spolni ud.
 Klitorisi so različnih oblik in velikosti; nekatere ščegetavčkove glavice so komaj večje od bucikine glavice, druge pa lahko dosežejo tudi do dva centimetra."""@sl .
@@ -1897,7 +1900,7 @@ ss:spolna_usmerjenost a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q17888> ;
     skos:altLabel "2.1.2"@sl ;
     skos:definition "Sexual orientation is an enduring pattern of whether a person has romantic attraction or sexual attraction (or a combination of these) to persons of the opposite sex or gender, the same sex or gender, or to both sexes or more than one gender. These attractions are generally subsumed under heterosexuality, homosexuality, and bisexuality, while asexuality (the lack of sexual attraction to others) is sometimes identified as the fourth category.These categories are aspects of the more nuanced nature of sexual identity and terminology. For example, people may use other labels, such as pansexual or polysexual, or none at all. According to the American Psychological Association, sexual orientation \"also refers to a person's sense of identity based on those attractions, related behaviors, and membership in a community of others who share those attractions\". Androphilia and gynephilia are terms used in behavioral science to describe sexual orientation as an alternative to a gender binary conceptualization. Androphilia describes sexual attraction to masculinity; gynephilia describes the sexual attraction to femininity. The term sexual preference largely overlaps with sexual orientation, but is generally distinguished in psychological research. A person who identifies as bisexual, for example, may sexually prefer one sex over the other. Sexual preference may also suggest a degree of voluntary choice, whereas sexual orientation is not a choice.Scientists do not know the exact cause of sexual orientation, but they theorize that it is caused by a complex interplay of genetic, hormonal, and environmental influences. Although no single theory on the cause of sexual orientation has yet gained widespread support, scientists favor biologically based theories. There is considerably more evidence supporting nonsocial, biological causes of sexual orientation than social ones, especially for males. There is no substantive evidence which suggests parenting or early childhood experiences play a role with regard to sexual orientation. Across cultures, most people are heterosexual, with a minority of people having a homosexual or bisexual orientation.: 8 : 9–10  A person's sexual orientation can be anywhere on a continuum, from exclusive attraction to the opposite sex to exclusive attraction to the same sex.Sexual orientation is studied primarily within biology, anthropology, and psychology (including sexology), but it is also a subject area in sociology, history (including social constructionist perspectives), and law."@en,
-        """Spolna usmerjenost ali spolna orientacija je pojem, ki se nanaša na  posameznikov spolni nagon oz. na preferiran spol intimnih partnerjev. 
+        """Spolna usmerjenost ali spolna orientacija je pojem, ki se nanaša na  posameznikov spolni nagon oz. na preferiran spol intimnih partnerjev.
 Najpogostejše oblika spolne usmerjenosti so heteroseksualnost (pozameznika spolno privlačijo osebe nasprotnega spola), homoseksualnost (pozameznika spolno privlačijo osebe istega spola) in biseksualnost (pozameznika spolno privlačijo osebe moškega in ženskega spola ali več kot enega spola).Poudariti je treba, da spolna usmerjenost zavzema več kot samo strogi kontekst spolnega občevanja - spolna usmerjenost je identiteta, s katero se človek poistoveti, se torej označuje za homoseksualno/biseksualno/heteroseksualno usmerjenega. Od te oznake je odvisen sklop vedenj v odnosu do spolov, ki zajema romantične težnje in fantazije, intimne čustvene odnose, vedenje in dojemanje samega sebe v okviru družbe in v primerjavi z ostalimi ljudmi.Po Kinseyju je spolna orientacija fluidna in ne-binarna (torej zanika rigidno delitev ljudi na homoseksualce in heteroseksualce, marveč uvaja 8 stopenj človeške seksualnosti); glede na posameznikove izkušnje in razvoj lahko variira in se spreminja.Na definicijo spolne usmerjenosti nerazdružljivo vpliva definicija spola. V naši kulturi je definicija spolov binarna, torej priznava obstoj samo dveh spolov: moškega in ženskega spola. Ta trditev je problematična že samo v biološkem oziru, saj znanost beleži primere ljudi z dvoumnimi spolnimi znaki (npr. genitalijami), poleg tega pa ne dopušča prostora za samo-identifikacijo.
 Spolne usmerjenosti ne moremo določiti drugače, kot na podlagi spolne identitete - po vsem svetu najdemo ljudi, ki spadajo pod krovni izraz transspolnost (trans-gender). V slovenščino je to slabše prevedljivo, saj uporabljamo besedo spol tako za angleški sex (biološka komponenta spola – genitalije, kromosomi ...) kot za gender (družbena komponenta spola, ki vključuje družbene vloge, pričakovanja, interese in samo-doživljanje vsakega posameznika kot moškega, žensko ali tretji spol).
 V okviru seksologije je bilo uvedeno mnogo klasifikacij spolnih orientacij, med katerimi so pogoste še aseksualnost, avtoseksualnost in  panseksualnost."""@sl .
@@ -1925,7 +1928,7 @@ ss:transspolnost a owl:Class ;
     skos:definition """A transgender person (often shortened to trans) is someone whose gender identity differs from that typically associated with the sex they were assigned at birth.  Some transgender people who desire medical assistance to transition from one sex to another identify as transsexual. Transgender, often shortened as trans, is also an umbrella term; in addition to including people whose gender identity is the opposite of their assigned sex (trans men and trans women), it may also include people who are non-binary or genderqueer. Other definitions of transgender also include people who belong to a third gender, or else conceptualize transgender people as a third gender. The term transgender may be defined very broadly to include cross-dressers. The term transgender does not have a universally accepted definition, including among researchers.Being transgender is distinct from sexual orientation. Transgender people may identify as heterosexual (straight), homosexual (gay or lesbian), bisexual, asexual, or otherwise, or may decline to label their sexual orientation. The opposite of transgender is cisgender, which describes persons whose gender identity matches their assigned sex. Accurate statistics on the number of transgender people vary widely, in part due to different definitions of what constitutes being transgender. Some countries, such as Canada, collect census data on transgender people. Generally, fewer than 1% of the worldwide population are transgender, with figures ranging from <0.1% to 0.6%.The degree to which individuals feel genuine, authentic, and comfortable within their external appearance and accept their genuine identity has been called transgender congruence. Many transgender people experience gender dysphoria, and some seek medical treatments such as hormone replacement therapy, sex reassignment surgery, or psychotherapy. Not all transgender people desire these treatments, and some cannot undergo them for financial or medical reasons.Many transgender people face discrimination in the workplace and in accessing public accommodations and healthcare. In many places, they are not legally protected from discrimination.
 
 """@en,
-        """Transspolnost (angleško transgender) je krovni izraz za vse spolne identitete, ki temeljijo na neujemanju spolne identitete s spolom, ki je bil osebi pripisan ob rojstvu. Transspolnost zajema vse spolne identitete, ki so osnovane na posamezničnimi_kovi čutenji in doživljanji sebe in/ali preoblikovane v skladu z njimi. Latinska predpona trans- pomeni »preko«, »onkraj« ali »na drugi strani«. 
+        """Transspolnost (angleško transgender) je krovni izraz za vse spolne identitete, ki temeljijo na neujemanju spolne identitete s spolom, ki je bil osebi pripisan ob rojstvu. Transspolnost zajema vse spolne identitete, ki so osnovane na posamezničnimi_kovi čutenji in doživljanji sebe in/ali preoblikovane v skladu z njimi. Latinska predpona trans- pomeni »preko«, »onkraj« ali »na drugi strani«.
 Transspolne osebe so osebe, ki se ne identificirajo s spolom, ki jim je bil pripisan ob rojstvu na podlagi njihovih genitalij. Transspolnost je nadpomenka, ki vsebuje celo vrsto različnih spolnih identitet. Nekatere transspolne osebe so ženske, nekatere moški, nekatere nebinarne osebe, nekatere spola sploh ne čutijo, se identificirajo z različnimi spoli ali pa se njihova spolna identiteta skozi čas spreminja. Ključna oseba okoliščina transspolnih oseb je spolna identiteta, ki se razlikuje od njihovega pripisanega spola. Transspolnim ljudjem družba in mediji velikokrat pravijo transseksualci, seveda pa se lahko posameznice_ki tako identificirajo. Transspolnost je tudi krovni termin: poleg trans moških in trans žensk lahko vključuje tudi ljudi, ki niso izključno moški ali ženske (npr. kvirsspolne, bispolne, panspolne, spolno fluidne ali aspolne osebe). Druge definicije transspolnosti vključujejo tudi ljudi, ki pripadajo tretjemu spolu, ali pa konceptualizirajo transspolne ljudi kot tretji spol. Včasih, a redkeje, pa se pojem transspolnosti definira tako široko, da vključuje tudi transvestite ne glede na njihovo spolno identiteto.
 Transseksualni ljudje so tisti, katerih spolna identiteta se ne ujema z njihovim dodeljenim spolom in imajo trajno željo spremembe spola (tranzicije spola), običajno z medicinsko pomočjo, kot sta hormonska nadomestna terapija ali operacija potrditve spola, da bi dosegli uskladitev svoje spolne identitete z biološkim spolom. Fizične tranzicije si ne želijo vse transspolne osebe, lahko pa jim je tudi nedosegljiva iz finančnih ali zdravstvenih razlogov. Izraz transseksualnost je podpomenka izraza transspolnost, nekateri transseksualci pa zavračajo oznako transspolnik. Če oseba čuti trajno in izrazito neskladje med občutenim in biološkim spolom, se lahko postavi medicinska diagnoza disforije spola. Disforijo spola doživljajo številni transspolni ljudje.Biti transspolen je neodvisno od spolne usmerjenosti: transspolni ljudje se namreč lahko identificirajo kot heteroseksualni, homoseksualni, biseksualni, aseksualni itd., ali pa menijo, da so običajne oznake za spolno usmerjenost pomanjkljive ali neustrezne. Transspolnost se lahko tudi razlikuje od interspolnosti, ki opisuje ljudi, rojene s fizičnimi značilnostmi, "ki se ne prilegajo tipičnemu binarnemu pojmovanju moškega ali ženskega telesa".
 Večina transspolnih ljudi se srečuje z diskriminacijo na delovnem mestu, v javnih okoliščinah in v zdravstvenem sistemu. V mnogih državah transspolni ljudje niso pravno zaščiteni pred diskriminacijo."""@sl .
@@ -2025,7 +2028,7 @@ ss:coitus a owl:Class ;
     skos:altLabel "3.2.1.1"@sl ;
     skos:definition """Sexual intercourse (or coitus or copulation) is sexual activity involving the insertion and thrusting of the male penis inside the female vagina for sexual pleasure,  reproduction, or both. This is also known as vaginal intercourse or vaginal sex. Other forms of penetrative sexual intercourse include anal sex (penetration of the anus by the penis), oral sex (penetration of the mouth by the penis or oral penetration of the female genitalia), fingering (sexual penetration by the fingers) and penetration by use of a dildo (especially a strap-on dildo). These activities involve physical intimacy between two or more individuals and are usually used among humans solely for physical or emotional pleasure and can contribute to human bonding.There are different views on what constitutes sexual intercourse or other sexual activity, which can impact on views of sexual health. Although sexual intercourse, particularly the term coitus, generally denotes penile–vaginal penetration and the possibility of creating offspring, it also commonly denotes penetrative oral sex and penile–anal sex, especially the latter. It usually encompasses sexual penetration, while non-penetrative sex has been labeled "outercourse", but non-penetrative sex may also be considered sexual intercourse. Sex, often a shorthand for sexual intercourse, can mean any form of sexual activity. Because people can be at risk of contracting sexually transmitted infections during these activities, safer sex practices are recommended by health professionals to reduce transmission risk.Various jurisdictions place restrictions on certain sexual acts, such as incest, sexual activity with minors, prostitution, rape, zoophilia, sodomy, premarital and extramarital sex. Religious beliefs also play a role in personal decisions about sexual intercourse or other sexual activity, such as decisions about virginity, or legal and public policy matters. Religious views on sexuality vary significantly between different religions and sects of the same religion, though there are common themes, such as prohibition of adultery.
 Reproductive sexual intercourse between non-human animals is more often called copulation, and sperm may be introduced into the female's reproductive tract in non-vaginal ways among the animals, such as by cloacal copulation. For most non-human mammals, mating and copulation occur at the point of estrus (the most fertile period of time in the female's reproductive cycle), which increases the chances of successful impregnation. However, bonobos, dolphins and chimpanzees are known to engage in sexual intercourse regardless of whether the female is in estrus, and to engage in sex acts with same-sex partners. Like humans engaging in sexual activity primarily for pleasure, this behavior in these animals is also presumed to be for pleasure, and a contributing factor to strengthening their social bonds."""@en,
-        """Spolni odnos je intimna fizična združitev (občevanje) dveh ali več ljudi, pri kateri pride do draženja spolovil in ki običajno vključuje prodiranje moškega spolnega uda v žensko spolovilo. Biološka funkcija spolnega odnosa je razmnoževanje in s tem nadaljevanje vrste, a tudi doseganje ugodja. Zato se izraz uporablja tudi širše, za draženje spolovil z drugimi deli telesa (prsti, jezikom ipd.) ali predmeti, ali pa spolno občevanje med človekoma istega spola. 
+        """Spolni odnos je intimna fizična združitev (občevanje) dveh ali več ljudi, pri kateri pride do draženja spolovil in ki običajno vključuje prodiranje moškega spolnega uda v žensko spolovilo. Biološka funkcija spolnega odnosa je razmnoževanje in s tem nadaljevanje vrste, a tudi doseganje ugodja. Zato se izraz uporablja tudi širše, za draženje spolovil z drugimi deli telesa (prsti, jezikom ipd.) ali predmeti, ali pa spolno občevanje med človekoma istega spola.
 S tujko lahko spolni odnos poimenujemo tudi z besedo seks, ki je izposojenka iz angleščine (izvirno sex), ali latinsko izposojenko koitus (coitus). V vsakdanji rabi s temi izrazi označujemo le občevanje med ljudmi, za ustrezno vedenje pri živalih pa se uporablja izraz parjenje (kopulacija), ki je povečini namenjeno izključno razmnoževanju."""@sl .
 
 ss:embrioloski_razvoj a owl:Class ;
@@ -2177,7 +2180,7 @@ ss:spolno_delo a owl:Class ;
     rdfs:subClassOf ss:spolna_industrija ;
     owl:sameAs <http://wikidata.org/entity/Q1297897> ;
     skos:altLabel "4.3.1"@sl ;
-    skos:definition """Sex work is "the exchange of sexual services, performances, or products for material compensation. It includes activities of direct physical contact between buyers and sellers as well as indirect sexual stimulation". Sex work only refers to voluntary sexual transactions; thus, the term does not refer to human trafficking and other coerced or nonconsensual sexual transactions such as child prostitution. The transaction must take place between consenting adults of the legal age and mental capacity to consent and must take place without any methods of coercion, other than payment. The term emphasizes the labor and economic implications of this type of work. Furthermore, some prefer the use of the term because it grants more agency to the sellers of these services.  
+    skos:definition """Sex work is "the exchange of sexual services, performances, or products for material compensation. It includes activities of direct physical contact between buyers and sellers as well as indirect sexual stimulation". Sex work only refers to voluntary sexual transactions; thus, the term does not refer to human trafficking and other coerced or nonconsensual sexual transactions such as child prostitution. The transaction must take place between consenting adults of the legal age and mental capacity to consent and must take place without any methods of coercion, other than payment. The term emphasizes the labor and economic implications of this type of work. Furthermore, some prefer the use of the term because it grants more agency to the sellers of these services.
 
 """@en,
         "TODO"@sl .
