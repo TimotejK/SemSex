@@ -1,4 +1,3 @@
-
 @prefix ss: <http://onto.clarin.si/semsex#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,31 +10,29 @@
 <http://onto.clarin.si/semsex>
     a owl:Ontology ;
     vann:preferredNamespaceUri "http://onto.clarin.si/semsex#";
-    owl:versionIRI <http://onto.mju.gov.si/podatkovni-zemljevid/0.1.0#> ;
+    owl:versionIRI <http://onto.clarin.si/semsex/0.1.0#> ;
     owl:versionInfo "0.1.0"@en ;
     cc:license <http://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespacePrefix "ss";
     dct:created "2023-10-20"^^xsd:date ;
     rdfs:label "Shema učnih načrtov za spolno vzgojo"@sl ;
     rdfs:label "Schema for storing concepts about sex education curriculums"@en ;
-    schemaorg:creator ss:TimotejKnez, ss:TimPrezelj ;
+    schemaorg:creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;
     schemaorg:publisher ss:Clarin ;
 
 ss:Clarin
     a foaf:Organization ;
-    rdfs:label "Clarin.si"@sl ;
-    rdfs:label "Clarin.si"@en ;
-    foaf:name "slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN"@sl ;
+    rdfs:label "Clarin.si" ;
+    foaf:name "Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN"@sl ;
     foaf:name "Slovene national consortium of the European research infrastructure CLARIN"@en ;
     foaf:homepage <https://www.clarin.si> .
 
 ss:TimotejKnez
     a foaf:Person ;
-    foaf:name "Timotej Knez"@en ;
-    foaf:name "Timotej Knez"@sl ;
+    foaf:name "Timotej Knez" ;
     schemaorg:affiliation [
-    foaf:homepage <https://www.fri.uni-lj.si> ;
-    foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
+    	foaf:homepage <https://www.fri.uni-lj.si> ;
+    	foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
     ] ;
     foaf:mbox "timotej.knez@fri.uni-lj.si" ;
     rdfs:seeAlso <http://orcid.org/0000-0001-7506-5739> .
@@ -45,72 +42,83 @@ ss:TimPrezelj
     foaf:name "Tim Prezelj"@en ;
     foaf:name "Tim Prezelj"@sl ;
     schemaorg:affiliation [
-    foaf:homepage <https://www.pef.uni-lj.si/> ;
-    foaf:name "Univerza v Ljubljani, Pedagoška fakulteta" ;
+    	foaf:homepage <https://www.pef.uni-lj.si> ;
+    	foaf:name "Univerza v Ljubljani, Pedagoška fakulteta" ;
     ] ;
     foaf:mbox "tim.prezelj@pef.uni-lj.si" ;
     rdfs:seeAlso <http://orcid.org/0000-0002-2412-2737> .
+
+ss:SlavkoZitnik
+    a foaf:Person ;
+    foaf:name "Slavko Žitnik" ;
+    schemaorg:affiliation [
+    	foaf:homepage <https://www.fri.uni-lj.si> ;
+    	foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
+    ] ;
+    foaf:mbox "slavko.zitnik@fri.uni-lj.si" ;
+    rdfs:seeAlso <http://orcid.org/0000-0003-3452-1106> .
+
 
 ##############################################
 # Data properties
 ##############################################
 
-# rdf:type a owl:DatatypeProperty ;
-#     rdfs:label "type"@en ;
-#     rdfs:label "tip"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# rdfs.isDefinedBy a owl:DatatypeProperty ;
-#     rdfs:label "described at URL"@en ;
-#     rdfs:label "opisano na URL-ju"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# rdfs.label a owl:DatatypeProperty ;
-#     rdfs:label "Label"@en ;
-#     rdfs:label "Oznaka"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# rdfs.subClassOf a owl:DatatypeProperty ;
-#     rdfs:label "Subclass of"@en ;
-#     rdfs:label "Podtip"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# owl.sameAs a owl:DatatypeProperty ;
-#     rdfs:label "Same as"@en ;
-#     rdfs:label "Isto kot"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# skos.altLabel a owl:DatatypeProperty ;
-#     rdfs:label "Alternative label"@en ;
-#     rdfs:label "Druga oznaka"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
-# skos.definition a owl:DatatypeProperty ;
-#     rdfs:label "Definition"@en ;
-#     rdfs:label "Definicija"@sl ;
-#     rdfs:domain owl:Thing ;
-#     rdfs:range xsd:string ;
-#     skos:definition "TODO"@en,
-#         "TODO"@sl .
-#
+rdf:type a owl:DatatypeProperty ;
+    rdfs:label "type"@en ;
+    rdfs:label "tip"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+rdfs:isDefinedBy a owl:DatatypeProperty ;
+    rdfs:label "described at URL"@en ;
+    rdfs:label "opisano na URL-ju"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+rdfs:label a owl:DatatypeProperty ;
+    rdfs:label "Label"@en ;
+    rdfs:label "Oznaka"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+rdfs:subClassOf a owl:DatatypeProperty ;
+    rdfs:label "Subclass of"@en ;
+    rdfs:label "Podtip"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+owl:sameAs a owl:DatatypeProperty ;
+    rdfs:label "Same as"@en ;
+    rdfs:label "Isto kot"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+skos:altLabel a owl:DatatypeProperty ;
+    rdfs:label "Alternative label"@en ;
+    rdfs:label "Druga oznaka"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
+skos:definition a owl:DatatypeProperty ;
+    rdfs:label "Definition"@en ;
+    rdfs:label "Definicija"@sl ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    skos:definition "TODO"@en,
+        "TODO"@sl .
+
 
 ##############################################
 # Object properties
@@ -203,7 +211,7 @@ ss:abstieneca a owl:Class ;
     skos:definition "Sexual Abstinence: The practice of refraining from some or all aspects of sexual activity for various reasons, including medical, moral, religious, or social motivations. It can be voluntary, involuntary, or legally mandated."@en,
         "Spolna abstinenca: praksa vzdržanja nekaterih ali vseh vidikov spolne dejavnosti iz različnih razlogov, vključno z zdravstvenimi, moralnimi, verskimi ali družbenimi motivacijami. Lahko je prostovoljno, neprostovoljno ali zakonsko predpisano."@sl .
 
-ss:ameba-entamoeba_histolytica a owl:Class ;
+ss:ameba-entamoeba_histolytica a owl:Class ; TODO
     rdfs:label "Entamoeba histolytica"@en,
         "Entamoeba histolytica"@sl ;
     schemaorg:isSimilarTo ss:higiena ;
