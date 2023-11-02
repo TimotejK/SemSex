@@ -63,6 +63,7 @@ ss:SlavkoZitnik
 # Data properties
 ##############################################
 
+
 rdf:type a owl:DatatypeProperty ;
     rdfs:label "type"@en ;
     rdfs:label "tip"@sl ;
@@ -104,12 +105,12 @@ owl:sameAs a owl:DatatypeProperty ;
         "TODO"@sl .
 
 skos:altLabel a owl:DatatypeProperty ;
-    rdfs:label "Alternative label"@en ;
-    rdfs:label "Druga oznaka"@sl ;
+    rdfs:label "Chapter label"@en ;
+    rdfs:label "Oznaka poglavja"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "The label marsk each concept with its unique number in the form of a chapter and subchapter."@en,
+        "S to oznako označujemo številko posameznega koncepta v obliki poiglavja ter podpoglavja."@sl .
 
 skos:definition a owl:DatatypeProperty ;
     rdfs:label "Definition"@en ;
@@ -118,7 +119,6 @@ skos:definition a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "TODO"@en,
         "TODO"@sl .
-
 
 ##############################################
 # Object properties
