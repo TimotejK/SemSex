@@ -9,3 +9,6 @@ datasets
 scikit-learn
 evaluate==0.4.0
 accelerate>=0.20.1
+# PyPDF2
+PyMuPDF
+fitz
