@@ -1,5 +1,5 @@
 # importing required modules
-import PyPDF2
+# import PyPDF2
 import PyMuPDF
 
 def read_annotation(page):
