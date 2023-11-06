@@ -24,6 +24,11 @@ num_labels = 2
 
 df = pd.read_csv(data_path)
 
+# undersample
+nMin = df.groupby('label').count().min()['text']
+balanced_df = df.groupby('label').apply(lambda x: x.sample(n=min(nMin, len(x))))
+balanced_df = balanced_df.sample(frac=1, ignore_index=True)
+
 le = preprocessing.LabelEncoder()
 le.fit(df[label_column_name].tolist())
 df['label'] = le.transform(df[label_column_name].tolist())
