@@ -202,14 +202,14 @@ ss:zascita a owl:ObjectProperty ;
 
 ss:abstieneca a owl:Class ;
     rdfs:label "Sexual abstinence"@en,
-        "Abstinenca"@sl ;
+        "Spolna abstinenca"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sexual_abstinence"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Abstinenca"^^xsd:string ;
     rdfs:subClassOf <http://onto.clarin.si/semsex#vedenjska_»naravna«> ;
     owl:sameAs <http://wikidata.org/entity/Q598443> ;
     skos:altLabel "1.2.5.1"@sl ;
     skos:definition "Sexual Abstinence: The practice of refraining from some or all aspects of sexual activity for various reasons, including medical, moral, religious, or social motivations. It can be voluntary, involuntary, or legally mandated."@en,
-        "Spolna abstinenca: praksa vzdržanja nekaterih ali vseh vidikov spolne dejavnosti iz različnih razlogov, vključno z zdravstvenimi, moralnimi, verskimi ali družbenimi motivacijami. Lahko je prostovoljno, neprostovoljno ali zakonsko predpisano."@sl .
+        "Spolna abstinenca: praksa vzdržanja nekaterih ali vseh vidikov spolne dejavnosti iz različnih razlogov, vključno z zdravstvenimi, moralnimi, verskimi ali družbenimi. Lahko je prostovoljna, neprostovoljna ali zakonsko določena."@sl .
 
 ss:ameba-entamoeba_histolytica a owl:Class ; TODO
     rdfs:label "Entamoeba histolytica"@en,
@@ -232,18 +232,18 @@ ss:anilingus a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q210749> ;
     skos:altLabel "3.2.1.5"@sl ;
     skos:definition "Anilingus: An oral and anal sex act where one person stimulates another person's anus using their tongue and lips, also known as 'rimming' or 'anal-oral contact.' It can be part of sexual foreplay and is based on the high concentration of nerve endings in the anus."@en,
-        "Anilingus: oralni in analni spolni akt, pri katerem ena oseba stimulira anus druge osebe s svojim jezikom in ustnicami, znan tudi kot &quot;rimming&quot; ali &quot;analno-oralni stik&quot;. Lahko je del spolne predigre in temelji na visoki koncentraciji živčnih končičev v anusu."@sl .
+        "Anilingus: oralna in analna spolna praksa, pri kateri ena oseba stimulira anus druge osebe s svojim jezikom in ustnicami, znana tudi kot &quot;rimming&quot; ali &quot;analno-oralni stik&quot;. Lahko je del spolne predigre."@sl .
 
 ss:biseskaulna a owl:Class ;
-    rdfs:label "Human sexuality"@en,
+    rdfs:label "Bisexuality"@en,
         "Biseksualnost"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Bisexuality"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Biseksualnost"^^xsd:string ;
     rdfs:subClassOf ss:homoseksualna ;
     owl:sameAs <http://wikidata.org/entity/Q43200> ;
     skos:altLabel "2.1.4.3.3"@sl ;
-    skos:definition "Human Sexuality: The way individuals experience and express their sexuality, involving various biological, psychological, emotional, social, and cultural aspects. It encompasses sexual orientation, physical and emotional connections, and is influenced by various societal factors."@en,
-        "Človeška spolnost: Način, kako posamezniki doživljajo in izražajo svojo spolnost, ki vključuje različne biološke, psihološke, čustvene, družbene in kulturne vidike. Zajema spolno usmerjenost, fizične in čustvene povezave, nanjo pa vplivajo različni družbeni dejavniki."@sl .
+    skos:definition "Bisexuality: a romantic or sexual attraction or behavior toward both males and females (gender binary), to more than one gender, or to both people of the same gender and different genders."@en,
+        "Biseksualnost: Biseksualnost je spolna, romantična ali čustvena privlačnost do več kot enega spola. Lahko jo opredelimo tudi kot spolno privlačnost do ljudi katerega koli spola ali spolne identitete, kar je znano tudi kot panseksualnost."@sl .
 
 ss:cisspolnost a owl:Class ;
     rdfs:label "Cisgender"@en,
@@ -254,7 +254,7 @@ ss:cisspolnost a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1093205> ;
     skos:altLabel "2.1.1.3"@sl ;
     skos:definition "Cisgender: A term describing individuals whose gender identity aligns with the sex assigned to them at birth. It is the opposite of transgender and is used to discuss gender identity and expression."@en,
-        "Cisgender: izraz, ki opisuje posameznike, katerih spolna identiteta je usklajena s spolom, ki jim je bil dodeljen ob rojstvu. Je nasprotje transspolnosti in se uporablja za razpravo o spolni identiteti in izražanju."@sl .
+        "Cisspolnost: izraz, ki opisuje posameznike, katerih spolna identiteta je usklajena s spolom, ki jim je bil dodeljen ob rojstvu. Je nasprotje transspolnosti in se uporablja za razpravo o spolni identiteti in izražanju."@sl .
 
 ss:coitus_interruptus a owl:Class ;
     rdfs:label "Coitus interruptus"@en,
@@ -265,7 +265,7 @@ ss:coitus_interruptus a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q182207> ;
     skos:altLabel "1.2.5.2"@sl ;
     skos:definition "Coitus Interruptus: A method of birth control involving the withdrawal of the penis from the vagina before ejaculation to prevent insemination. It does not protect against sexually transmitted infections (STIs)."@en,
-        "Coitus Interruptus: metoda kontracepcije, ki vključuje umik penisa iz nožnice pred ejakulacijo, da se prepreči oploditev. Ne ščiti pred spolno prenosljivimi okužbami (SPO)."@sl .
+        "Coitus Interruptus: manj zanesljiva metoda kontracepcije, ki vključuje umik penisa iz nožnice pred ejakulacijo, da se prepreči oploditev. Ne ščiti pred spolno prenosljivimi okužbami (SPO)."@sl .
 
 ss:diafragma a owl:Class ;
     rdfs:label "Diaphragm (birth control)"@en,
@@ -276,7 +276,7 @@ ss:diafragma a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q754926> ;
     skos:altLabel "1.2.1.2"@sl ;
     skos:definition "Diaphragm (Birth Control): A barrier method of birth control placed over the cervix with spermicide before sex to block access to the uterus and hold spermicide near the cervix. It has moderate effectiveness in preventing pregnancy."@en,
-        "Diafragma (kontrola rojstva): pregradna metoda kontracepcije, ki se pred spolnim odnosom namesti na maternični vrat s spermicidom, da prepreči dostop do maternice in zadrži spermicid blizu materničnega vratu. Ima zmerno učinkovitost pri preprečevanju nosečnosti."@sl .
+        "Diafragma (kontracepcija): pregradna metoda kontracepcije, ki se pred spolnim odnosom namesti na maternični vrat s spermicidom, da prepreči dostop do maternice in zadrži spermicid blizu materničnega vratu. Ima zmerno učinkovitost pri preprečevanju nosečnosti."@sl .
 
 ss:dolocitev_bioloskega_spola a owl:Class ;
     rdfs:label "Sex-determination system"@en,
@@ -300,15 +300,15 @@ ss:drag a owl:Class ;
         "Drag: Predstava s pretiranim izražanjem spola, kjer posamezniki, pogosto v gledaliških okoljih, prikazujejo pretirano ženskost ali moškost. Drag se pogosto uporablja za zabavo, družbeno satiro in politične komentarje."@sl .
 
 ss:druzbeni_spol a owl:Class ;
-    rdfs:label "Genre"@en,
+    rdfs:label "Gendre"@en,
         "Družbeni spol"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Gender"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Družbeni_spol"^^xsd:string ;
     rdfs:subClassOf ss:spolna_identiteta ;
     owl:sameAs <http://wikidata.org/entity/Q48277> ;
     skos:altLabel "2.1.1.2"@sl ;
-    skos:definition "Genre: A category or form of communication, including literature, music, or art, characterized by socially agreed-upon conventions and stylistic criteria. Genres can be flexible and change over time."@en,
-        "Žanr: Kategorija ali oblika komunikacije, vključno z literaturo, glasbo ali umetnostjo, za katero so značilni družbeno dogovorjeni običaji in slogovna merila. Žanri so lahko prilagodljivi in se sčasoma spreminjajo."@sl .
+    skos:definition "Gendre: Gender includes the social, psychological, cultural and behavioral aspects of being a man, woman, or other gender identity. Depending on the context, this may include sex-based social structures (i.e. gender roles) and gender expression."@en,
+        "Družbeni spol: Družbeni spol je nabor značilnosti, ki se nanašajo na moškost in ženskost in ki ju razlikujejo med seboj. Glede na kontekst lahko te značilnosti vključujejo biološki spol (moški, ženska ali medspol), spolne socialne strukture (spolne in druge družbene vloge) ter spolno identiteto."@sl .
 
 ss:erektilna_disfunkcija a owl:Class ;
     rdfs:label "Erectile dysfunction"@en,
@@ -323,14 +323,14 @@ ss:erektilna_disfunkcija a owl:Class ;
         "Erektilna disfunkcija (ED): oblika spolne disfunkcije pri moških, za katero je značilna ponavljajoča se nezmožnost doseči ali ohraniti zadostno erekcijo za spolno aktivnost. Lahko ima fizične in psihološke vzroke."@sl .
 
 ss:femicid a owl:Class ;
-    rdfs:label "Homicide"@en,
+    rdfs:label "Femicide"@en,
         "Femicid"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Femicide"^^xsd:string ;
     rdfs:subClassOf ss:spolna_nedotakljivost ;
     owl:sameAs <http://wikidata.org/entity/Q1342425> ;
     skos:altLabel "5.4"@sl ;
-    skos:definition "Homicide: The act of one person causing the death of another person, which can occur intentionally or unintentionally. It encompasses various legal categories, including murder, manslaughter, and justifiable homicide."@en,
-        "Umor: Dejanje ene osebe, ki povzroči smrt druge osebe, ki se lahko zgodi namerno ali nenamerno. Zajema različne pravne kategorije, vključno z umori, umori in upravičenimi umori."@sl .
+    skos:definition "Femicide: Femicide or feminicide is a hate crime which is broadly defined as "the intentional killing of women or girls because they are female", with definitions varying based on cultural context."@en,
+        "Femicid: Femicid je zločin, ki je opredeljen kot "nameren umor ženske ali dekleta zaradi njihovega spola", pri čemer se definicije razlikujejo glede na kulturni kontekst."@sl .
 
 ss:fetis a owl:Class ;
     rdfs:label "Fetishism"@en,
@@ -340,8 +340,8 @@ ss:fetis a owl:Class ;
     rdfs:subClassOf ss:spolne_fantazije ;
     owl:sameAs <http://wikidata.org/entity/Q207791> ;
     skos:altLabel "2.2.2"@sl ;
-    skos:definition "Fetish: An object believed to have supernatural powers or special significance, often attributed with the power to influence or control others."@en,
-        "Fetiš: Predmet, za katerega se domneva, da ima nadnaravno moč ali poseben pomen, ki se mu pogosto pripisuje moč vplivanja ali nadzora nad drugimi."@sl .
+    skos:definition "Fetish: Sexual fetishism or erotic fetishism is a sexual fixation on a nonliving object or nongenital body part. The object of interest is called the fetish."@en,
+        "Fetiš: Seksualni ali spolni fetišizem, priložnostno tudi erotični fetišizem, je seksualna fiksacija na neživi predmet ali del telesa, ki ne spada med spolovila (genitalije). Objektu (predmetu) spolnega interesa pravimo fetiš."@sl .
 
 ss:fingering a owl:Class ;
     rdfs:label "Fingering (sexual act)"@en,
@@ -351,7 +351,7 @@ ss:fingering a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q757329> ;
     skos:altLabel "3.2.1.6"@sl ;
     skos:definition "Fingering: Sexual stimulation of the vulva or vagina using the fingers, often as part of sexual arousal or foreplay. It can be a form of manual sex."@en,
-        "Prsti: Spolno draženje vulve ali vagine s prsti, pogosto kot del spolnega vzburjenja ali predigre. Lahko je oblika ročnega seksa."@sl .
+        "Fingering: Spolno draženje vulve ali vagine s prsti, pogosto kot del spolnega vzburjenja ali predigre. Lahko je oblika ročnega seksa."@sl .
 
 ss:fiziologija_spolnega_odnosa a owl:Class ;
     rdfs:label "Human sexual response cycle"@en,
@@ -375,15 +375,15 @@ ss:frenulum a owl:Class ;
         "Frenulum penisa: tanek, elastičen trak tkiva na spodnji strani glavice in vratu penisa. Pomaga pri premikanju kožice čez glavico med erekcijo."@sl .
 
 ss:frot a owl:Class ;
-    rdfs:label "Frog"@en,
+    rdfs:label "Frot"@en,
         "Frot"@sl ;
     ss:povezano_z ss:gej ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Frot"^^xsd:string ;
     rdfs:subClassOf ss:druzne ;
     owl:sameAs <http://wikidata.org/entity/Q1098028> ;
     skos:altLabel "3.2.1.3"@sl ;
-    skos:definition "Frog: A tailless amphibian belonging to the order Anura. Frogs are known for their diverse species, with characteristics such as glandular skin and a life cycle involving tadpole larvae."@en,
-        "Žaba: brezrepa dvoživka iz reda Anura. Žabe so znane po svojih raznolikih vrstah, z značilnostmi, kot sta žlezasta koža in življenjski cikel, ki vključuje ličinke paglavcev."@sl .
+    skos:definition "Frot: a gay sexual practice that usually involves direct penis-to-penis contact."@en,
+        "Frot: Gejevska spolna praksa, ki običajno vključuje neposreden stik med penisoma."@sl .
 
 ss:gangbang a owl:Class ;
     rdfs:label "Gang bang"@en,
@@ -409,7 +409,7 @@ ss:garje-sarcoptes_scabiei a owl:Class ;
 
 ss:giardia_duodenalis a owl:Class ;
     rdfs:label "Giardia duodenalis"@en,
-        "Giardia intestinalis"@sl ;
+        "Giardia duodenalis"@sl ;
     schemaorg:isSimilarTo ss:higiena ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Giardia_duodenalis"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Giardia_intestinalis"^^xsd:string,
@@ -432,7 +432,7 @@ ss:glavica a owl:Class ;
 
 ss:gonoreja-neisseria_gonorrhoeae a owl:Class ;
     rdfs:label "Neisseria gonorrhoeae"@en,
-        "Gonoreja"@sl ;
+        "Neisseria gonorrhoeae"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Gonorrhea"^^xsd:string,
         "https://en.wikipedia.org/wiki/Neisseria_gonorrhoeae"^^xsd:string,
@@ -453,11 +453,11 @@ ss:hemofilus-haemophilus_ducreyi a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1114305> ;
     skos:altLabel "1.1.2.6"@sl ;
     skos:definition "Haemophilus Ducreyi: Haemophilus ducreyi is a fastidious Gram-negative coccobacillus bacterium that causes chancroid, a sexually transmitted disease characterized by painful genital ulcers. It primarily affects the genitalia and can lead to severe ulceration."@en,
-        "Haemophilus Ducreyi: Haemophilus ducreyi je izbirčna po Gramu negativna bakterija coccobacillus, ki povzroča šancroid, spolno prenosljivo bolezen, za katero so značilne boleče genitalne razjede. Prizadene predvsem genitalije in lahko povzroči hude razjede."@sl .
+        "Haemophilus Ducreyi: Haemophilus ducreyi je po Gramu negativna bakterija coccobacillus, ki povzroča čankar, spolno prenosljivo bolezen, za katero so značilne boleče genitalne razjede. Prizadene predvsem genitalije in lahko povzroči hude razjede."@sl .
 
-ss:hepatitis_c_virus a owl:Class ;
+ss:hepatitis_a_virus a owl:Class ;
     rdfs:label "Hepatitis A"@en,
-        "Hepatitis C"@sl ;
+        "Hepatitis A"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hepatitis_C"^^xsd:string,
         "https://nijz.si/nalezljive-bolezni/nalezljive-bolezni-od-a-do-z/hepatitis-c-virusni-hepatitis-c/"^^xsd:string,
@@ -468,9 +468,9 @@ ss:hepatitis_c_virus a owl:Class ;
     skos:definition "Hepatitis A: Hepatitis A is an infectious liver disease caused by the Hepatovirus A (HAV). It is transmitted through contaminated food or water and can result in symptoms such as jaundice, nausea, and abdominal pain."@en,
         "Hepatitis A: Hepatitis A je nalezljiva bolezen jeter, ki jo povzroča hepatovirus A (HAV). Prenaša se z okuženo hrano ali vodo in lahko povzroči simptome, kot so zlatenica, slabost in bolečine v trebuhu."@sl .
 
-ss:hepatitis_d_virus a owl:Class ;
+ss:hepatitis_e_virus a owl:Class ;
     rdfs:label "Hepatitis E"@en,
-        "Hepatitis D"@sl ;
+        "Hepatitis E"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hepatitis_D"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Hepatitis_D"^^xsd:string ;
     rdfs:subClassOf ss:hepatitis_virusi ;
@@ -503,7 +503,7 @@ ss:heteroseksualna a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1035954> ;
     skos:altLabel "2.1.2.1"@sl ;
     skos:definition "Heterosexuality refers to a sexual orientation characterized by romantic, emotional, and sexual attraction between individuals of the opposite sex or gender. It's commonly referred to as 'straight' and is one of the primary sexual orientations."@en,
-        "Heteroseksualnost se nanaša na spolno usmerjenost, za katero je značilna romantična, čustvena in spolna privlačnost med posamezniki nasprotnega spola ali spola. Običajno se imenuje &quot;streight&quot; in je ena od primarnih spolnih usmerjenosti."@sl .
+        "Heteroseksualnost se nanaša na spolno usmerjenost, za katero je značilna romantična, čustvena in spolna privlačnost med posamezniki različnega spola. Običajno se imenuje &quot;streight&quot; in je ena od normativenjših oblik spolne usmerjenosti."@sl .
 
 ss:himen a owl:Class ;
     rdfs:label "Hyman"@en,
@@ -514,8 +514,8 @@ ss:himen a owl:Class ;
     rdfs:subClassOf ss:vulva ;
     owl:sameAs <http://wikidata.org/entity/Q1640627> ;
     skos:altLabel "8.3.7.1"@sl ;
-    skos:definition "Hyman: Hyman is a surname associated with various individuals in different fields, from authors and athletes to musicians and businesspeople. It is a family name."@en,
-        "Hyman: Hyman je priimek, povezan z različnimi posamezniki na različnih področjih, od avtorjev in športnikov do glasbenikov in poslovnežev. To je družinsko ime."@sl .
+    skos:definition "Hymen: The hymen is a thin piece of mucosal tissue that surrounds or partially covers the vaginal opening."@en,
+        "Deviška kožica: Himen ali deviška kožica je tanka, prožna opna, ki delno zapira vhod v nožnico."@sl .
 
 ss:interspolnost a owl:Class ;
     rdfs:label "Intersex"@en,
@@ -537,10 +537,10 @@ ss:jajcevod a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1233836> ;
     skos:altLabel "8.3.2"@sl ;
     skos:definition "Fallopian Tubes: The fallopian tubes, also known as uterine tubes or oviducts, are paired muscular tubes in the female reproductive system connecting the ovaries to the uterus. They play a crucial role in transporting eggs and providing a site for fertilization."@en,
-        "Jajcevodi: jajcevodi, znani tudi kot maternične cevi ali jajcevovodi, so parne mišične cevi v ženskem reproduktivnem sistemu, ki povezujejo jajčnike z maternico. Imajo ključno vlogo pri transportu jajčec in zagotavljanju mesta za oploditev."@sl .
+        "Jajcevodi: jajcevodi, so parne mišične cevi v ženskem reproduktivnem sistemu, ki povezujejo jajčnike z maternico. Imajo ključno vlogo pri transportu jajčec in zagotavljanju mesta za oploditev."@sl .
 
 ss:jajcniki a owl:Class ;
-    rdfs:label "Egg cell"@en,
+    rdfs:label "Ovary"@en,
         "Jajčnik"@sl ;
     ss:povezano_z ss:ovulacija ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Ovary"^^xsd:string,
@@ -548,12 +548,12 @@ ss:jajcniki a owl:Class ;
     rdfs:subClassOf ss:zenske ;
     owl:sameAs <http://wikidata.org/entity/Q9631> ;
     skos:altLabel "8.3.3"@sl ;
-    skos:definition "Egg Cell (Ovum): An egg cell, or ovum, is the non-motile female reproductive cell in sexual reproduction. When fertilized by a sperm cell, it forms a zygote, which subsequently develops into a new organism."@en,
-        "Jajčna celica (jajčna celica): jajčna celica ali jajčna celica je negibna ženska reproduktivna celica pri spolnem razmnoževanju. Ko se oplodi s semenčico, tvori zigoto, ki se nato razvije v nov organizem."@sl .
+    skos:definition "Ovary: an organ in the female reproductive system that produces an ovum. When released, this travels down the fallopian tube into the uterus. There is an ovary found on the left and the right side of the body. The ovaries also secrete hormones that play a role in the menstrual cycle and fertility."@en,
+        "Jajčnik: del ženskih spolnih organov. Ležita levo in desno ob maternici v mali medenici. Jajčnik je za mandelj velika žleza, v kateri nastajajo spolne celice in spolni hormoni. Leži v široki maternični vezi, ki se razteza od maternice proti stranskima stenama male medenice. Z dvema vezema je na eni strani pritrjen na zgorni del materničnega telesa, na drugi pa na steno medenice."@sl .
 
-ss:kastrat a owl:Class ;
+ss:kastracija a owl:Class ;
     rdfs:label "Castration"@en,
-        "Kastrat"@sl ;
+        "Kastracija"@sl ;
     ss:povezano_z ss:moda,
         ss:penis,
         ss:spolni_hormoni ;
@@ -563,7 +563,7 @@ ss:kastrat a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "5.5.1"@sl ;
     skos:definition "Castration: Castration involves the removal or deactivation of the testicles in males, leading to sterilization and a reduction in hormone production, such as testosterone. It can be performed surgically or chemically."@en,
-        "Kastracija: Kastracija vključuje odstranitev ali deaktivacijo testisov pri samcih, kar vodi do sterilizacije in zmanjšanja proizvodnje hormonov, kot je testosteron. Lahko se izvaja kirurško ali kemično."@sl .
+        "Kastracija: Kastracija vključuje odstranitev ali deaktivacijo testisov pri samcih oz. moških, kar vodi do sterilizacije in zmanjšanja proizvodnje hormonov, kot je testosteron. Lahko se izvaja kirurško ali kemično."@sl .
 
 ss:kemsex a owl:Class ;
     rdfs:label "Party and play"@en,
@@ -574,7 +574,7 @@ ss:kemsex a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q7140972> ;
     skos:altLabel "1.5"@sl ;
     skos:definition "Party and Play (PnP): Party and play, also known as chemsex or wired play, refers to the practice of using drugs to enhance sexual activity. It often involves high-risk sexual behaviors and is associated with an increased risk of sexually transmitted infections, including HIV/AIDS."@en,
-        "Zabava in igra (PnP): zabava in igra, znana tudi kot chemsex ali žična igra, se nanaša na prakso uporabe drog za izboljšanje spolne aktivnosti. Pogosto vključuje visoko tvegano spolno vedenje in je povezano s povečanim tveganjem za spolno prenosljive okužbe, vključno s HIV/aidsom."@sl .
+        "Kemseks: se nanaša na prakso uporabe drog za izboljšanje spolne aktivnosti. Pogosto vključuje visoko tvegano spolno vedenje in je povezano s povečanim tveganjem za spolno prenosljive okužbe, vključno s HIV/aidsom."@sl .
 
 ss:kink a owl:Class ;
     rdfs:label "Kink (sexuality)"@en,
@@ -584,7 +584,7 @@ ss:kink a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q3815525> ;
     skos:altLabel "2.2.1"@sl ;
     skos:definition "Kinkiness: Kinkiness refers to non-conventional sexual practices, concepts, or fantasies that deviate from mainstream sexual norms. It involves exploring a wide range of sexual behaviors beyond what is considered conventional."@en,
-        "Napačnost: Napačnost se nanaša na nekonvencionalne spolne prakse, koncepte ali fantazije, ki odstopajo od običajnih spolnih norm. Vključuje raziskovanje širokega spektra spolnega vedenja, ki presega tisto, kar velja za konvencionalno."@sl .
+        "Kink: se nanaša na nekonvencionalne spolne prakse, koncepte ali fantazije, ki odstopajo od običajnih spolnih norm. Vključuje raziskovanje širokega spektra spolnega vedenja, ki presega tisto, kar velja za konvencionalno."@sl .
 
 ss:klamidija-chlamydia_trachomatis a owl:Class ;
     rdfs:label "Chlamydia trachomatis"@en,
@@ -600,7 +600,7 @@ ss:klamidija-chlamydia_trachomatis a owl:Class ;
 
 ss:klebsijela-klebsiella_granulomatis a owl:Class ;
     rdfs:label "Klebsiella granulomatis"@en,
-        "Klebsijela / Klebsiella granulomatis"@sl ;
+        "Klebsiella granulomatis"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Klebsiella_granulomatis"^^xsd:string ;
     rdfs:subClassOf ss:bakterijske ;
@@ -617,7 +617,7 @@ ss:klistiranje a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q21072660> ;
     skos:altLabel "1.4.4"@sl ;
     skos:definition "Rectal Douching: Rectal douching involves rinsing the rectum for cleansing purposes. It may be done using a specific tool or device and is often practiced for hygiene reasons."@en,
-        "Rektalno izpiranje: Rektalno izpiranje vključuje izpiranje danke za čiščenje. Lahko se izvaja s posebnim orodjem ali napravo in se pogosto izvaja iz higienskih razlogov."@sl .
+        "Klisitranje: Rektalno izpiranje vključuje izpiranje danke za čiščenje. Lahko se izvaja s posebnim orodjem ali napravo in se pogosto izvaja iz higienskih razlogov."@sl .
 
 ss:kombinirana_tabletka a owl:Class ;
     rdfs:label "Combined oral contraceptive pill"@en,
@@ -631,7 +631,7 @@ ss:kombinirana_tabletka a owl:Class ;
 
 ss:kontracepcijske_injekcije a owl:Class ;
     rdfs:label "Combined injectable birth control"@en,
-        "Kontracepcijske injekcije"@sl ;
+        "Kombinirani kontraceptivi za injiciranje"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Injectable_birth_control"^^xsd:string,
         "https://www.tosemjaz.net/razisci/spolnost/kontracepcijske-injekcije/"^^xsd:string ;
     rdfs:subClassOf ss:hormonska ;
@@ -640,9 +640,9 @@ ss:kontracepcijske_injekcije a owl:Class ;
     skos:definition "Combined Injectable Contraceptives (CICs): Combined injectable contraceptives are monthly injections containing both estrogen and progestin hormones to prevent pregnancy. They work by inhibiting ovulation and thickening cervical mucus."@en,
         "Kombinirani kontraceptivi za injiciranje (CIC): Kombinirani kontraceptivi za injiciranje so mesečne injekcije, ki vsebujejo hormone estrogen in progestin za preprečevanje nosečnosti. Delujejo tako, da zavirajo ovulacijo in zgostijo sluz materničnega vratu."@sl .
 
-ss:kontracepcijski_implantat a owl:Class ;
+ss:kontracepcijski_vsadek a owl:Class ;
     rdfs:label "Contraceptive implant"@en,
-        "Kontracepcijski implantat"@sl ;
+        "Kontracepcijski vsadek"@sl ;
     rdfs:isDefinedBy "http://www.cbz.si/zzzs/pao/bazazdr2.nsf/o/5313E92FCF976A89C1257B4B00836C4C/$File/a-016142.pdf"^^xsd:string,
         "https://en.wikipedia.org/wiki/Contraceptive_implant"^^xsd:string ;
     rdfs:subClassOf ss:hormonska ;
@@ -660,7 +660,7 @@ ss:kontracepcijski_oblizi a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1295013> ;
     skos:altLabel "1.2.2.3"@sl ;
     skos:definition "Contraceptive Patch: A transdermal patch applied to the skin that releases synthetic estrogen and progestogen hormones to prevent pregnancy, available by prescription. It is as effective as the combined oral contraceptive pill and is sold in boxes of three patches."@en,
-        "Kontracepcijski obliž: transdermalni obliž, ki se nanese na kožo in sprošča sintetični estrogen in progestogene hormone za preprečevanje nosečnosti, na voljo na recept. Je enako učinkovit kot kombinirana peroralna kontracepcijska tabletka in se prodaja v škatlah s tremi obliži."@sl .
+        "Kontracepcijski obliž: transdermalni obliž, ki se nanese na kožo in sprošča sintetični estrogen in progestogene hormone za preprečevanje nosečnosti, na voljo je na recept. Je enako učinkovit kot kombinirana peroralna kontracepcijska tabletka in se prodaja v škatlah s tremi obliži."@sl .
 
 ss:koren a owl:Class ;
     rdfs:label "Body of penis"@en,
@@ -670,7 +670,7 @@ ss:koren a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q4936942> ;
     skos:altLabel "8.2.3.3"@sl ;
     skos:definition "Penis Body/Shaft: The external portion of the human penis, located outside the pelvic cavity, consisting of the corpora cavernosa and the corpus spongiosum, with a continuation of the internal root. It is homologous to the female clitoral body."@en,
-        "Telo penisa/steblo penisa: Zunanji del človeškega penisa, ki se nahaja izven medenične votline in je sestavljen iz kavernoznih teles in spongiozuma korpusa, z nadaljevanjem notranje korenine. Je homologno ženskemu klitorisnemu telesu."@sl .
+        "Koren penisa: Zunanji del človeškega penisa, ki se nahaja izven medenične votline in je sestavljen iz kavernoznih teles in spongiozuma korpusa, z nadaljevanjem notranje korenine. Je homologno ženskemu klitorisnemu telesu."@sl .
 
 <http://onto.clarin.si/semsex#kriptosporidij-cryptosporidium_spp.> a owl:Class ;
     rdfs:label "Cryptosporidium"@en,
@@ -681,8 +681,8 @@ ss:koren a owl:Class ;
     rdfs:subClassOf ss:parazitske ;
     owl:sameAs <http://wikidata.org/entity/Q133078> ;
     skos:altLabel "1.1.1.5"@sl ;
-    skos:definition "Cryptosporidium (Crypto): An apicomplexan parasite that can cause gastrointestinal and respiratory illnesses, particularly watery diarrhea. Treatment involves rehydration, electrolyte replacement, and, for immunocompetent individuals, symptom management. The oocysts are small and partially acid-fast stained."@en,
-        "Cryptosporidium (Crypto): apikompleksanski parazit, ki lahko povzroči bolezni prebavil in dihal, zlasti vodeno drisko. Zdravljenje vključuje rehidracijo, nadomeščanje elektrolitov in, pri imunokompetentnih posameznikih, obvladovanje simptomov. Oociste so majhne in delno kislinsko obstojne."@sl .
+    skos:definition "Cryptosporidium: An apicomplexan parasite that can cause gastrointestinal and respiratory illnesses, particularly watery diarrhea. Treatment involves rehydration, electrolyte replacement, and, for immunocompetent individuals, symptom management. The oocysts are small and partially acid-fast stained."@en,
+        "Cryptosporidium: apikompleksanski parazit, ki lahko povzroči bolezni prebavil in dihal, zlasti vodeno drisko. Zdravljenje vključuje rehidracijo, nadomeščanje elektrolitov in, pri imunokompetentnih posameznikih, obvladovanje simptomov. Oociste so majhne in delno kislinsko obstojne."@sl .
 
 ss:kunilingus a owl:Class ;
     rdfs:label "Cunnilingus"@en,
@@ -694,15 +694,15 @@ ss:kunilingus a owl:Class ;
     skos:definition "Cunnilingus: An oral sex act involving the stimulation of the vulva using the tongue and lips, often performed as foreplay or an intimate act. It carries a lower risk of sexually transmitted infections compared to vaginal or anal sex."@en,
         "Kunilingus: oralno spolno dejanje, ki vključuje stimulacijo vulve z jezikom in ustnicami, ki se pogosto izvaja kot predigra ali intimno dejanje. V primerjavi z vaginalnim ali analnim seksom je tveganje za spolno prenosljive okužbe manjše."@sl .
 
-ss:male a owl:Class ;
+ss:male_sramne_ustnice a owl:Class ;
     rdfs:label "Labia minora"@en,
-        "Male"@sl ;
+        "Male sramne ustnice"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Labia_minora"^^xsd:string ;
     rdfs:subClassOf ss:sramne_ustnice ;
     owl:sameAs <http://wikidata.org/entity/Q1211892> ;
     skos:altLabel "8.3.7.3.1"@sl ;
     skos:definition "Labia Minora: Also known as the inner labia, these are two skin flaps within the vulva that extend from the vaginal and urethral openings. They vary in size, color, and shape among individuals and are homologous to the male urethral surface of the penis."@en,
-        "Male sramne ustnice: znane tudi kot notranje sramne ustnice, to sta dve kožni režnji znotraj vulve, ki segata od vaginalne in sečnice. Med posamezniki se razlikujejo po velikosti, barvi in obliki ter so homologni površini sečnice moškega penisa."@sl .
+        "Male sramne ustnice: znane tudi kot notranje sramne ustnice, sta dve kožni gubi znotraj vulve. Med posameznicami se razlikujejo po velikosti, barvi in obliki ter so homologni površini sečnice moškega penisa."@sl .
 
 ss:mcv a owl:Class ;
     rdfs:label "Molluscum contagiosum"@en,
@@ -724,7 +724,7 @@ ss:mehurcasta_zleza a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q120463> ;
     skos:altLabel "8.2.1"@sl ;
     skos:definition "Bulbourethral Glands (Cowper's Glands): Small exocrine glands in male mammals, producing a pre-ejaculate fluid to neutralize the urethral acidity for sperm passage during sexual arousal. They are homologous to Bartholin's glands in females."@en,
-        "Bulbouretralne žleze (Cowperjeve žleze): Majhne eksokrine žleze pri samcih sesalcev, ki proizvajajo tekočino pred ejakulatom za nevtralizacijo kislosti sečnice za prehod sperme med spolnim vzburjenjem. So homologne Bartholinijevim žlezam pri ženskah."@sl .
+        "Bulbouretralne žleze (Cowperjeve žleze): Majhne eksokrine žleze pri samcih sesalcev oz. moških, ki proizvajajo tekočino pred ejakulatom za nevtralizacijo kislosti sečnice za prehod sperme med spolnim vzburjenjem. So homologne Bartholinijevim žlezam pri ženskah."@sl .
 
 ss:menopavza a owl:Class ;
     rdfs:label "Menopause"@en,
@@ -736,7 +736,7 @@ ss:menopavza a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q177708> ;
     skos:altLabel "6.7.1"@sl ;
     skos:definition "Menopause: The permanent cessation of menstrual periods, typically occurring between ages 45 and 55 due to a decrease in estrogen and progesterone production by the ovaries. Symptoms include irregular periods, hot flashes, vaginal dryness, and bone loss."@en,
-        "Menopavza: trajno prenehanje menstruacije, ki se običajno pojavi med 45. in 55. letom starosti zaradi zmanjšanja proizvodnje estrogena in progesterona v jajčnikih. Simptomi vključujejo neredne menstruacije, vročine, suhost nožnice in izgubo kosti."@sl .
+        "Menopavza: trajno prenehanje menstruacije, ki se običajno pojavi med 45. in 55. letom starosti zaradi zmanjšanja proizvodnje estrogena in progesterona v jajčnikih. Simptomi vključujejo neredne menstruacije, vročice, suhost nožnice ipd."@sl .
 
 ss:menstrualna_skodelica a owl:Class ;
     rdfs:label "Menstrual cup"@en,
@@ -748,7 +748,7 @@ ss:menstrualna_skodelica a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q216997> ;
     skos:altLabel "1.4.3"@sl ;
     skos:definition "Menstrual Cup: A menstrual hygiene device inserted into the vagina to collect menstrual fluid. Typically made of medical-grade silicone, latex, or thermoplastic, they are reusable and generate less waste compared to tampons or pads."@en,
-        "Menstrualna skodelica: naprava za menstrualno higieno, ki se vstavi v nožnico za zbiranje menstrualne tekočine. Običajno so izdelani iz medicinskega silikona, lateksa ali termoplasta, zato jih je mogoče ponovno uporabiti in ustvarjajo manj odpadkov v primerjavi s tamponi ali vložki."@sl .
+        "Menstrualna skodelica: pripomoček za menstrualno higieno, ki se vstavi v nožnico za zbiranje menstrualne tekočine. Običajno so izdelani iz medicinskega silikona, lateksa ali termoplasta, zato jih je mogoče ponovno uporabiti in ustvarjajo manj odpadkov v primerjavi s tamponi ali vložki."@sl .
 
 ss:menstrualni_tamponi a owl:Class ;
     rdfs:label "Tampon"@en,
@@ -762,15 +762,15 @@ ss:menstrualni_tamponi a owl:Class ;
         "Tampon: Menstrualni izdelek, zasnovan za notranjo vstavitev v vaginalni kanal za absorbiranje menstrualne krvi. Če se ne uporablja pravilno, lahko poveča tveganje za sindrom toksičnega šoka."@sl .
 
 ss:menstrualni_vlozki a owl:Class ;
-    rdfs:label "Dysmenorrhea"@en,
-        "Menstrualni vložki"@sl ;
+    rdfs:label "Menstrual pad"@en,
+        "Menstrualni vložek"@sl ;
     ss:povezano_z ss:menstruacija ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Menstrual_pad"^^xsd:string ;
     rdfs:subClassOf ss:higiena ;
     owl:sameAs <http://wikidata.org/entity/Q235693> ;
     skos:altLabel "1.4.1"@sl ;
-    skos:definition "Dysmenorrhea: Also known as period pain, it refers to pain during menstruation, commonly lasting less than three days. It may occur without an underlying issue or be associated with conditions like endometriosis."@en,
-        "Dismenoreja: znana tudi kot menstruacijska bolečina, se nanaša na bolečino med menstruacijo, ki običajno traja manj kot tri dni. Lahko se pojavi brez osnovne težave ali pa je povezana z boleznimi, kot je endometrioza."@sl .
+    skos:definition "Menstrual pad: A menstrual pad, or simply a pad, (also known as a sanitary pad, sanitary towel, sanitary napkin or feminine napkin) is an absorbent item worn by women in their underwear when menstruating, bleeding after giving birth, recovering from gynecologic surgery, experiencing a miscarriage or abortion, or in any other situation where it is necessary to absorb a flow of blood from the vagina. A menstrual pad is a type of menstrual hygiene product that is worn externally, unlike tampons and menstrual cups, which are worn inside the vagina."@en,
+        "Menstrualni vložek: Menstrualni vložek, ali preprosto vložek je vpojna naprava, ki jo ženske nosijo v svojem perilu med menstruacijo, krvavitvijo po porodu, okrevanjem po ginekološki operaciji, ob izgubi zarodka ali splavu ter v vseh drugih situacijah, kjer je potrebno vpojiti tok krvi iz nožnice. Menstrualni vložek je vrsta higienskega izdelka za menstruacijo, ki se nosi zunaj, za razliko od tamponov in menstrualnih skodelic, ki se nosijo v nožnici."@sl .
 
 ss:modnik a owl:Class ;
     rdfs:label "Scrotum"@en,
@@ -781,7 +781,7 @@ ss:modnik a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q174471> ;
     skos:altLabel "8.2.5"@sl ;
     skos:definition "Scrotum: An anatomical structure in males consisting of a dual-chambered sac of skin and smooth muscle that houses the testes and associated reproductive structures. It is homologous to the female labia majora."@en,
-        "Mošnja: anatomska struktura pri moških, sestavljena iz dvoprekatne vrečke iz kože in gladkih mišic, v kateri so testisi in pripadajoče reproduktivne strukture. Je homologna ženskim velikim sramnim ustnicam."@sl .
+        "Modnik: anatomska struktura pri moških, imenovana tudi mošnja, sestavljena iz dvoprekatne vrečke iz kože in gladkih mišic, v kateri so testisi in pripadajoče reproduktivne strukture. Je homologna ženskim velikim sramnim ustnicam."@sl .
 
 ss:mokre_sanje a owl:Class ;
     rdfs:label "Nocturnal emission"@en,
@@ -793,7 +793,7 @@ ss:mokre_sanje a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q2102452> ;
     skos:altLabel "6.5.2"@sl ;
     skos:definition "Nocturnal Emission (Wet Dream): A spontaneous orgasm during sleep, characterized by ejaculation for males or vaginal lubrication or orgasm for females."@en,
-        "Nočno izpuščanje (mokre sanje): spontani orgazem med spanjem, za katerega je značilna ejakulacija pri moških ali vaginalno mazanje ali orgazem pri ženskah."@sl .
+        "Nočni izliv (mokre sanje): spontani orgazem med spanjem, za katerega je značilna ejakulacija pri moških ali vaginalno vlaženje oz. orgazem pri ženskah."@sl .
 
 ss:monogamija a owl:Class ;
     rdfs:label "Monogamy"@en,
@@ -803,17 +803,17 @@ ss:monogamija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q184211> ;
     skos:altLabel "4.1"@sl ;
     skos:definition "Monogamy: A dyadic relationship in which two individuals form an exclusive intimate partnership at any given time, contrasting with various forms of non-monogamy. It refers to having only one mate at a time."@en,
-        "Monogamija: diadično razmerje, v katerem dva posameznika v danem trenutku tvorita izključno intimno partnerstvo, kar je v nasprotju z različnimi oblikami ne-monogamije. Nanaša se na samo enega partnerja naenkrat."@sl .
+        "Monogamija: diadično razmerje, v katerem dva posameznika_ci v danem trenutku tvorita ekskluzivno intimno partnerstvo, kar je v nasprotju z različnimi oblikami ne-monogamije. Nanaša se na samo enega partnerja naenkrat."@sl .
 
 ss:mutual_masturbation a owl:Class ;
-    rdfs:label "Sexual penetration"@en,
-        "Mutual masturbation"@sl ;
+    rdfs:label "Mutual masturbation"@en,
+        "Družna masturbacija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Non-penetrative_sex"^^xsd:string ;
     rdfs:subClassOf ss:promiskuitetno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/Q10048327> ;
     skos:altLabel "4.2.6"@sl ;
-    skos:definition "Sexual Penetration: The insertion of a body part or object into a body orifice during sexual activity, often associated with legal definitions of certain sexual acts."@en,
-        "Spolna penetracija: vstavljanje dela telesa ali predmeta v telesno odprtino med spolno aktivnostjo, pogosto povezano s pravnimi definicijami določenih spolnih dejanj."@sl .
+    skos:definition "Mutual masturbation: Mutual masturbation usually involves two or more people who either simultaneously masturbate or perform manual sex on each other."@en,
+        "Družna masturbacija: Družna masturbacija običajno vključuje dve ali več oseb, ki si bodisi istočasno masturbirajo bodisi si izvajajo ročni spolni odnos druga drugemu."@sl .
 
 ss:mycoplasma_genitalum a owl:Class ;
     rdfs:label "Mycoplasma genitalium"@en,
@@ -823,8 +823,8 @@ ss:mycoplasma_genitalum a owl:Class ;
     rdfs:subClassOf ss:mikoplazme_in_ureoplazme ;
     owl:sameAs <http://wikidata.org/entity/Q1930909> ;
     skos:altLabel "1.1.2.7.1"@sl ;
-    skos:definition "Mycoplasma Genitalium (MG): A pathogenic bacterium found in the urinary and genital tracts, which can cause urethritis and other negative health effects, and has developed resistance to antibiotics."@en,
-        "Mycoplasma Genitalium (MG): Patogena bakterija, ki jo najdemo v sečilih in genitalnih poteh, lahko povzroči uretritis in druge negativne učinke na zdravje ter je razvila odpornost na antibiotike."@sl .
+    skos:definition "Mycoplasma Genitalium (MG): A pathogenic bacterium found in the urinary and genital tracts, which can cause urethritis and other negative health effects."@en,
+        "Mycoplasma Genitalium (MG): Patogena bakterija, ki jo najdemo v sečilih in genitalnih poteh, lahko povzroči uretritis in druge negativne učinke na zdravje."@sl .
 
 ss:mycoplasma_hominis a owl:Class ;
     rdfs:label "Mycoplasma hominis"@en,
@@ -846,18 +846,18 @@ ss:obmodek a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1973610> ;
     skos:altLabel "8.2.2"@sl ;
     skos:definition "Epididymis: A tubular structure attached to the testes that serves to store, mature, and transport sperm cells in the male reproductive system."@en,
-        "Epididimis: cevasta struktura, pritrjena na testise, ki služi za shranjevanje, zorenje in transport semenčic v moškem reproduktivnem sistemu."@sl .
+        "Obmodek (epididimis): cevasta struktura, pritrjena na testise, ki služi za shranjevanje, zorenje in transport semenčic v moškem reproduktivnem sistemu."@sl .
 
-ss:obrezovanje a owl:Class ;
-    rdfs:label "Circumcision"@en,
+ss:obrezovanje_moških a owl:Class ;
+    rdfs:label "Male circumcision"@en,
         "Obrezovanje moških"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Circumcision"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Obrezovanje_moških"^^xsd:string ;
     rdfs:subClassOf ss:kozica ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "8.2.3.2.1."@sl ;
-    skos:definition "Circumcision: A surgical procedure that removes the foreskin from the penis, performed for various reasons, including health benefits and cultural or religious practices."@en,
-        "Obrezovanje: kirurški poseg, pri katerem se odstrani kožica s penisa, ki se izvaja iz različnih razlogov, vključno z zdravstvenimi koristmi ter kulturnimi ali verskimi praksami."@sl .
+    skos:definition "Male circumcision: A surgical procedure that removes the foreskin from the penis, performed for various reasons, including health benefits and cultural or religious practices."@en,
+        "Obrezovanje moških: kirurški poseg, pri katerem se odstrani kožica s penisa, ki se izvaja iz različnih razlogov, vključno z zdravstvenimi koristmi ter kulturnimi ali verskimi praksami."@sl .
 
 ss:oploditev_z_biomedicinsko_pomocjo a owl:Class ;
     rdfs:label "In vitro fertilisation"@en,
@@ -869,7 +869,7 @@ ss:oploditev_z_biomedicinsko_pomocjo a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "6.1.2"@sl ;
     skos:definition "In Vitro Fertilization (IVF): A reproductive technology involving the fertilization of an egg with sperm outside the body, followed by the transfer of the resulting embryo into the uterus to establish pregnancy. It is used for infertility treatment, gestational surrogacy, and genetic condition prevention."@en,
-        "Oploditev in vitro (IVF): Reproduktivna tehnologija, ki vključuje oploditev jajčeca s semenčico zunaj telesa, čemur sledi prenos nastalega zarodka v maternico za vzpostavitev nosečnosti. Uporablja se za zdravljenje neplodnosti, gestacijsko nadomestno materinstvo in preprečevanje genetskih bolezni."@sl .
+        "Oploditev z biomedicinsko pomočjo (IVF): Reproduktivna tehnologija, ki vključuje oploditev jajčeca s semenčico zunaj telesa, čemur sledi prenos nastalega zarodka v maternico za vzpostavitev nosečnosti. Uporablja se za zdravljenje neplodnosti, gestacijsko nadomestno materinstvo in preprečevanje genetskih bolezni."@sl .
 
 ss:orgije a owl:Class ;
     rdfs:label "Orgy"@en,
@@ -912,9 +912,9 @@ ss:pegging a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1412313> ;
     skos:altLabel "3.2.1.7"@sl ;
     skos:definition "Pegging: Pegging is an anal sex act in which a woman penetrates a man's anus with a strap-on dildo."@en,
-        "Pegging: Pegging je analni spolni akt, pri katerem ženska prodre v anus moškega s pripetim dildom."@sl .
+        "Pegging: Pegging je analni spolni akt, pri katerem običajno ženska prodre v anus moškega s pripetim dildom."@sl .
 
-ss:pep a owl:Class ;
+ss:PEP a owl:Class ;
     rdfs:label "Post-exposure prophylaxis"@en,
         "Zaščita po izpostavitvi"@sl ;
     schemaorg:isVariantOf_proti ss:hiv ;
@@ -924,19 +924,19 @@ ss:pep a owl:Class ;
     rdfs:subClassOf ss:zascita_pred_spo ;
     owl:sameAs <http://wikidata.org/entity/Q1361206> ;
     skos:altLabel "1.3.3"@sl ;
-    skos:definition "Post-exposure Prophylaxis (PEP): Post-exposure prophylaxis (PEP) is a preventive medical treatment started after exposure to a pathogen to prevent infection from occurring. It's commonly used in cases of potential exposure to diseases like HIV."@en,
-        "Profilaksa po izpostavitvi (PEP): Profilaksa po izpostavljenosti (PEP) je preventivno zdravljenje, ki se začne po izpostavitvi patogenu, da se prepreči pojav okužbe. Običajno se uporablja v primerih potencialne izpostavljenosti boleznim, kot je HIV."@sl .
+    skos:definition "Post-exposure Prophylaxis (PEP): Post-exposure prophylaxis (PEP) is a preventive medical treatment started after exposure to a pathogen to prevent infection from occurring. It's commonly used in cases of potential exposure to infection like HIV."@en,
+        "Profilaksa po izpostavitvi (PEP): preventivno zdravljenje, ki se začne po izpostavitvi patogenu, da se prepreči pojav okužbe. Običajno se uporablja v primerih potencialne izpostavljenosti okužbam, kot je HIV."@sl .
 
 ss:poliamorija a owl:Class ;
-    rdfs:label "Polyandry"@en,
+    rdfs:label "Polyamory"@en,
         "Poliamorija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Polyamory"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Poliamorija"^^xsd:string ;
     rdfs:subClassOf ss:promiskuitetno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/Q272026> ;
     skos:altLabel "4.2.7"@sl ;
-    skos:definition "Polyandry: TODO Polyandry is a form of polygamy in which a woman has two or more husbands simultaneously. It contrasts with polygyny, which involves one man having multiple wives."@en,
-        "Poliandrija: TODO Poliandrija je oblika poligamije, pri kateri ima ženska dva ali več mož hkrati. To je v nasprotju s poliginijo, pri kateri ima en moški več žena."@sl .
+    skos:definition "Polyamory: Polyamory is the practice of, or desire for, romantic relationships with more than one partner at the same time, with the informed consent of all partners involved."@en,
+        "Poliandrija: Poliamorija se prakticira iz želje intimnem razmerju z več kot eno osebo, v soglasju z vsemi udeleženci_kami."@sl .
 
 ss:poliandrija a owl:Class ;
     rdfs:label "Polyandry"@en,
@@ -945,28 +945,28 @@ ss:poliandrija a owl:Class ;
     rdfs:subClassOf ss:promiskuitetno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/Q2102979> ;
     skos:altLabel "4.2.3"@sl ;
-    skos:definition "Polyandry: TODO Polyandry is a form of polygamy in which a woman has two or more husbands simultaneously. It contrasts with polygyny, which involves one man having multiple wives."@en,
-        "Poliandrija: TODO Poliandrija je oblika poligamije, pri kateri ima ženska dva ali več mož hkrati. To je v nasprotju s poliginijo, pri kateri ima en moški več žena."@sl .
+    skos:definition "Polyandry: Polyandry is a form of polygamy in which a woman has two or more husbands simultaneously. It contrasts with polygyny, which involves one man having multiple wives."@en,
+        "Poliandrija: Poliandrija je oblika poligamije, pri kateri ima ženska dva ali več mož hkrati. To je v nasprotju s poliginijo, pri kateri ima en moški več žena."@sl .
 
 ss:poligamija a owl:Class ;
-    rdfs:label "PolyGram"@en,
+    rdfs:label "Polygamy"@en,
         "Poligamija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Polygamy"^^xsd:string ;
     rdfs:subClassOf ss:promiskuitetno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/Q170585> ;
     skos:altLabel "4.2.1"@sl ;
-    skos:definition "PolyGram: TODO PolyGram was a multinational entertainment company and major music record label based in the Netherlands, founded by Philips and Siemens, with roots tracing back to the invention of the gramophone."@en,
-        "PolyGram: TODO PolyGram je bilo večnacionalno zabavno podjetje in velika glasbena založba s sedežem na Nizozemskem, ki sta jo ustanovila Philips in Siemens, korenine pa segajo vse do izuma gramofona."@sl .
+    skos:definition "Polygamy: Polygamy is the practice of marrying multiple spouses. When a man is married to more than one wife at the same time, sociologists call this polygyny. When a woman is married to more than one husband at a time, it is called polyandry."@en,
+        "Poligamija: Poligamija je zveza večih posameznikov_ic. Ko je moški v zvezi z več kot eno žensko hkrati, sociologi to imenujejo poliginija. Ko je ženska v zvezi z več kot enim možem hkrati, to imenujemo poliandrija."@sl .
 
 ss:poliginija a owl:Class ;
-    rdfs:label "Polygamy"@en,
+    rdfs:label "Polygyny"@en,
         "Poliginija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Polygyny"^^xsd:string ;
     rdfs:subClassOf ss:promiskuitetno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/Q17105315> ;
     skos:altLabel "4.2.2"@sl ;
-    skos:definition "Polygamy: Polygamy refers to the practice of marrying multiple spouses. Polygyny involves a man having multiple wives, while polyandry involves a woman having multiple husbands."@en,
-        "Poligamija: Poligamija se nanaša na prakso poroke z več zakonci. Poliginija vključuje moškega, ki ima več žena, medtem ko poliandrija vključuje žensko, ki ima več mož."@sl .
+    skos:definition "Polygyny: Polygyny is the most common and accepted form of polygamy around the world, entailing the marriage of a man with several women."@en,
+        "Poliginija: Poliginija je praksa, ki je po svetu najpogostejša in sprejeta oblika poligamije, in vključuje poroko moškega z več ženskami hkrati."@sl .
 
 ss:pornografija a owl:Class ;
     rdfs:label "Pornography"@en,
@@ -981,15 +981,15 @@ ss:pornografija a owl:Class ;
         "Pornografija: Pornografija je gradivo, namenjeno spolnemu vzburjenju, kot so slike, videoposnetki ali besedilo, ki ga uporabljajo odrasli. Ima dolgo zgodovino in je bil predmet pravnih in kulturnih razprav."@sl .
 
 ss:posilstvo a owl:Class ;
-    rdfs:label "Hip hop music"@en,
+    rdfs:label "Rape"@en,
         "Posilstvo"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Rape"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Posilstvo"^^xsd:string ;
     rdfs:subClassOf ss:spolna_nedotakljivost ;
     owl:sameAs <http://wikidata.org/entity/Q47092> ;
     skos:altLabel "5.3"@sl ;
-    skos:definition "Hip Hop: TODO Hip hop, also known as rap, is a genre of popular music that originated in the Bronx in the early 1970s, characterized by rhythmic music, often accompanied by rapping, DJing, break dancing, and graffiti art."@en,
-        "Hip hop: TODO Hip hop, znan tudi kot rap, je zvrst popularne glasbe, ki je nastala v Bronxu v zgodnjih sedemdesetih letih prejšnjega stoletja, za katero je značilna ritmična glasba, ki jo pogosto spremljajo rapanje, DJ-je, break dance in grafiti."@sl .
+    skos:definition "Rape: Rape is a type of sexual assault involving sexual intercourse or other forms of sexual penetration carried out against a person without their consent. The act may be carried out by physical force, coercion, abuse of authority, or against a person who is incapable of giving valid consent, such as one who is unconscious, incapacitated, has an intellectual disability, or is below the legal age of consent."@en,
+        "Posilstvo: Posilstvo je vrsta spolnega napada, ki vključuje spolni odnos ali druge oblike spolne penetracije, izvedene nad osebo brez njenega soglasja. Dejanje se lahko izvede s fizično silo, prisilo, zlorabo oblasti ali nad osebo, ki ni sposobna podati veljavnega soglasja, kot je oseba, ki je nezavestna, onesposobljena, ima intelektualno oviranost ali je mlajša od zakonskega spolnega soglasja."@sl .
 
 ss:privoljenje a owl:Class ;
     rdfs:label "Consent"@en,
@@ -999,7 +999,7 @@ ss:privoljenje a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q231043> ;
     skos:altLabel "5.1"@sl ;
     skos:definition "Consent: Consent occurs when one person voluntarily agrees to the proposal or desires of another, especially in contexts such as law, medicine, research, and sexual relationships."@en,
-        "Privolitev: Privolitev se zgodi, ko se ena oseba prostovoljno strinja s predlogom ali željami druge, zlasti v kontekstih, kot so pravo, medicina, raziskave in spolni odnosi."@sl .
+        "Privolitev: Privolitev se zgodi, ko se ena oseba prostovoljno strinja s predlogom ali željami druge in to nedvoumno izrazi, zlasti v kontekstih, kot so pravo, medicina, raziskave in spolni odnosi."@sl .
 
 ss:progesteronska_tabletka a owl:Class ;
     rdfs:label "Progestogen-only pill"@en,
@@ -1009,7 +1009,7 @@ ss:progesteronska_tabletka a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q977536> ;
     skos:altLabel "1.2.2.1.3"@sl ;
     skos:definition "Progestogen-only Pills (Mini Pills): Progestogen-only pills are contraceptive pills containing only synthetic progestogens (progestins) and no estrogens."@en,
-        "Progestagenske tablete (mini tablete): Progestagenske tablete so kontracepcijske tablete, ki vsebujejo samo sintetične progestagene (progestine) in ne vsebujejo estrogenov."@sl .
+        "Progestagenske tablete (mini tabletke): Progestagenske tablete so kontracepcijske tablete, ki vsebujejo samo sintetične progestagene (progestine) in ne vsebujejo estrogenov."@sl .
 
 ss:prostata a owl:Class ;
     rdfs:label "Prostate"@en,
@@ -1064,7 +1064,7 @@ ss:romanticna_usmerjenost a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q4688879> ;
     skos:altLabel "2.1.3"@sl ;
     skos:definition "Romantic Orientation: Romantic orientation refers to a person's classification of the sex or gender with which they experience romantic attraction or are likely to have romantic relationships."@en,
-        "Romantična usmerjenost: Romantična usmerjenost se nanaša na klasifikacijo osebe glede na spol ali spol, s katerim doživlja romantično privlačnost ali je verjetno, da bo imela romantično razmerje."@sl .
+        "Romantična usmerjenost: Romantična usmerjenost se nanaša na klasifikacijo osebe glede na spol, s katerim doživlja romantično privlačnost ali je verjetno, da bo imela romantično razmerje."@sl .
 
 ss:seksologija a owl:Class ;
     rdfs:label "Sexology"@en,
@@ -1075,18 +1075,18 @@ ss:seksologija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q170912> ;
     skos:altLabel "7.1"@sl ;
     skos:definition "Sexology: Sexology is the scientific study of human sexuality, covering various aspects of sexual interests, behaviors, and functions."@en,
-        "Seksologija: Seksologija je znanstvena študija človeške spolnosti, ki zajema različne vidike spolnih interesov, vedenja in funkcij."@sl .
+        "Seksologija: Seksologija je znanstveno proučevanje človeške spolnosti, ki zajema različne vidike spolnih interesov, vedenja in funkcij."@sl .
 
 ss:seksting a owl:Class ;
-    rdfs:label "Sexing"@en,
+    rdfs:label "Sexting"@en,
         "Sekstanje"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sexting"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Sekstanje"^^xsd:string ;
     rdfs:subClassOf ss:virtualne ;
     owl:sameAs <http://wikidata.org/entity/Q510866> ;
     skos:altLabel "3.2.3.1"@sl ;
-    skos:definition "Sexing (Gender Identification): Sexing or gender identification is the process of determining the sex of an individual, commonly used in biology, agriculture, and veterinary practice, including DNA-based techniques for accurate identification."@en,
-        "Določitev spola (identifikacija spola): Določitev spola ali identifikacija spola je postopek določanja spola posameznika, ki se pogosto uporablja v biologiji, kmetijstvu in veterinarski praksi, vključno s tehnikami, ki temeljijo na DNK za natančno identifikacijo."@sl .
+    skos:definition "Sexting: Sexting is sending, receiving, or forwarding sexually explicit messages, photographs, or videos, primarily between mobile phones. It may also include the use of a computer or any digital device."@en,
+        "Sekstanje: pošiljanje, prejemanje ali posredovanje spolno eksplicitnih besedilnih sporočil, fotografij ali videoposnetkov, predvsem med prenosnimi telefoni."@sl .
 
 ss:semenjak a owl:Class ;
     rdfs:label "Seminal vesicles"@en,
@@ -1097,7 +1097,7 @@ ss:semenjak a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q217259> ;
     skos:altLabel "8.2.6"@sl ;
     skos:definition "Seminal Vesicles: Paired convoluted tubular glands located behind the male urinary bladder that secrete fluid contributing to semen. They join with the vas deferens at the ejaculatory duct and may suffer from conditions like seminal vesiculitis."@en,
-        "Semenske vezikule: parne zavite cevaste žleze, ki se nahajajo za moškim sečnim mehurjem in izločajo tekočino, ki prispeva k semenu. Združijo se z vas deferensom pri ejakulacijskem kanalu in lahko trpijo zaradi bolezni, kot je semenski vezikulitis."@sl .
+        "Semenjak: parne zavite cevaste žleze, ki se nahajajo za moškim sečnim mehurjem in izločajo tekočino, ki prispeva k semenu. Združijo se z vas deferens pri ejakulacijskem kanalu in lahko trpijo zaradi bolezni, kot je semenski vezikulitis."@sl .
 
 ss:sifilis-treponema_palidum a owl:Class ;
     rdfs:label "Treponema pallidum"@en,
@@ -1133,11 +1133,11 @@ ss:skenejeve_zleze a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1762220> ;
     skos:altLabel "8.3.4"@sl ;
     skos:definition "Skene's Glands: Glands located near the female urethra that secrete fluid during sexual arousal and orgasm. They are part of the female reproductive system."@en,
-        "Skenove žleze: žleze, ki se nahajajo v bližini ženske sečnice in izločajo tekočino med spolnim vzburjenjem in orgazmom. So del ženskega reproduktivnega sistema."@sl .
+        "Skenejeve žleze: žleze, ki se nahajajo v bližini ženske sečnice in izločajo tekočino med spolnim vzburjenjem in orgazmom. So del ženskega reproduktivnega sistema."@sl .
 
-ss:spermicidi a owl:Class ;
+ss:spermidin a owl:Class ;
     rdfs:label "Spermidine"@en,
-        "Spermicidi"@sl ;
+        "Spermidin"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Spermicide"^^xsd:string,
         "https://www.tosemjaz.net/razisci/spolnost/spermicidi/"^^xsd:string ;
     rdfs:subClassOf ss:kemicna ;
@@ -1167,7 +1167,7 @@ ss:spolna_terapija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q138686> ;
     skos:altLabel "1.9"@sl ;
     skos:definition "Sex Therapy: A therapeutic approach for addressing sexual dysfunction and improving sexual function, encompassing a range of sexual issues and concerns."@en,
-        "Seksualna terapija: terapevtski pristop za obravnavo spolne disfunkcije in izboljšanje spolne funkcije, ki zajema vrsto spolnih vprašanj in skrbi."@sl .
+        "Seksualna terapija: terapevtski pristop za obravnavo spolne disfunkcije in izboljšanje spolne funkcije."@sl .
 
 ss:spolni_dimorfizem a owl:Class ;
     rdfs:label "Sexual dimorphism"@en,
@@ -1181,15 +1181,15 @@ ss:spolni_dimorfizem a owl:Class ;
         "Spolni dimorfizem: pojav, kjer samci in samice iste vrste kažejo različne nereproduktivne morfološke značilnosti, kot so velikost, barva ali vedenjske lastnosti."@sl .
 
 ss:spolno_nadlegovanje a owl:Class ;
-    rdfs:label "Sexual assault"@en,
+    rdfs:label "Sexual harassment"@en,
         "Spolno nadlegovanje"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sexual_assault"^^xsd:string,
         "https://en.wikipedia.org/wiki/Sexual_harassment"^^xsd:string ;
     rdfs:subClassOf ss:spolna_nedotakljivost ;
     owl:sameAs <http://wikidata.org/entity/Q751722> ;
     skos:altLabel "5.2"@sl ;
-    skos:definition "Sexual Assault: An intentional act involving non-consensual sexual touching, coercion, or force, including acts like rape, groping, and child sexual abuse."@en,
-        "Spolni napad: namerno dejanje, ki vključuje spolno dotikanje brez privolitve, prisilo ali silo, vključno z dejanji, kot so posilstvo, otipavanje in spolna zloraba otrok."@sl .
+    skos:definition "Sexual harassment: Sexual harassment is a type of harassment involving the use of explicit or implicit sexual overtones, including the unwelcome and inappropriate promises of rewards in exchange for sexual favors. Sexual harassment can be physical and/or verbal."@en,
+        "Spolno nadlegovanje: Spolno nadlegovanje je vrsta nadlegovanja, ki vključuje uporabo izrecnih ali implicitnih spolnih nians, vključno z nezaželenimi in neprimernimi obljubami nagrad v zameno za spolne usluge. Spolno nadlegovanje lahko zajema fizične in/ali verbalne oblike."@sl .
 
 ss:spolnost_med_nosecnostjo a owl:Class ;
     rdfs:label "Sexual activity during pregnancy"@en,
@@ -1198,8 +1198,8 @@ ss:spolnost_med_nosecnostjo a owl:Class ;
     rdfs:subClassOf ss:razmnozevanje ;
     owl:sameAs <http://wikidata.org/entity/Q7458752> ;
     skos:altLabel "6.6.1.1"@sl ;
-    skos:definition "Sex During Pregnancy: TODO Sex during pregnancy is generally safe, but desire and frequency may change. Postpartum, there may be difficulties and pain, with various factors affecting sexual desire and function."@en,
-        "Seks med nosečnostjo: TODO Seks med nosečnostjo je na splošno varen, vendar se želja in pogostost lahko spremenita. Po porodu se lahko pojavijo težave in bolečine z različnimi dejavniki, ki vplivajo na spolno željo in funkcijo."@sl .
+    skos:definition "Sex During Pregnancy: Sex during pregnancy is generally safe, but desire and frequency may change. Postpartum, there may be difficulties and pain, with various factors affecting sexual desire and function."@en,
+        "Seks med nosečnostjo: Seks med nosečnostjo je na splošno varen, vendar se želja in pogostost lahko spremenita. Po porodu se lahko pojavijo težave in bolečine z različnimi dejavniki, ki vplivajo na spolno željo in funkcijo."@sl .
 
 ss:spolnost_po_porodu a owl:Class ;
     rdfs:label "Sex after pregnancy"@en,
@@ -1208,8 +1208,8 @@ ss:spolnost_po_porodu a owl:Class ;
     rdfs:subClassOf ss:razmnozevanje ;
     owl:sameAs <http://wikidata.org/entity/Q7458450> ;
     skos:altLabel "6.6.1.2"@sl ;
-    skos:definition "Sex After Pregnancy: TODO Sex during pregnancy is generally safe, but desire and frequency may change. Postpartum, there may be difficulties and pain, with various factors affecting sexual desire and function."@en,
-        "Seks po nosečnosti: TODO Seks med nosečnostjo je na splošno varen, vendar se želja in pogostost lahko spremenita. Po porodu se lahko pojavijo težave in bolečine z različnimi dejavniki, ki vplivajo na spolno željo in funkcijo."@sl .
+    skos:definition "Sex After Pregnancy: Sex after pregnancy is often delayed for several weeks or months, and may be difficult and painful for women. Painful intercourse is the most common sexual activity-related complication after childbirth.[1] Since there are no guidelines on resuming sexual intercourse after childbirth, the postpartum patients are generally advised to resume sex when they feel comfortable to do so."@en,
+        "Seks po porodu: Spolni odnosi po porodu se pogosto odložijo za več tednov ali mesecev ter so lahko težavni in boleči za ženske. Boleč spolni odnos je najpogostejša zapletenost v povezavi s spolno aktivnostjo po porodu. Ker ni smernic glede ponovnega začetka spolnih odnosov po porodu, se po porodu ženskam običajno svetuje, da se spolnih odnosov lotijo, ko se počutijo udobno."@sl .
 
 ss:sramne_usi-pthirus_pubis a owl:Class ;
     rdfs:label "Crab louse"@en,
@@ -1222,7 +1222,7 @@ ss:sramne_usi-pthirus_pubis a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q3381802> ;
     skos:altLabel "1.1.1.1"@sl ;
     skos:definition "Crab Louse (Pthirus pubis): An ectoparasite infesting humans, typically found in pubic hair and other areas with coarse hair. It exclusively feeds on blood."@en,
-        "Rakova uš (Pthirus pubis): ektoparazit, ki okuži ljudi in se običajno nahaja v sramnih dlakah in na drugih območjih z grobimi dlakami. Hrani se izključno s krvjo."@sl .
+        "Sramna uš (Pthirus pubis): ektoparazit, ki okuži ljudi in se običajno nahaja v sramnih dlakah in na drugih območjih z grobimi dlakami. Hrani se izključno s krvjo."@sl .
 
 ss:sterilizacija_pri_zenskah a owl:Class ;
     rdfs:label "Tubal ligation"@en,
@@ -1245,7 +1245,7 @@ ss:tocka_g a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q517807> ;
     skos:altLabel "8.3.8"@sl ;
     skos:definition "G-Spot: An erogenous area within the vagina, subject to debate regarding its existence, that, when stimulated, may lead to strong sexual arousal and orgasms in some women."@en,
-        "G-točka: erogeno območje v nožnici, o katerem se razpravlja o njegovem obstoju, ki lahko pri nekaterih ženskah, če je stimulirano, povzroči močno spolno vzburjenje in orgazme."@sl .
+        "Točka G: erogeno območje v nožnici, o katerem se razpravlja o njegovem obstoju, ki lahko pri nekaterih ženskah, če je stimulirano, povzroči močno spolno vzburjenje in orgazme."@sl .
 
 ss:transvestit a owl:Class ;
     rdfs:label "Transvestism"@en,
@@ -1270,15 +1270,15 @@ ss:travestit a owl:Class ;
         "Travesti: gledališki izraz, ki se nanaša na upodobitev likov s strani izvajalcev nasprotnega spola, pogosto viden v zgodnjih oblikah gledališča, pantomime in burleske."@sl .
 
 ss:tribadizem a owl:Class ;
-    rdfs:label "Tribalism"@en,
+    rdfs:label "Tribadism"@en,
         "Tribadizem"@sl ;
     ss:povezano_z ss:lezbijka ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Tribadism"^^xsd:string ;
     rdfs:subClassOf ss:druzne ;
     owl:sameAs <http://wikidata.org/entity/Q376032> ;
     skos:altLabel "3.2.1.4"@sl ;
-    skos:definition "Tribalism: The organization or advocacy for tribal lifestyles, often based on in-group loyalty, and, in some contexts, used negatively to describe discriminatory attitudes towards out-groups."@en,
-        "Tribalizem: organizacija ali zagovarjanje plemenskega življenjskega sloga, ki pogosto temelji na lojalnosti znotraj skupine in se v nekaterih kontekstih uporablja negativno za opis diskriminatornega odnosa do drugih skupin."@sl .
+    skos:definition "Tribadism: Tribadism or tribbing, commonly known by its scissoring position, is a lesbian sexual practice in which a woman rubs her vulva against her partner's body for sexual stimulation, especially for stimulation of the clitoris."@en,
+        "Tribadizem: Tribadizem ali tribbing, pogosto znan po svojem položaju "škarij", je lezbična spolna praksa, pri kateri ženska drgne svojo vulvo ob partnerjevo_kino telo za spolno stimulacijo, še posebej za stimulacijo klitorisa."@sl .
 
 ss:trihomonas-trichomonas_vaginalis a owl:Class ;
     rdfs:label "Trichomoniasis"@en,
@@ -1290,7 +1290,7 @@ ss:trihomonas-trichomonas_vaginalis a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q745865> ;
     skos:altLabel "1.1.1.3"@sl ;
     skos:definition "Trichomoniasis: An infectious disease caused by the parasite Trichomonas vaginalis, often transmitted through sexual contact, leading to symptoms like itching, discharge, and increased risk of HIV/AIDS."@en,
-        "Trihomonijaza: nalezljiva bolezen, ki jo povzroča parazit Trichomonas vaginalis, ki se pogosto prenaša s spolnim stikom, kar povzroča simptome, kot so srbenje, izcedek in povečano tveganje za HIV/AIDS."@sl .
+        "Trihomonoza: nalezljiva bolezen, ki jo povzroča parazit Trichomonas vaginalis, ki se pogosto prenaša s spolnim stikom, kar povzroča simptome, kot so srbenje, izcedek in povečano tveganje za okužbo s HIV/AIDS."@sl .
 
 ss:ureoplasma_urealyticum a owl:Class ;
     rdfs:label "Ureaplasma urealyticum"@en,
@@ -1303,7 +1303,7 @@ ss:ureoplasma_urealyticum a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.1.2.7.3"@sl ;
     skos:definition "Ureaplasma urealyticum: A unique bacterium commonly found in human urogenital tracts as commensals but can cause infections when overgrown, notable for its lack of a cell wall."@en,
-        "Ureaplasma urealyticum: Edinstvena bakterija, ki jo običajno najdemo v človeških urogenitalnih organih kot komenzale, vendar lahko povzroči okužbe, ko se razraste, za kar je značilno, da nima celične stene."@sl .
+        "Ureaplasma urealyticum: Edinstvena bakterija brez celične stene, ki jo običajno najdemo v človeških urogenitalnih organih kot komenzale, vendar lahko povzroči okužbe, ko se razraste."@sl .
 
 ss:urgentna_kontracepcija a owl:Class ;
     rdfs:label "Emergency contraception"@en,
@@ -1351,19 +1351,19 @@ ss:vaginoplastika a owl:Class ;
         "Vaginoplastika: Vaginoplastika je kirurški poseg, ki vključuje konstrukcijo ali rekonstrukcijo nožnice. Izvaja se iz različnih razlogov, med drugim za korekcijo prirojenih napak, zdravljenje prolapsa medeničnih organov ali po odstranitvi malignih tvorb."@sl .
 
 ss:vazektomija a owl:Class ;
-    rdfs:label "Mastectomy"@en,
+    rdfs:label "Vasectomy"@en,
         "Vazektomija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Vasectomy"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Vazektomija"^^xsd:string ;
     rdfs:subClassOf ss:operativna ;
     owl:sameAs <http://wikidata.org/entity/Q690838> ;
     skos:altLabel "1.2.4.1"@sl ;
-    skos:definition "Mastectomy: Mastectomy is the surgical removal of one or both breasts, either partially or completely. It is commonly performed as a treatment for breast cancer but can also be chosen as a preventive measure for individuals at high risk."@en,
-        "Mastektomija: Mastektomija je kirurška odstranitev ene ali obeh dojk, delno ali v celoti. Običajno se izvaja kot zdravljenje raka dojke, vendar se lahko izbere tudi kot preventivni ukrep za posameznike z visokim tveganjem."@sl .
+    skos:definition "Vasectomy: Vasectomy (or vasoligation), is an elective surgical procedure for male sterilization or permanent contraception. During the procedure, the male vasa deferentia are cut and tied or sealed so as to prevent sperm from entering into the urethra and thereby prevent fertilization of a female through sexual intercourse."@en,
+        "Vazektomija: Vazektomíja pomeni operacijsko prekinitev ali delno odstranitev semenovoda. Z vazektomijo se pri moškem doseže trajna sterilizacija oziroma zaščita pred zaploditvijo. Zaradi prekinitve obeh semenovodov v izlivu po posegu semenčice več niso prisotne."@sl .
 
-ss:velike a owl:Class ;
+ss:velike_sramne_ustnice a owl:Class ;
     rdfs:label "Labia majora"@en,
-        "Velike"@sl ;
+        "Velike sramne ustnice"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Labia_majora"^^xsd:string ;
     rdfs:subClassOf ss:sramne_ustnice ;
     owl:sameAs <http://wikidata.org/entity/Q1081574> ;
@@ -1380,11 +1380,11 @@ ss:virtualni_seks a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q626268> ;
     skos:altLabel "3.2.3.2"@sl ;
     skos:definition "Cybersex: Cybersex refers to virtual sexual encounters involving long-distance communication, often facilitated by electronic devices such as webcams or text messaging. It can include explicit messages, descriptions of sexual experiences, or even real-life masturbation."@en,
-        "Cybersex: Cybersex se nanaša na virtualna spolna srečanja, ki vključujejo komunikacijo na dolge razdalje, ki jo pogosto omogočajo elektronske naprave, kot so spletne kamere ali besedilna sporočila. Vključuje lahko eksplicitna sporočila, opise spolnih izkušenj ali celo masturbacijo v resničnem življenju."@sl .
+        "Kiberseks: kiberseks se nanaša na virtualna spolna srečanja, ki vključujejo komunikacijo na dolge razdalje, ki jo pogosto omogočajo elektronske naprave, kot so spletne kamere ali besedilna sporočila. Vključuje lahko eksplicitna sporočila, opise spolnih izkušenj ali celo masturbacijo v realnem času."@sl .
 
-ss:zenski_notranji a owl:Class ;
+ss:kondom a owl:Class ;
     rdfs:label "Condom"@en,
-        "ženski (notranji)"@sl ;
+        "Kondom"@sl ;
     ss:povezano_z ss:noznica ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Female_condom"^^xsd:string ;
     rdfs:subClassOf ss:kondom ;
@@ -1424,7 +1424,7 @@ ss:bioloski_spol a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q290> ;
     skos:altLabel "2.1.1.1"@sl ;
     skos:definition "Sex: Sex refers to the biological trait that determines whether an organism produces male or female gametes, and it plays a crucial role in reproduction. Sexual characteristics may differ between species and individuals."@en,
-        "Spol: Spol se nanaša na biološko lastnost, ki določa, ali organizem proizvaja moške ali ženske gamete, in ima ključno vlogo pri razmnoževanju. Spolne značilnosti se lahko med vrstami in posamezniki razlikujejo."@sl .
+        "Biološki spol: Spol se nanaša na biološko lastnost, ki določa, ali organizem proizvaja moške ali ženske gamete, in ima ključno vlogo pri razmnoževanju. Spolne značilnosti se lahko med vrstami in posamezniki razlikujejo."@sl .
 
 ss:gej a owl:Class ;
     rdfs:label "Gay"@en,
@@ -1435,11 +1435,11 @@ ss:gej a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q592> ;
     skos:altLabel "2.1.4.3.1"@sl ;
     skos:definition "Gay: Gay is a term referring to homosexuality or individuals attracted to members of the same sex. Originally, it meant 'carefree' but has evolved to describe the LGBTQ+ community and same-sex attraction."@en,
-        "Gej: Gej je izraz, ki se nanaša na homoseksualnost ali posameznike, ki jih privlačijo pripadniki istega spola. Prvotno je pomenilo &quot;brezskrben&quot;, vendar se je razvilo v opis skupnosti LGBTQ+ in istospolne privlačnosti."@sl .
+        "Gej: Gej je izraz, ki se nanaša na moško homoseksualnost ali posameznike, ki jih privlačijo pripadniki istega spola. Prvotno je pomenilo &quot;brezskrben&quot;, vendar se je razvilo v opis skupnosti LGBTQ+ in istospolne privlačnosti."@sl .
 
-ss:hepatitis_a_virus a owl:Class ;
-    rdfs:label "Hepatitis A"@en,
-        "Hepatitis A"@sl ;
+ss:hepatitis_c_virus a owl:Class ;
+    rdfs:label "Hepatitis C"@en,
+        "Hepatitis C"@sl ;
     ss:zascita ss:cepljenje ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hepatitis_A"^^xsd:string,
         "https://nijz.si/nalezljive-bolezni/nalezljive-bolezni-od-a-do-z/hepatitis-a-virusni-hepatitis-a/"^^xsd:string,
@@ -1447,11 +1447,11 @@ ss:hepatitis_a_virus a owl:Class ;
     rdfs:subClassOf ss:hepatitis_virusi ;
     owl:sameAs <http://wikidata.org/entity/Q157661> ;
     skos:altLabel "1.1.3.6.1"@sl ;
-    skos:definition "Hepatitis A: TODO Hepatitis A is an infectious liver disease caused by the Hepatovirus A (HAV). It can result in symptoms like jaundice, nausea, and abdominal pain and is primarily spread through contaminated food or water."@en,
-        "Hepatitis A: TODO Hepatitis A je nalezljiva bolezen jeter, ki jo povzroča hepatovirus A (HAV). Lahko povzroči simptome, kot so zlatenica, slabost in bolečine v trebuhu, in se primarno širi z okuženo hrano ali vodo."@sl .
+    skos:definition "Hepatitis C: Hepatitis C is an infectious disease caused by the hepatitis C virus (HCV) that primarily affects the liver; it is a type of viral hepatitis. During the initial infection period, people often have mild or no symptoms. Early symptoms can include fever, dark urine, abdominal pain, and yellow tinged skin."@en,
+        "Hepatitis C: Hepatitis C je nalezljiva bolezen, ki napada predvsem jetra in jo povzroča virus hepatitisa C (VHC). Okužba pogosto poteka brez simptomov, kronična okužba pa pogosto lahko vodi do zabrazgotinjenja in ciroze jeter, kar je na splošno mogoče zaznati šele po mnogih letih. V nekaterih primerih pride zaradi ciroze do odpovedi jeter, raka na jetrih ali smrtno nevarnih krotic v požiralniku in želodcu."@sl .
 
 ss:hepatitis_b_virus a owl:Class ;
-    rdfs:label "Hepatitis A"@en,
+    rdfs:label "Hepatitis B"@en,
         "Hepatitis B"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hepatitis_B"^^xsd:string,
@@ -1460,12 +1460,12 @@ ss:hepatitis_b_virus a owl:Class ;
     rdfs:subClassOf ss:hepatitis_virusi ;
     owl:sameAs <http://wikidata.org/entity/Q6853> ;
     skos:altLabel "1.1.3.6.2"@sl ;
-    skos:definition "Hepatitis A: TODO Hepatitis A is an infectious liver disease caused by the Hepatovirus A (HAV). It can result in symptoms like jaundice, nausea, and abdominal pain and is primarily spread through contaminated food or water."@en,
-        "Hepatitis A: TODO Hepatitis A je nalezljiva bolezen jeter, ki jo povzroča hepatovirus A (HAV). Lahko povzroči simptome, kot so zlatenica, slabost in bolečine v trebuhu, in se primarno širi z okuženo hrano ali vodo."@sl .
+    skos:definition "Hepatitis B: Hepatitis B virus (HBV) is a partially double-stranded DNA virus, a species of the genus Orthohepadnavirus and a member of the Hepadnaviridae family of viruses."@en,
+        "Hepatitis B: Virus hepatitisa B, okrajšano VHB, je virus iz rodu ortohepadnavirusov, ki je odporen na toploto in občutljiv na kislo okolje, povzroča hepatitis B in se prenaša s krvjo in krvnimi produkti. Razlikujejo 4 virusne tipe."@sl .
 
-ss:hepatitis_e_virus a owl:Class ;
-    rdfs:label "Hepatitis A"@en,
-        "Hepatitis E"@sl ;
+ss:hepatitis_d_virus a owl:Class ;
+    rdfs:label "Hepatitis D"@en,
+        "Hepatitis D"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hepatitis_E"^^xsd:string,
         "https://nijz.si/nalezljive-bolezni/nalezljive-bolezni-od-a-do-z/hepatitis-e-virusni-hepatitis-e/"^^xsd:string,
@@ -1473,8 +1473,8 @@ ss:hepatitis_e_virus a owl:Class ;
     rdfs:subClassOf ss:hepatitis_virusi ;
     owl:sameAs <http://wikidata.org/entity/Q326643> ;
     skos:altLabel "1.1.3.6.5"@sl ;
-    skos:definition "Hepatitis A: TODO Hepatitis A is an infectious liver disease caused by the Hepatovirus A (HAV). It can result in symptoms like jaundice, nausea, and abdominal pain and is primarily spread through contaminated food or water."@en,
-        "Hepatitis A: TODO Hepatitis A je nalezljiva bolezen jeter, ki jo povzroča hepatovirus A (HAV). Lahko povzroči simptome, kot so zlatenica, slabost in bolečine v trebuhu, in se primarno širi z okuženo hrano ali vodo."@sl .
+    skos:definition "Hepatitis D: Hepatitis D is a type of viral hepatitis[3] caused by the hepatitis delta virus (HDV). HDV is one of five known hepatitis viruses: A, B, C, D, and E. HDV is considered to be a satellite (a type of subviral agent) because it can propagate only in the presence of the hepatitis B virus (HBV). Transmission of HDV can occur either via simultaneous infection with HBV (coinfection) or superimposed on chronic hepatitis B or hepatitis B carrier state (superinfection)."@en,
+        "Hepatitis D: Hepatitis D je oblika hepatitisa, ki ga povzroča virus hepatitisa D (VHD); le-ta za svoj razvoj potrebuje virus hepatitisa B. Prenaša se s spolnim stikom in s transfuzijo kontaminirane krvi ali krvnih derivatov. Bolezen lahko poteka akutno, včasih v hudi obliki, lahko pa preide v kronični hepatitis in cirozo jeter."@sl .
 
 ss:hormonski_intrauterini_sistem a owl:Class ;
     rdfs:label "Hormonal intrauterine device"@en,
@@ -1501,14 +1501,14 @@ ss:hpv a owl:Class ;
     skos:definition "HPV Infection: An HPV infection is caused by the human papillomavirus, a DNA virus from the Papillomaviridae family. It often presents with no symptoms, but in some cases can result in warts or precancerous lesions, increasing the risk of certain cancers."@en,
         "Okužba s HPV: okužbo s HPV povzroča človeški papiloma virus, DNK virus iz družine Papillomaviridae. Pogosto se kaže brez simptomov, vendar lahko v nekaterih primerih povzroči bradavice ali predrakave lezije, kar poveča tveganje za nekatere vrste raka."@sl .
 
-ss:individualne a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Individualne"@sl ;
+ss:individualne_spolne_prakse a owl:Class ;
+    rdfs:label "Individual sex practices"@en,
+        "Individualne spolne prakse"@sl ;
     rdfs:subClassOf ss:spolne_prakse ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "3.2.2"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Individual sex practices: These are sexual practices that are performed independently (alone), most often as a form of masturbation."@en,
+        "Individualne spolne prakse: so spolne prakse, ki jih izvajamo samostojno (sami), največkrat kot obliko samozadovoljevanja."@sl .
 
 ss:intrauterini_sisitem_z_bakrom a owl:Class ;
     rdfs:label "Copper IUD"@en,
@@ -1519,7 +1519,7 @@ ss:intrauterini_sisitem_z_bakrom a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q16274676> ;
     skos:altLabel "1.2.3.2"@sl ;
     skos:definition "Copper Intrauterine Device (IUD): A copper intrauterine device, or copper coil, is a non-hormonal form of birth control placed in the uterus. It prevents pregnancy by disrupting sperm movement and is effective for up to twelve years."@en,
-        "Bakrena intrauterina naprava (IUD): bakrena intrauterina naprava ali bakrena spirala je nehormonska oblika kontracepcije, nameščena v maternici. Preprečuje nosečnost z motnjami gibanja semenčic in deluje do dvanajst let."@sl .
+        "Bakreni intrauterini sistem (IUD): bakreni intrauterini sistem ali bakrena spirala je nehormonska oblika kontracepcije, nameščena v maternici. Preprečuje nosečnost z motnjami gibanja semenčic in deluje do dvanajst let."@sl .
 
 ss:klitoris a owl:Class ;
     rdfs:label "Clitoris"@en,
@@ -1533,7 +1533,7 @@ ss:klitoris a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q873072> ;
     skos:altLabel "8.3.7.2"@sl ;
     skos:definition "Clitoris: The clitoris is a sensitive female sex organ located at the front junction of the labia minora. It serves as the primary source of female sexual pleasure and has complex anatomical variations. It has been a subject of sociocultural discussions and studies."@en,
-        "Klitoris: Klitoris je občutljiv ženski spolni organ, ki se nahaja na sprednjem spoju malih sramnih ustnic. Služi kot primarni vir ženskega spolnega užitka in ima zapletene anatomske razlike. Bila je predmet sociokulturnih razprav in študij."@sl .
+        "Klitoris: Klitoris je občutljiv ženski spolni organ, ki se nahaja na sprednjem spoju malih sramnih ustnic. Služi kot primarni vir ženskega spolnega užitka in ima zapletene anatomske variacije."@sl .
 
 ss:kozica a owl:Class ;
     rdfs:label "Foreskin"@en,
@@ -1578,26 +1578,26 @@ ss:moda a owl:Class ;
     skos:definition "Testicle: A testicle is a male reproductive gland responsible for producing sperm and the hormone testosterone. They are essential for male reproduction."@en,
         "Moda: moda so moška reproduktivna žleza, odgovorna za proizvodnjo sperme in hormona testosterona. Bistveni so za moško reprodukcijo."@sl .
 
-ss:moski_zunanji a owl:Class ;
-    rdfs:label "TODO"@en,
-        "moški (zunanji)"@sl ;
+ss:moski_zunanji_kondom a owl:Class ;
+    rdfs:label "Condom"@en,
+        "Kondom"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/w/index.php?title=Male_condom&redirect=no"^^xsd:string ;
     rdfs:subClassOf ss:kondom ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.2.1.1.1"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Condom: is a sheath-shaped barrier device used during sexual intercourse to reduce the probability of pregnancy or a sexually transmitted infection (STI). There are both male and female condoms."@en,
+        "Kondom: Kondom (tudi prezervativ) je mehansko kontracepcijsko sredstvo, ki si ga moški pred spolnim odnosom natakne čez spolni ud. S tem prepreči izliv spermalne tekočine v nožnico in tako preprečuje zanositev ter ščiti pred spolno prenosljivimi boleznimi, kot so gonoreja, sifilis in HIV."@sl .
 
 ss:nedolznost a owl:Class ;
-    rdfs:label "Virginia"@en,
+    rdfs:label "Virginity"@en,
         "Nedolžnost"@sl ;
     ss:povezano_z ss:spolni_razvoj ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Virginity"^^xsd:string ;
     rdfs:subClassOf ss:spolno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "3.3."@sl ;
-    skos:definition "Virginia: Virginia is a U.S. state located in the Mid-Atlantic and Southeastern regions. It has a rich history, being one of the original Thirteen Colonies, and is known for its diverse geography, including the Blue Ridge Mountains and the Chesapeake Bay."@en,
-        "Virginia: Virginia je ameriška zvezna država v srednjem Atlantiku in jugovzhodni regiji. Ima bogato zgodovino, saj je ena od prvotnih trinajstih kolonij, in je znana po svoji raznoliki geografiji, vključno z gorovjem Blue Ridge in zalivom Chesapeake."@sl .
+    skos:definition "Virginity: Virginity is the state of a person who has never engaged in sexual intercourse.[1][2] The term virgin originally only referred to sexually inexperienced women, but has evolved to encompass a range of definitions, as found in traditional, modern and ethical concepts."@en,
+        "Nedolžnost: Deviškost je stanje osebe, ki se nikoli ni vključila v (družni) spolni odnos. Izraz devica je prvotno označeval le spolno neizkušene ženske, vendar se je razvil in zajema različne definicije, kot jih najdemo v tradicionalnih, sodobnih in etičnih konceptih."@sl .
 
 ss:odstranitev_penisa a owl:Class ;
     rdfs:label "Penis removal"@en,
@@ -1644,7 +1644,7 @@ ss:semenska_tekocina a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q9715> ;
     skos:altLabel "9.5"@sl ;
     skos:definition "Semen: Semen, also known as seminal fluid, is a bodily fluid containing sperm and other components. It is produced in the male reproductive system and plays a vital role in fertilization."@en,
-        "Seme: Seme, znano tudi kot semenska tekočina, je telesna tekočina, ki vsebuje spermo in druge sestavine. Proizvaja se v moškem reproduktivnem sistemu in ima ključno vlogo pri oploditvi."@sl .
+        "Semenska tekočina: je telesna tekočina, ki vsebuje spermo in druge sestavine. Proizvaja se v moškem reproduktivnem sistemu in ima ključno vlogo pri oploditvi."@sl .
 
 ss:spolna_usmerjenost a owl:Class ;
     rdfs:label "Sexual orientation"@en,
@@ -1657,9 +1657,9 @@ ss:spolna_usmerjenost a owl:Class ;
     skos:definition "Sexual Orientation: Sexual orientation is a person's enduring pattern of romantic or sexual attraction to persons of the opposite sex, the same sex, or both sexes. It is a complex aspect of one's identity and not a choice."@en,
         "Spolna usmerjenost: Spolna usmerjenost je človekov trajni vzorec romantične ali spolne privlačnosti do oseb nasprotnega spola, istega spola ali obeh spolov. Je kompleksen vidik posameznikove identitete in ne izbira."@sl .
 
-ss:starost a owl:Class ;
+ss:starost_in_spolnost a owl:Class ;
     rdfs:label "Sexuality in older age"@en,
-        "Starost"@sl ;
+        "Starost in spolnost"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sexuality_in_older_age"^^xsd:string ;
     rdfs:subClassOf ss:spolni_razvoj ;
     owl:sameAs <http://wikidata.org/entity/Q438973> ;
@@ -1679,7 +1679,7 @@ ss:transspolnost a owl:Class ;
         "Transspolnost: Transspolna oseba ima spolno identiteto, ki ni v skladu s spolom, dodeljenim ob rojstvu. Transspolni posamezniki se lahko identificirajo kot drug spol ali kot nebinarni in so lahko ali pa tudi ne podvrženi zdravstveni ali socialni tranziciji."@sl .
 
 ss:zenska_ejakulacija a owl:Class ;
-    rdfs:label "Ejaculation"@en,
+    rdfs:label "Female ejaculation"@en,
         "Ženska ejakulacija"@sl ;
     ss:povezano_z ss:orgazem,
         ss:spolne_fantazije ;
@@ -1687,8 +1687,8 @@ ss:zenska_ejakulacija a owl:Class ;
     rdfs:subClassOf ss:fiziologija ;
     owl:sameAs <http://wikidata.org/entity/Q212379> ;
     skos:altLabel "9.3"@sl ;
-    skos:definition "Ejaculation: The discharge of semen from the male reproductive tract during orgasm, typically containing sperm, and is an essential component of natural conception. It can also occur spontaneously during sleep (nocturnal emission) and can be painful (dysejaculation) or result in semen traveling backward into the bladder (retrograde ejaculation) in rare cases."@en,
-        "Ejakulacija: izločanje semena iz moškega reproduktivnega trakta med orgazmom, ki običajno vsebuje spermo in je bistvena sestavina naravnega spočetja. Pojavi se lahko tudi spontano med spanjem (nočno izlivanje) in je lahko boleče (disejakulacija) ali v redkih primerih povzroči, da seme potuje nazaj v mehur (retrogradna ejakulacija)."@sl .
+    skos:definition "Female ejaculation: Female ejaculation is characterized as an expulsion of fluid from the Skene's gland at the lower end of the urethra during or before an orgasm. It is also known colloquially as squirting (or gushing), although research indicates that female ejaculation and squirting are different phenomena, squirting being attributed to a sudden expulsion of liquid that partly comes from the bladder and contains urine."@en,
+        "Ženska ejakulacija: Ženska ejakulacija je opredeljena kot izločanje tekočine iz Skenejeve žleze na spodnjem koncu sečnice med ali pred orgazmom. Kolokvialno je znana tudi kot squirting (ali izliv), čeprav raziskave kažejo, da sta ženska ejakulacija in squirting različna pojava, pri čemer se squirting pripisuje nenadnemu izločanju tekočine, ki deloma izhaja iz mehurja in vsebuje urin."@sl .
 
 ss:zgodovina_seksualnosti a owl:Class ;
     rdfs:label "History of human sexuality"@en,
@@ -1758,7 +1758,7 @@ ss:coitus a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q5873> ;
     skos:altLabel "3.2.1.1"@sl ;
     skos:definition "Sexual Intercourse: Sexual activity involving the insertion of the male penis into the female vagina for pleasure and reproduction, with various forms including vaginal, anal, and oral sex, often used for physical and emotional bonding."@en,
-        "Spolni odnos: spolna dejavnost, ki vključuje vstavljanje moškega penisa v žensko vagino za užitek in razmnoževanje, z različnimi oblikami, vključno z vaginalnim, analnim in oralnim seksom, ki se pogosto uporablja za fizično in čustveno vez."@sl .
+        "Spolni odnos: spolna dejavnost, ki vključuje različne prakse, namenjene zagotavljanju užitka in razmnoževanja, z različnimi oblikami, vključno z vaginalnim, analnim in oralnim seksom, ki se pogosto uporablja za fizično in čustveno povezovanje."@sl .
 
 ss:embrioloski_razvoj a owl:Class ;
     rdfs:label "Human embryonic development"@en,
@@ -1772,7 +1772,7 @@ ss:embrioloski_razvoj a owl:Class ;
 
 ss:hiv a owl:Class ;
     rdfs:label "HIV"@en,
-        "Aids"@sl ;
+        "HIV"@sl ;
     ss:zascita ss:prep ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/HIV"^^xsd:string,
         "https://en.wikipedia.org/wiki/HIV/AIDS"^^xsd:string,
@@ -1786,14 +1786,14 @@ ss:hiv a owl:Class ;
         "Virusi humane imunske pomanjkljivosti (HIV): dva retrovirusa, HIV-1 in HIV-2, ki okužita ljudi in vodita do sindroma pridobljene imunske pomanjkljivosti (AIDS) s postopnim slabljenjem imunskega sistema."@sl .
 
 ss:kemicna a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Kemična"@sl ;
+    rdfs:label "Chemical contraception"@en,
+        "Kemična kontracepcija"@sl ;
     schemaorg:isVariantOf_proti ss:semenska_tekocina ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.2.3"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Spermicide: Spermicide is a contraceptive substance that destroys sperm, inserted vaginally prior to intercourse to prevent pregnancy. As a contraceptive, spermicide may be used alone. However, the pregnancy rate experienced by couples using only spermicide is higher than that of couples using other methods. Usually, spermicides are combined with contraceptive barrier methods such as diaphragms, condoms, cervical caps, and sponges."@en,
+        "Spermicid: Spermicid je kontracepcijska snov, ki uničuje spermo in se vstavi vaginalno pred spolnim odnosom, da prepreči nosečnost. Kot kontracepcijsko sredstvo se spermicid lahko uporablja samostojno. Vendar je stopnja nosečnosti pri parih, ki uporabljajo samo spermicid, višja kot pri parih, ki uporabljajo druge metode. Običajno se spermicidi kombinirajo z kontracepcijskimi pregradnimi metodami, kot so diafragme, kondomi, maternične kapice in gobice."@sl .
 
 ss:maternica a owl:Class ;
     rdfs:label "Uterus"@en,
@@ -1820,35 +1820,35 @@ ss:noznica a owl:Class ;
     skos:definition "Vagina: The elastic, muscular part of the female genital tract that extends from the vestibule to the cervix, playing a role in sexual intercourse, birth, and menstrual flow."@en,
         "Vagina: Elastičen, mišičast del ženskega genitalnega trakta, ki se razteza od preddverja do materničnega vratu in igra vlogo pri spolnem odnosu, porodu in menstrualnem toku."@sl .
 
-ss:operativna a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Operativna"@sl ;
+ss:operativna_kontracepcija a owl:Class ;
+    rdfs:label "Surgical birth control"@en,
+        "Operativna kontracepcija"@sl ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.2.4"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Surgical contracpetion: It includes castration in men (commonly referred to as vasectomy) or sterilization in women."@en,
+        "Operativna kontracepcija: vključuje kastracijo pri moških (t.i. vazektomijo) oz. sterilizacijo pri ženskah."@sl .
 
 ss:ovulacija a owl:Class ;
-    rdfs:label "Sexual intercourse"@en,
+    rdfs:label "Ovulation"@en,
         "Ovulacija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Ovulation"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Ovulacija"^^xsd:string ;
     rdfs:subClassOf ss:oploditev ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "6.1.3"@sl ;
-    skos:definition "intercourse: TODO."@en,
-        "spolni odnos: TODO."@sl .
+    skos:definition "Ovulation: Ovulation is the release of eggs from the ovaries. In women, this event occurs when the ovarian follicles rupture and release the secondary oocyte ovarian cells.[1] After ovulation, during the luteal phase, the egg will be available to be fertilized by sperm. In addition, the uterine lining (endometrium) is thickened to be able to receive a fertilized egg. If no conception occurs, the uterine lining as well as the egg will be shed during menstruation."@en,
+        "Ovulacija: Ovulacija (lat. ovulatio) je proces sproščanja zrelega jajčeca (jajčne celice) iz počenega folikla in sledeča izločitev skozi predrto steno ženskega jajčnika. Navadno se ovulacija odvije v sredini obdobja med dvema menstruacijama (na štirinajsti dan)."@sl .
 
-ss:pregradna a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Pregradna"@sl ;
+ss:pregradna_kontracepcija a owl:Class ;
+    rdfs:label "Barrier birth control"@en,
+        "Pregradna kontracepcijaa"@sl ;
     rdfs:isDefinedBy "https://pubmed.ncbi.nlm.nih.gov/6150780/"^^xsd:string ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.2.1"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Barrier birth control: Barrier methods of birth control act as barriers to keep sperm from reaching the egg. Some barrier methods also protect against sexually transmitted infections (STIs). A few barrier methods (spermicide, condom, and sponge) can be bought in most drugstores. Others (diaphragm and cervical cap) must be prescribed by a health care professional."@en,
+        "Pregradna kontracepcija: Pregrade kontracepcijskih metod delujejo kot ovire, ki preprečujejo, da bi sperma dosegla jajčece. Nekatere pregradne metode prav tako ščitijo pred spolno prenosljivimi okužbami (STI). Nekatere pregradne metode (spermicid, kondom in gobica) je mogoče kupiti v večini lekarn. Druge (diafragma in maternična kapica) mora predpisati zdravnik."@sl .
 
 ss:samozadovoljevanje a owl:Class ;
     rdfs:label "Masturbation"@en,
@@ -1870,7 +1870,7 @@ ss:spolna_industrija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "4.3."@sl ;
     skos:definition "Sex Industry: The sector of businesses providing sex-related products, services, and adult entertainment, including prostitution, strip clubs, pornography, and sex shops."@en,
-        "Seks industrija: sektor podjetij, ki ponuja izdelke, storitve in zabavo za odrasle, povezane s spolnostjo, vključno s prostitucijo, striptiz klubi, pornografijo in trgovinami s spolnostjo."@sl .
+        "Seks industrija: sektor podjetij, ki ponuja izdelke, storitve in zabavo za odrasle, povezane s spolnostjo, vključno s prostitucijo, striptiz klubi, pornografijo in trgovinami s spolnimi igračami."@sl .
 
 ss:spolne_igracke a owl:Class ;
     rdfs:label "Sex toy"@en,
@@ -1891,16 +1891,16 @@ ss:spolno_delo a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1297897> ;
     skos:altLabel "4.3.1"@sl ;
     skos:definition "Sex Work: The exchange of sexual services for material compensation between consenting adults, emphasizing the labor and economic aspects of such transactions."@en,
-        "Seksualno delo: Izmenjava spolnih storitev za materialno nadomestilo med odraslimi osebami, ki soglašajo s tem, s poudarkom na delovnih in ekonomskih vidikih takih transakcij."@sl .
+        "Seksualno delo: Izmenjava spolnih storitev za materialno ali nematerialno nadomestilo med odraslimi osebami, ki soglašajo s tem, s poudarkom na delovnih in ekonomskih vidikih takih transakcij."@sl .
 
 ss:spolnostna_identiteta a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexuality identity"@en,
         "Spolnostna identiteta"@sl ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "2"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sexuality identity: includes a wide range of identity characteristics related to gender and sexuality, such as gender identity, sexual orientation, romantic orientation, and sexual fantasies."@en,
+        "Spolnostna identiteta: spolnostna identiteta vključuje širok nabor identitetnih lastnosti povezanih s spolom in spolnostjo, kot na primer spolno identiteto, spolno usmerjenost, romantično usmerjenost in spolne fantazije."@sl .
 
 ss:sramne_ustnice a owl:Class ;
     rdfs:label "Labia"@en,
@@ -1910,27 +1910,27 @@ ss:sramne_ustnice a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q1406501> ;
     skos:altLabel "8.3.7.3"@sl ;
     skos:definition "Labia: The externally visible portions of the vulva in humans, including the labia majora and labia minora, which surround and protect the vaginal and urethral openings."@en,
-        "Labia: Navzven vidni deli vulve pri ljudeh, vključno z velikimi in malimi sramnimi ustnicami, ki obdajajo in ščitijo vaginalne in sečnice."@sl .
+        "Labia: Navzven vidni deli vulve pri ljudeh, vključno z velikimi in malimi sramnimi ustnicami, ki obdajajo in ščitijo vagino in sečnico."@sl .
 
 <http://onto.clarin.si/semsex#vedenjska_»naravna«> a owl:Class ;
-    rdfs:label "TODO"@en,
-        "vedenjska (»naravna«)"@sl ;
+    rdfs:label "Natural family planning"@en,
+        "Naravno načrtovanje družine"@sl ;
     rdfs:isDefinedBy "https://www.tosemjaz.net/razisci/spolnost/naravne-metode/"^^xsd:string ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.2.5"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Natural family planning (NFP) comprises the family planning methods approved by the Catholic Church and some Protestant denominations for both achieving and postponing or avoiding pregnancy. In accordance with the Church's teachings regarding sexual behavior, NFP excludes the use of other methods of birth control, which it refers to as "artificial contraception"."@en,
+        "Naravno načrtovanje družine (NND) se navezuje na metode načrtovanja družine, ki temeljijo na opazovanju telesnih znakov za določanje plodnih in neplodnih dni menstruacijskega ciklusa, ne da bi posegale v naravno telesno dogajanje. Osnovane so na opazovanju znakov, kot so učinki hormonov na bazalno telesno temperaturo in spremembe sluzi ter položaju materničnega vratu. Učinkovitost je zelo raznolika, odvisno od uporabljene metode, ustrezne poučitve in skrbnosti pri upoštevanju postopka."@sl .
 
 ss:virtualne a owl:Class ;
-    rdfs:label "Virtual exchange"@en,
+    rdfs:label "Virtual sex"@en,
         "Virtualne"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Virtual_sex"^^xsd:string ;
     rdfs:subClassOf ss:spolne_prakse ;
     owl:sameAs <http://wikidata.org/entity/Q2607593> ;
     skos:altLabel "3.2.3"@sl ;
-    skos:definition "Virtual Exchange: An instructional approach for language learning that involves connecting language learners through computer-mediated communication to improve language skills, intercultural competence, and digital literacy."@en,
-        "Virtualna izmenjava: poučni pristop za učenje jezikov, ki vključuje povezovanje učencev jezikov prek računalniško posredovane komunikacije za izboljšanje jezikovnih spretnosti, medkulturne kompetence in digitalne pismenosti."@sl .
+    skos:definition "Virtual sex: Virtual sex is sexual activity where two or more people (or one person and a virtual character) gather together via some form of communications equipment to arouse each other, often by the means of transmitting sexually explicit messages. Virtual sex describes the phenomenon, no matter the communications equipment used."@en,
+        "Virtualni seks je spolna dejavnost, pri kateri se dve ali več oseb (ali ena oseba in virtualni lik) zberejo prek neke vrste komunikacijske opreme, da bi vzbudili drug drugega, pogosto z oddajanjem spolno eksplicitnih sporočil. Izraz "virtualni seks" opisuje pojav, ne glede na uporabljeno komunikacijsko opremo."@sl .
 
 ss:homoseksualna a owl:Class ;
     rdfs:label "Homosexuality"@en,
@@ -1944,7 +1944,7 @@ ss:homoseksualna a owl:Class ;
         "Homoseksualnost: spolna usmerjenost, za katero je značilna trajna privlačnost, romantično zanimanje in/ali spolno vedenje med pripadniki istega spola ali spola."@sl .
 
 ss:mikoplazme_in_ureoplazme a owl:Class ;
-    rdfs:label "Ureaplasma urealyticum"@en,
+    rdfs:label "Mycoplasmataceae"@en,
         "Mikoplazme in ureoplazme"@sl ;
     ss:zascita ss:kondom ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Mycoplasma"^^xsd:string,
@@ -1952,8 +1952,8 @@ ss:mikoplazme_in_ureoplazme a owl:Class ;
     rdfs:subClassOf ss:bakterijske ;
     owl:sameAs <http://wikidata.org/entity/Q210975> ;
     skos:altLabel "1.1.2.7"@sl ;
-    skos:definition "Ureaplasma Urealyticum: A bacterium commonly found in the urogenital tracts of humans, with the potential to cause infections when overgrown, known for lacking a cell wall."@en,
-        "Ureaplasma Urealyticum: Bakterija, ki jo običajno najdemo v urogenitalnem traktu ljudi in lahko povzroči okužbe, če se razraste, znana pa je po tem, da nima celične stene."@sl .
+    skos:definition "Mycoplasmataceae: a family of bacteria in the order Mycoplasmatales. This family consists of the genera Mycoplasma and Ureaplasma."@en,
+        "Mycoplasmataceae: družina bakterij v redu Mycoplasmatales. Ta družina vključuje rodova Mycoplasma in Ureaplasma."@sl .
 
 ss:orgazem a owl:Class ;
     rdfs:label "Orgasm"@en,
@@ -1980,13 +1980,13 @@ ss:rojstvo a owl:Class ;
         "Rojstvo: Rojstvo, znano tudi kot porod, je proces rojstva potomcev pri sesalcih. Sprožijo ga hormonske spremembe, ki povzročijo krčenje maternice, kar povzroči izgon ploda. Čas rojstva je čas, ko je mladič pripravljen na samostojno hranjenje in dihanje. Nekatere vrste imajo predkocialne potomce, ki se lahko premikajo kmalu po rojstvu, medtem ko imajo druge altrične potomce, ki so popolnoma odvisni od starševske oskrbe. Pri nekaterih živalih, kot so vrečarji, se mladiči rodijo v nezreli fazi in se naprej razvijajo v materini vrečki. Rojenje ni omejeno samo na sesalce, saj tudi nekateri plazilci, dvoživke, ribe in nevretenčarji skotijo ali nosijo svoje mladiče."@sl .
 
 ss:socialne_spolne_oblike a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sociosexuality"@en,
         "Socialne spolne oblike"@sl ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "4"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sociosexuality, sometimes called sociosexual orientation, is the individual difference in the willingness to engage in sexual activity outside of a committed relationship. Individuals who are more restricted sociosexually are less willing to engage in casual sex; they prefer greater love, commitment and emotional closeness before having sex with romantic partners. Individuals who are more unrestricted sociosexually are more willing to have casual sex and are more comfortable engaging in sex without love, commitment or closeness."@en,
+        "Socialne spolne oblike: Sociospolnost, včasih imenovana sociospolna usmerjenost, je posamezni različek v pripravljenosti za sodelovanje v spolni dejavnosti zunaj zavezane zveze. Posamezniki, ki so sociospolno bolj omejeni, so manj pripravljeni na sproščen spolni odnos; raje imajo več ljubezni, zavezanosti in čustvene bližine, preden se vključijo v spolne odnose s partnerji. Posamezniki, ki so sociospolno bolj neomejeni, pa so bolj pripravljeni na sproščen spolni odnos in se bolj udobno vključujejo v spolnost brez ljubezni, zavezanosti ali bližine."@sl .
 
 ss:spolna_disfunkcija a owl:Class ;
     rdfs:label "Sexual dysfunction"@en,
@@ -2059,7 +2059,7 @@ ss:vzburjenje a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q215127> ;
     skos:altLabel "9.2.1"@sl ;
     skos:definition "Sexual Arousal: Sexual arousal, also known as sexual excitement, is the physiological and psychological response that occurs when individuals prepare for sexual activity or are exposed to sexual stimuli. This response involves physical changes, such as engorgement of sexual tissues, and hormonal fluctuations, which can lead to sexual desire and lead to sexual activity. Sexual arousal may progress through different stages and can culminate in an orgasm."@en,
-        "Spolno vzburjenje: Spolno vzburjenje, znano tudi kot spolno vzburjenje, je fiziološki in psihološki odziv, ki se pojavi, ko se posamezniki pripravljajo na spolno aktivnost ali so izpostavljeni spolnim dražljajem. Ta odziv vključuje fizične spremembe, kot je preobremenitev spolnih tkiv, in hormonska nihanja, ki lahko povzročijo spolno željo in povzročijo spolno aktivnost. Spolno vzburjenje lahko napreduje skozi različne stopnje in se lahko konča z orgazmom."@sl .
+        "Spolno vzburjenje: Spolno vzburjenje, je fiziološki in psihološki odziv, ki se pojavi, ko se posamezniki pripravljajo na spolno aktivnost ali so izpostavljeni spolnim dražljajem. Ta odziv vključuje fizične spremembe, kot je preobremenitev spolnih tkiv, in hormonska nihanja, ki lahko povzročijo spolno željo in povzročijo spolno aktivnost. Spolno vzburjenje lahko napreduje skozi različne stopnje in se lahko konča z orgazmom."@sl .
 
 ss:kontracepcijske_tabletke a owl:Class ;
     rdfs:label "Combined oral contraceptive pill"@en,
@@ -2084,7 +2084,7 @@ ss:menstruacija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q12171> ;
     skos:altLabel "6.5.1"@sl ;
     skos:definition "Menstruation: Menstruation, also known as a period, refers to the regular discharge of blood and mucosal tissue from the inner lining of the uterus through the vagina. It is a natural part of the menstrual cycle, characterized by hormonal fluctuations. Menstruation typically indicates that pregnancy has not occurred. The average menstrual cycle ranges from 21 to 31 days, with bleeding lasting around 2 to 7 days. Some women may experience premenstrual symptoms like bloating, irritability, and tender breasts. Menstruation ceases after menopause."@en,
-        "Menstruacija: Menstruacija, znana tudi kot menstruacija, se nanaša na redno odvajanje krvi in sluznice iz notranje sluznice maternice skozi nožnico. Je naravni del menstrualnega ciklusa, za katerega so značilna hormonska nihanja. Menstruacija običajno kaže, da ni prišlo do nosečnosti. Povprečni menstrualni cikel je od 21 do 31 dni, krvavitev pa traja od 2 do 7 dni. Nekatere ženske lahko občutijo predmenstrualne simptome, kot so napenjanje, razdražljivost in občutljive dojke. Po menopavzi menstruacija preneha."@sl .
+        "Menstruacija: Menstruacija, se nanaša na redno odvajanje krvi in sluznice iz notranje sluznice maternice skozi nožnico. Je naravni del menstrualnega ciklusa, za katerega so značilna hormonska nihanja. Menstruacija običajno kaže, da ni prišlo do nosečnosti. Povprečni menstrualni cikel je od 21 do 31 dni, krvavitev pa traja od 2 do 7 dni. Nekatere ženske lahko občutijo predmenstrualne simptome, kot so napenjanje, razdražljivost in občutljive dojke. Po menopavzi menstruacija preneha."@sl .
 
 ss:spolna_identiteta a owl:Class ;
     rdfs:label "Sexual identity"@en,
@@ -2095,26 +2095,26 @@ ss:spolna_identiteta a owl:Class ;
     rdfs:subClassOf ss:spolni_tip ;
     owl:sameAs <http://wikidata.org/entity/Q1165905> ;
     skos:altLabel "2.1.1"@sl ;
-    skos:definition "Sexual Identity: Sexual identity refers to an individual's self-perception regarding romantic or sexual attraction to others. It is closely related to sexual orientation and can encompass attractions to individuals of the opposite sex, the same sex, both sexes, or more than one gender. Sexual identity can vary widely among individuals and is distinct from their sexual behavior, which involves actual sexual acts, and gender identity, which is an individual's internal sense of their gender."@en,
-        "Spolna identiteta: Spolna identiteta se nanaša na posameznikovo samozaznavanje glede romantične ali spolne privlačnosti do drugih. Tesno je povezan s spolno usmerjenostjo in lahko zajema privlačnosti do posameznikov nasprotnega spola, istega spola, obeh spolov ali več kot enega spola. Spolna identiteta se lahko med posamezniki zelo razlikuje in se razlikuje od njihovega spolnega vedenja, ki vključuje dejanska spolna dejanja, in spolne identitete, ki je posameznikov notranji občutek svojega spola."@sl .
+    skos:definition "Sexual Identity: Sexual identity has been described as a component of an individual's identity that reflects their sexual self-concept. The integration of the respective identity components (e.g. moral, religious, ethnic, occupational) into a greater overall identity is essential to the process of developing the multi-dimensional construct of identity."@en,
+        "Spolna identiteta: Spolna identiteta je bila opisana kot sestavni del posameznikove identitete, ki odraža njihov spolni samokoncept. Vključevanje ustrezne identitetne komponente (npr. moralne, verske, etnične, poklicne) v širšo celotno identiteto je bistveno za razvoj večdimenzionalnega konstrukta identitete."@sl .
 
 ss:spolni_tip a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexual type"@en,
         "Spolni tip"@sl ;
     rdfs:subClassOf ss:spolnostna_identiteta ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "2.1"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sexual type: a part of sexual identity that pertains to gender identity, sexual orientation, and romantic orientation."@en,
+        "Spolni tip: del spolnostne identitete, ki se nanaša na spolno identiteto, spolno usmerjenost in romantično usmerjenost."@sl .
 
 ss:hepatitis_virusi a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "HEpatitis"@en,
         "Hepatitis virusi"@sl ;
     rdfs:subClassOf ss:virusne ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.1.3.6"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Hepatitis: an inflammation of the liver tissue. Some people or animals with hepatitis have no symptoms, whereas others develop yellow discoloration of the skin and whites of the eyes (jaundice), poor appetite, vomiting, tiredness, abdominal pain, and diarrhea. Hepatitis is acute if it resolves within six months, and chronic if it lasts longer than six months."@en,
+        "Hepatitis: Hepatítis pomeni vnetje jetrnega tkiva. V nekaterih primerih poteka brezsimptomno, sicer pa se lahko kaže s slabostjo, bruhanjem, zmanjšanjem teka, drisko, utrujenostjo, vročino, bolečinami in napetostjo v trebuhu, zlatenico, povečanimi jetri in moteno jetrno funkcijo."@sl .
 
 ss:kontracepcija a owl:Class ;
     rdfs:label "Birth control"@en,
@@ -2127,7 +2127,7 @@ ss:kontracepcija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q122224> ;
     skos:altLabel "1.2"@sl ;
     skos:definition "Birth Control: Birth control, also known as contraception, involves the use of methods or devices to prevent unintended pregnancy. It has been practiced for centuries, with various methods developed over time. Effective and safe birth control methods have become widely available in the 20th century. Birth control can involve hormonal methods, barrier methods, fertility awareness methods, and more. It may also include surgical methods like sterilization. Safe sex practices can help prevent sexually transmitted infections (STIs) but do not protect against pregnancy. Comprehensive sex education plays a crucial role in promoting responsible birth control use."@en,
-        "Kontrola rojstva: kontracepcija, znana tudi kot kontracepcija, vključuje uporabo metod ali naprav za preprečevanje nenamerne nosečnosti. Izvajajo jo že stoletja, s časom pa so se razvile različne metode. Učinkovite in varne metode kontracepcije so postale široko dostopne v 20. stoletju. Kontrola rojstva lahko vključuje hormonske metode, pregradne metode, metode ozaveščanja o plodnosti in drugo. Vključuje lahko tudi kirurške metode, kot je sterilizacija. Prakse varne spolnosti lahko pomagajo preprečiti spolno prenosljive okužbe (SPO), ne ščitijo pa pred nosečnostjo. Celovita spolna vzgoja igra ključno vlogo pri spodbujanju odgovorne uporabe kontracepcije."@sl .
+        "Kontrola rojstva: kontracepcija, vključuje uporabo metod ali naprav za preprečevanje nenamerne nosečnosti. Izvajajo jo že stoletja, s časom pa so se razvile različne metode. Učinkovite in varne metode kontracepcije so postale široko dostopne v 20. stoletju. Kontrola rojstva lahko vključuje hormonske metode, pregradne metode, metode ozaveščanja o plodnosti in drugo. Vključuje lahko tudi kirurške metode, kot je sterilizacija. Prakse varne spolnosti lahko pomagajo preprečiti spolno prenosljive okužbe (SPO), ne ščitijo pa pred nosečnostjo. Celovita spolna vzgoja igra ključno vlogo pri spodbujanju odgovorne uporabe kontracepcije."@sl .
 
 ss:moska_ejakulacija a owl:Class ;
     rdfs:label "Ejaculation"@en,
@@ -2138,14 +2138,14 @@ ss:moska_ejakulacija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q14820885> ;
     skos:altLabel "9.4"@sl ;
     skos:definition "Ejaculation: Ejaculation refers to the discharge of semen from the male reproductive tract during orgasm. It is a critical component of male sexual stimulation and serves as a natural means of achieving conception. Ejaculation can occur both spontaneously, such as during sleep (nocturnal emission or 'wet dream'), or as a result of sexual activity. It is generally pleasurable for men and involves the release of sperm for reproduction. Dysfunctional ejaculation can result in painful or uncomfortable ejaculations."@en,
-        "Ejakulacija: Ejakulacija se nanaša na izločanje semena iz moškega reproduktivnega trakta med orgazmom. Je kritična sestavina moške spolne stimulacije in služi kot naravno sredstvo za dosego spočetja. Ejakulacija se lahko zgodi tako spontano, na primer med spanjem (nočno izlivanje ali &quot;mokre sanje&quot;), ali kot posledica spolne aktivnosti. Moškim je na splošno prijeten in vključuje sproščanje sperme za razmnoževanje. Disfunkcionalna ejakulacija lahko povzroči boleče ali neprijetne ejakulacije."@sl .
+        "Ejakulacija: Ejakulacija se nanaša na izločanje semena iz moškega reproduktivnega trakta med orgazmom. Je kritična sestavina moške spolne stimulacije in služi kot naravno sredstvo za dosego spočetja. Ejakulacija se lahko zgodi tako spontano, na primer med spanjem (nočni izliv ali &quot;mokre sanje&quot;), ali kot posledica spolne aktivnosti. Moškim je na splošno prijeten in vključuje sproščanje sperme za razmnoževanje. Disfunkcionalna ejakulacija lahko povzroči boleče ali neprijetne ejakulacije."@sl .
 
 ss:razmnozevanje a owl:Class ;
     rdfs:label "Human reproduction"@en,
         "Razmnoževanje"@sl ;
     schemaorg:isVariantOf ss:rojstvo ;
     ss:povezano_z ss:coitus,
-        ss:moska_ejakulacija,
+        ss:moska_ejakulacija,Hepatítis pomeni vnetje jetrnega tkiva.[5][3][6] V nekaterih primerih poteka brezsimptomno, sicer pa se lahko kaže s slabostjo, bruhanjem, zmanjšanjem teka, drisko, utrujenostjo, vročino, bolečinami in napetostjo v trebuhu, zlatenico, povečanimi jetri in moteno jetrno funkcijo.
         ss:ovulacija ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Human_reproduction"^^xsd:string ;
     rdfs:subClassOf ss:zrelo_obdobje ;
@@ -2155,13 +2155,13 @@ ss:razmnozevanje a owl:Class ;
         "Človeško razmnoževanje: Človeško razmnoževanje je proces spolnega razmnoževanja, ki vodi do oploditve človeškega jajčeca s človeško semenčico, ki se običajno pojavi med spolnim odnosom. Posledica tega procesa je nastanek zigote, ki se razvije v človeški zarodek. Človeško razmnoževanje vključuje specializirane reproduktivne celice, imenovane gamete, pri čemer se 23 kromosomov od vsakega starša združi v zigoto s 46 kromosomi."@sl .
 
 ss:spolna_nedotakljivost a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexual Integrity"@en,
         "Spolna nedotakljivost"@sl ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "5"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sexual Integrity: Criminal offenses against sexual integrity are acts of sexual, physical, and psychological violence, and represent one of the most serious infringements on the victim's personal integrity."@en,
+        "Spolna nedotakljivost: Kazniva dejanja zoper spolno nedotakljivost so dejanja spolnega, fizičnega in psihičnega nasilja in pomenijo za žrtve enega najhujših posegov v njihovo osebnostno celovitost."@sl .
 
 ss:spolne_fantazije a owl:Class ;
     rdfs:label "Sexual fantasy"@en,
@@ -2171,11 +2171,11 @@ ss:spolne_fantazije a owl:Class ;
     rdfs:subClassOf ss:spolnostna_identiteta ;
     owl:sameAs <http://wikidata.org/entity/Q1969374> ;
     skos:altLabel "2.2"@sl ;
-    skos:definition "Sexual fantasy: TODO."@en,
-        "Spolna fantazija: TODO."@sl .
+    skos:definition "Sexual fantasy: A sexual fantasy or erotic fantasy is an autoerotic mental image or pattern of thought that stirs a person's sexuality and can create or enhance sexual arousal. A sexual fantasy can be created by the person's imagination or memory, and may be triggered autonomously or by external stimulation such as erotic literature or pornography, a physical object, or sexual attraction to another person."@en,
+        "Spolna fantazija: Spolna fantazija ali erotična fantazija je samozadovoljujoča mentalna slika ali miselni vzorec, ki vzbudi osebo v spolnosti in lahko ustvari ali poveča spolno vzburjenje. Spolno fantazijo lahko ustvari osebina domišljija ali spomin ter jo lahko sproži avtonomno ali s pomočjo zunanjih dražljajev, kot so erotična literatura ali pornografija, fizični predmet ali spolna privlačnost do druge osebe."@sl .
 
 ss:spolne_prakse a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexual practices"@en,
         "Spolne prakse"@sl ;
     ss:povezano_z ss:spolna_anatomija,
         ss:spolne_fantazije,
@@ -2183,8 +2183,8 @@ ss:spolne_prakse a owl:Class ;
     rdfs:subClassOf ss:spolno_vedenje ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "3.2"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sexual practices: a collection of various behavioral patterns that people engage in to satisfy their sexual fantasies."@en,
+        "Spolne prakse: nabor najrazličnejših vedenjskih vzorcev, ki jih ljudje izvajamo za zadovoljitev svojih spolnih fantazij."@sl .
 
 ss:spolno_vedenje a owl:Class ;
     rdfs:label "Human sexual activity"@en,
@@ -2194,52 +2194,52 @@ ss:spolno_vedenje a owl:Class ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/Q608> ;
     skos:altLabel "3"@sl ;
-    skos:definition "Sexual activity: TODO."@en,
-        "Spolna aktivnost: TODO."@sl .
+    skos:definition "Sexual activity: Human sexual activity, human sexual practice or human sexual behaviour is the manner in which humans experience and express their sexuality. People engage in a variety of sexual acts, ranging from activities done alone (e.g., masturbation) to acts with another person (e.g., sexual intercourse, non-penetrative sex, oral sex, etc.)."@en,
+        "Spolna aktivnost: Človeška spolna dejavnost, človeška spolna praksa ali človeško spolno vedenje je način, na katerega ljudje doživljajo in izražajo svojo spolnost. Ljudje se vključujejo v različne spolne dejavnosti, ki segajo od dejavnosti, ki jih izvajajo sami (npr. masturbacija), do dejavnosti z drugo osebo (npr. spolni odnos, ne-penetracijski spol, oralni seks itd.)."@sl .
 
 ss:uzitek a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "pleasure"@en,
         "Užitek"@sl ;
     ss:povezano_z ss:spolno_vedenje ;
     rdfs:subClassOf ss:fiziologija ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "9.2"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Pleasure: sexual pleasure refers to experience that feels good, that involves the enjoyment of something in conection to sexual activity."@en,
+        "Užitek: spolni užitek se nanaša na izkušnjo, ko se dobro počutimo. Vključuje uživanje nečesa v povezavi s spolno dejavnostjo."@sl .
 
 ss:vulva a owl:Class ;
-    rdfs:label "Clasper"@en,
+    rdfs:label "Vulva"@en,
         "Vulva"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Vulva"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Vulva"^^xsd:string ;
     rdfs:subClassOf ss:zenske ;
     owl:sameAs <http://wikidata.org/entity/Q2192288> ;
     skos:altLabel "8.3.7"@sl ;
-    skos:definition "Clasper: TODO."@en,
-        "Zaponka: TODO."@sl .
+    skos:definition "Vulva: in humans, the vulva (pl.: vulvas or vulvae) consists of the external female sex organs. The vulva includes the mons pubis (or mons veneris), labia majora, labia minora, clitoris, vestibular bulbs, vulval vestibule, urinary meatus, the vaginal opening, hymen, and Bartholin's and Skene's vestibular glands. The urinary meatus is also included as it opens into the vulval vestibule. Other features of the vulva include the pudendal cleft, sebaceous glands, the urogenital triangle (anterior part of the perineum), and pubic hair. The vulva includes the entrance to the vagina, which leads to the uterus, and provides a double layer of protection for this by the folds of the outer and inner labia."@en,
+        "Vulva: vúlva ali zunánje žénsko spolovílo je del ženskih spolnih organov. Zgrajen je iz velikih (labia majora) in malih sramnih ustnic (labia minora), nadsramja (mons pubis ali mons veneris), ščegetavčka (clitoris) in nožničnega preddvora (vestibulum vaginae)."@sl .
 
 ss:hormonska a owl:Class ;
     rdfs:label "Hormonal contraception"@en,
-        "Hormonska"@sl ;
+        "Hormonska kontracepcija"@sl ;
     ss:povezano_z ss:spolni_hormoni ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Hormonal_contraception"^^xsd:string,
         "https://www.abczdravja.si/reproduktivni-sistem-in-secila/hormonska-kontracepcija/"^^xsd:string ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/Q7292449> ;
     skos:altLabel "1.2.2"@sl ;
-    skos:definition "Hormonal contraception: TODO."@en,
-        "Hormonska kontracepcija: TODO."@sl .
+    skos:definition "Hormonal contraception: There are several types and forms of hormonal contraception. The oldest is the combined contraceptive pill, which has been known for almost 50 years and has become very popular among women. The mechanism of hormonal contraception is based on preventing the maturation of a woman's sex cell (egg), which is best achieved with a combination of two sex hormones (estrogen and progestogen)."@en,
+        "Hormonska kontracepcija: Poznamo več vrst in oblik hormonske kontracepcije. Najstarejša je kombinirana kontracepcijska tabletka, ki jo poznamo že skoraj 50 let in je med ženskami postala izjemno priljubljena. Delovanje hormonske kontracepcije temelji na preprečevanju dozorevanja ženske spolne celice (jajčeca), kar najbolje dosežemo s kombinacijo dveh spolnih hormonov (estrogena in progestagena)."@sl .
 
 ss:oploditev a owl:Class ;
     rdfs:label "Human fertilization"@en,
-        "Zanositev"@sl ;
+        "Oploditev"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Human_fertilization"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Zanositev"^^xsd:string ;
     rdfs:subClassOf ss:spolni_razvoj ;
     owl:sameAs <http://wikidata.org/entity/Q2666904> ;
     skos:altLabel "6.1"@sl ;
-    skos:definition "Human fertilization: TODO Human fertilization is the union of a human egg and sperm, occurring primarily in the ampulla of the fallopian tube. The result of this union leads to the production of a fertilized egg called a zygote, initiating embryonic development. Scientists discovered the dynamics of human fertilization in the nineteenth century.The process of fertilization involves a sperm fusing with an ovum. The most common sequence begins with ejaculation during copulation, follows with ovulation, and finishes with fertilization. Various exceptions to this sequence are possible, including artificial insemination, in vitro fertilization, external ejaculation without copulation, or copulation shortly after ovulation. Upon encountering the secondary oocyte, the acrosome of the sperm produces enzymes which allow it to burrow through the outer shell called the zona pellucida of the egg. The sperm plasma then fuses with the egg's plasma membrane and their nuclei fuse, triggering the sperm head to disconnect from its flagellum as the egg travels down the fallopian tube to reach the uterus. In vitro fertilization (IVF) is a process by which egg cells are fertilized by sperm outside the womb, in vitro."@en,
-        "Človeška oploditev: TODO Človeška oploditev je združitev človeškega jajčeca in semenčice, ki se pojavi predvsem v ampuli jajcevodne cevi. Rezultat te združitve vodi do nastanka oplojenega jajčeca, imenovanega zigota, ki sproži razvoj zarodka. Znanstveniki so v devetnajstem stoletju odkrili dinamiko človeške oploditve. Proces oploditve vključuje zlitje semenčice z jajčecem. Najpogostejše zaporedje se začne z ejakulacijo med parjenjem, sledi ovulacija in konča z oploditvijo. Možne so različne izjeme od tega zaporedja, vključno z umetno oploditvijo, oploditvijo in vitro, zunanjim izlivom brez parjenja ali parjenjem kmalu po ovulaciji. Ob srečanju s sekundarno jajčno celico akrosom sperme proizvede encime, ki mu omogočijo, da se prebije skozi zunanjo lupino jajčeca, imenovano zona pellucida. Plazma sperme se nato spoji s plazemsko membrano jajčeca in njihova jedra se zlijejo, kar povzroči, da se glava sperme odklopi od bička, ko jajčece potuje po jajcevodu in doseže maternico. Oploditev in vitro (IVF) je postopek, pri katerem se jajčne celice oplodijo s semenčicami zunaj maternice, in vitro."@sl .
+    skos:definition "Human fertilization: Human fertilization is the union of a human egg and sperm, occurring primarily in the ampulla of the fallopian tube. The result of this union leads to the production of a fertilized egg called a zygote, initiating embryonic development. Scientists discovered the dynamics of human fertilization in the nineteenth century.The process of fertilization involves a sperm fusing with an ovum. The most common sequence begins with ejaculation during copulation, follows with ovulation, and finishes with fertilization. Various exceptions to this sequence are possible, including artificial insemination, in vitro fertilization, external ejaculation without copulation, or copulation shortly after ovulation. Upon encountering the secondary oocyte, the acrosome of the sperm produces enzymes which allow it to burrow through the outer shell called the zona pellucida of the egg. The sperm plasma then fuses with the egg's plasma membrane and their nuclei fuse, triggering the sperm head to disconnect from its flagellum as the egg travels down the fallopian tube to reach the uterus. In vitro fertilization (IVF) is a process by which egg cells are fertilized by sperm outside the womb, in vitro."@en,
+        "Človeška oploditev: Človeška oploditev je združitev človeškega jajčeca in semenčice, ki se pojavi predvsem v ampuli jajcevodne cevi. Rezultat te združitve vodi do nastanka oplojenega jajčeca, imenovanega zigota, ki sproži razvoj zarodka. Znanstveniki so v devetnajstem stoletju odkrili dinamiko človeške oploditve. Proces oploditve vključuje zlitje semenčice z jajčecem. Najpogostejše zaporedje se začne z ejakulacijo med parjenjem, sledi ovulacija in konča z oploditvijo. Možne so različne izjeme od tega zaporedja, vključno z umetno oploditvijo, oploditvijo in vitro, zunanjim izlivom brez parjenja ali parjenjem kmalu po ovulaciji. Ob srečanju s sekundarno jajčno celico akrosom sperme proizvede encime, ki mu omogočijo, da se prebije skozi zunanjo lupino jajčeca, imenovano zona pellucida. Plazma sperme se nato spoji s plazemsko membrano jajčeca in njihova jedra se zlijejo, kar povzroči, da se glava sperme odklopi od bička, ko jajčece potuje po jajcevodu in doseže maternico. Oploditev in vitro (IVF) je postopek, pri katerem se jajčne celice oplodijo s semenčicami zunaj maternice, in vitro."@sl .
 
 ss:parazitske a owl:Class ;
     rdfs:label "Parasitism"@en,
@@ -2249,38 +2249,38 @@ ss:parazitske a owl:Class ;
     rdfs:subClassOf ss:spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni ;
     owl:sameAs <http://wikidata.org/entity/Q7129784> ;
     skos:altLabel "1.1.1"@sl ;
-    skos:definition "Parasitism: TODO."@en,
-        "Parazitizem: TODO."@sl .
+    skos:definition "Parasitic infection: Parasitic infections are diseases caused by organisms that live off of another living thing. They can cause fever, fatigue, intestinal symptoms, skin rashes or neurological symptoms."@en,
+        "Parazitska okužba: parazitske okužbe so bolezni, ki jih povzročajo organizmi, ki živijo od drugega živečega organizma. Lahko povzročijo zvišano telesno temperaturo, utrujenost, težave s prebavili, izpuščaje na koži ali nevrološke simptome."@sl .
 
 ss:virusne a owl:Class ;
-    rdfs:label "Virtue"@en,
+    rdfs:label "Virus"@en,
         "Virusi"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Virus"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Virusi"^^xsd:string ;
     rdfs:subClassOf ss:spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni ;
     owl:sameAs <http://wikidata.org/entity/Q808> ;
     skos:altLabel "1.1.3"@sl ;
-    skos:definition "Virtue: TODO A trait of excellence, whether moral, social, or intellectual, that involves choosing actions in alignment with high moral standards, demonstrating what is right and avoiding wrong actions in a particular field of endeavor. Virtues are cultivated and valued as a foundational principle of human life, with the opposite being vice."@en,
-        "Vrlina: TODO Lastnost odličnosti, moralne, družbene ali intelektualne, ki vključuje izbiro dejanj v skladu z visokimi moralnimi standardi, prikazovanje, kaj je prav, in izogibanje napačnim dejanjem na določenem področju prizadevanj. Vrline se gojijo in cenijo kot temeljno načelo človeškega življenja, nasprotje pa je slabost."@sl .
+    skos:definition "Viral infection: A viral disease (or viral infection) occurs when an organism's body is invaded by pathogenic viruses, and infectious virus particles (virions) attach to and enter susceptible cells."@en,
+        "Virusna okužba: Virusna bolezen (ali virusna okužba) se pojavi, ko je telo organizma napadeno s patogenimi virusi, in nalezljivi virusni delci (virioni) se pritrdijo na občutljive celice in vstopijo vanje."@sl .
 
 ss:bakterijske a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Bakterijske"@sl ;
+    rdfs:label "Bacterial infection"@en,
+        "Bakterijske okužbe"@sl ;
     ss:zascita ss:kondom ;
     rdfs:subClassOf ss:spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.1.2"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Bacterial infection: Pathogenic bacteria are bacteria that can cause disease. Most species of bacteria are harmless and are often beneficial but others can cause infectious diseases. The number of these pathogenic species in humans is estimated to be fewer than a hundred. By contrast, several thousand species are part of the gut flora present in the digestive tract."@en,
+        "Bakterijska okužba: patogene bakterije so bakterije, ki lahko povzročijo bolezen. Ta članek se osredotoča na bakterije, ki so patogene za ljudi. Večina vrst bakterij je neškodljivih in pogosto koristnih, vendar druge lahko povzročijo nalezljive bolezni. Število teh patogenih vrst pri ljudeh se ocenjuje na manj kot sto. Nasprotno pa je več tisoč vrst del črevesne mikrobiote, prisotne v prebavnem traktu."@sl .
 
 ss:druzne a owl:Class ;
-    rdfs:label "TODO"@en,
-        "Družne"@sl ;
+    rdfs:label "Shared sexual practices"@en,
+        "Družne spolne prakse"@sl ;
     rdfs:subClassOf ss:spolne_prakse ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "3.2.1"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Shared sexual practices: Shared sexual practices are practices that are carried out together with at least one other person."@en,
+        "Družne spolne prakse: družne spolne prakse, so prakse, ki jih prakticiramo skupaj še vsaj z eno drugo osebo."@sl .
 
 ss:penis a owl:Class ;
     rdfs:label "Penis"@en,
@@ -2305,18 +2305,18 @@ ss:spolna_anatomija a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q4620674> ;
     skos:altLabel "8"@sl ;
     skos:definition "Sex Organ: A reproductive organ involved in sexual reproduction, producing and transporting gametes and facilitating fertilization and the development of offspring. These organs differ among species and are typically categorized as male or female."@en,
-        "Spolni organ: reproduktivni organ, ki sodeluje pri spolnem razmnoževanju, proizvaja in prenaša gamete ter omogoča oploditev in razvoj potomcev. Ti organi se med vrstami razlikujejo in so običajno kategorizirani kot moški ali ženski."@sl .
+        "Spolni organ: reproduktivni organ, ki sodeluje pri spolnem razmnoževanju, proizvaja in prenaša gamete ter omogoča oploditev in razvoj potomcev. Ti organi se med vrstami razlikujejo in so običajno kategorizirani kot moški ali ženski. Poleg reproduktivnih delov, pri spolnem odnosu sodeluje celotno telo."@sl .
 
 ss:zascita_pred_spo a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexually transmited infection protection"@en,
         "Zaščita pred SPO"@sl ;
     rdfs:isDefinedBy "https://www.tosemjaz.net/razisci/spolnost/zascita-naj-bo-zanesljiva/"^^xsd:string,
         "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/stis/prevention"^^xsd:string ;
     rdfs:subClassOf ss:spolno_zdravje ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "1.3"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Safe sex is sexual activity using methods or contraceptive devices (such as condoms) to reduce the risk of transmitting or acquiring sexually transmitted infections (STIs), especially HIV. "Safe sex" is also sometimes referred to as safer sex or protected sex to indicate that some safe sex practices do not eliminate STI risks. It is also sometimes used colloquially to describe methods aimed at preventing pregnancy that may or may not also lower STI risks."@en,
+        "Zaščita pred spolno prenosljivimi okužbami: Varni seks je spolna dejavnost, pri kateri se uporabljajo metode ali kontracepcijski pripomočki (kot so kondomi), da se zmanjša tveganje za prenos ali pridobitev spolno prenosljivih okužb (SPO), še posebej HIV. "Varni seks" se včasih imenuje tudi varnejši seks ali zaščiteni seks, da se pokaže, da nekatere prakse varnega seksa ne odpravijo tveganja za STO. Prav tako se včasih kolokvialno uporablja za opis metod, namenjenih preprečevanju nosečnosti, ki lahko ali pa tudi ne zmanjšajo tveganje za SPO."@sl .
 
 ss:moski a owl:Class ;
     rdfs:label "Male"@en,
@@ -2353,14 +2353,14 @@ ss:higiena a owl:Class ;
         "Izdelki za higieno žensk: izdelki za osebno nego, ki se uporabljajo za uravnavanje menstruacije, izcedka iz nožnice ter telesnih funkcij, povezanih z vulvo in vagino. Lahko so za enkratno uporabo (npr. menstrualne vložke) ali za večkratno uporabo (npr. menstrualne skodelice)."@sl .
 
 ss:spolni_razvoj a owl:Class ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Sexual developement"@en,
         "Spolni razvoj"@sl ;
     ss:povezano_z ss:fiziologija ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/TODO> ;
     skos:altLabel "6"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Sexual development is one part of sexuality, and it begins much earlier in life than puberty. Infants and children may not think about sexuality in same way as adults, but they learn and interpret messages related to sexuality that will shape their future actions and attitudes."@en,
+        "Spolni razvoj je en del spolnosti in se začne veliko prej v življenju kot puberteta. Dojenčki in otroci morda ne razmišljajo o spolnosti na enak način kot odrasli, vendar se učijo in razlagajo sporočila, povezana s spolnostjo, ki bodo oblikovala njihova prihodnja dejanja in stališča."@sl .
 
 rdf:object a owl:Class ;
     rdfs:label "TODO"@en,
@@ -2373,23 +2373,23 @@ rdf:object a owl:Class ;
 
 ss:fiziologija a owl:Class ;
     rdfs:label "Sex differences in human physiology"@en,
-        "Fiziologija"@sl ;
+        "Spolne razlike v fiziologiji človeka"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sex_differences_in_human_physiology"^^xsd:string ;
     rdfs:subClassOf rdf:object ;
     owl:sameAs <http://wikidata.org/entity/Q1920858> ;
     skos:altLabel "9"@sl ;
-    skos:definition "Sex differences: TODO"@en,
-        "Spolne razlike: TODO"@sl .
+    skos:definition "Sex differences: Sex differences in human physiology are distinctions of physiological characteristics associated with either male or female humans. These differences are caused by the effects of the different sex chromosome complement in males and females, and differential exposure to gonadal sex hormones during development. Sexual dimorphism is a term for the phenotypic difference between males and females of the same species."@en,
+        "Spolne razlike: Spolne razlike v fiziologiji človeka so razlike v fizioloških značilnostih, povezanih bodisi z moškimi bodisi z ženskami. Te razlike so posledica učinkov različnega spolnega kromosomskega dopolnila pri moških in ženskah ter različne izpostavljenosti gonadalnim spolnim hormonom med razvojem. Spolni dimorfizem je izraz za fenotipsko razliko med samci in samicami iste vrste."@sl .
 
-ss:zenske a owl:Class ;
-    rdfs:label "Male"@en,
-        "Ženske"@sl ;
+ss:moški a owl:Class ;
+    rdfs:label "Male reproductive system"@en,
+        "Moški reproduktivni sistem"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Female"^^xsd:string ;
     rdfs:subClassOf ss:spolna_anatomija ;
     owl:sameAs <http://wikidata.org/entity/Q6581072> ;
     skos:altLabel "8.3"@sl ;
-    skos:definition "Male: TODO The sex of an organism responsible for producing sperm, which fertilizes the female's ovum. It can also refer to gender in a social or identity context, with discussions on the confluence of sex and gender."@en,
-        "Moški: TODO Spol organizma, odgovornega za proizvodnjo sperme, ki oplodi jajčece samice. Lahko se nanaša tudi na spol v družbenem ali identitetnem kontekstu, z razpravami o sotočju spola in spola."@sl .
+    skos:definition "Male reproductive system consists of a number of sex organs that play a role in the process of human reproduction. These organs are located on the outside of the body, and within the pelvis."@en,
+        "Moški reprodukcijski sistem sestoji iz različnih spolnih organov, ki igrajo vlogo v procesu človeške reprodukcije. Ti organi se nahajajo na zunanjosti telesa in znotraj medenice."@sl .
 
 ss:spolno_zdravje a owl:Class ;
     rdfs:label "Sexual and reproductive health"@en,
