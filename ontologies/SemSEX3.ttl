@@ -69,40 +69,40 @@ rdf:type a owl:DatatypeProperty ;
     rdfs:label "tip"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "it characterizes one of the or. subgroup"@en,
+        "označuje enega izmed oz. podskupino"@sl .
 
 rdfs:isDefinedBy a owl:DatatypeProperty ;
     rdfs:label "described at URL"@en ;
     rdfs:label "opisano na URL-ju"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "More information and description available on the website."@en,
+        "več informacij in opis dostopen na spletni strani."@sl .
 
 rdfs:label a owl:DatatypeProperty ;
     rdfs:label "Label"@en ;
     rdfs:label "Oznaka"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Mark of the term."@en,
+        "Oznaka pojma."@sl .
 
 rdfs:subClassOf a owl:DatatypeProperty ;
     rdfs:label "Subclass of"@en ;
     rdfs:label "Podtip"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "A narrow group."@en,
+        "Ožja skupina."@sl .
 
 owl:sameAs a owl:DatatypeProperty ;
     rdfs:label "Same as"@en ;
     rdfs:label "Isto kot"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Indicates the same meaning."@en,
+        "Označuje enak pomen."@sl .
 
 skos:altLabel a owl:DatatypeProperty ;
     rdfs:label "Chapter label"@en ;
@@ -117,20 +117,20 @@ skos:definition a owl:DatatypeProperty ;
     rdfs:label "Definicija"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Explaining the concept."@en,
+        "Razlaga pojma."@sl .
 
 ##############################################
 # Object properties
 ##############################################
 
 ss:homologno a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "Homologous"@en,
         "homologno"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "In parallel or. of the same origin"@en,
+        "vzporedno oz. enakega izvora."@sl .
 
 schemaorg:isVariantOf a owl:ObjectProperty ;
     rdfs:label "Variant of"@en,
@@ -138,63 +138,63 @@ schemaorg:isVariantOf a owl:ObjectProperty ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
     skos:definition "Indicates the kind of product that this is a variant of. In the case of ProductModel, this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a ProductGroup, the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with ProductGroup, this property can apply to any Product included in the group."@en,
-        "TODO"@sl .
+        "Primer nekega splošnejšega fenomena."@sl .
 
 schemaorg:primaryPrevention a owl:ObjectProperty ;
     rdfs:label "Prevents"@en,
         "Preprečuje"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "It indicates a concept that prevents a phenomenon or occurrence state."@en,
+        "Označuje pojem, ki preprečuje nek pojav oz. stanje."@sl .
 
 schemaorg:isSimilarTo a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "related to"@en,
         "je_sorodno"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
     skos:definition "A pointer to another, functionally similar product (or multiple products)."@en,
-        "TODO"@sl .
+        "Označuje pojem, ki je soroden nekemu drugemu pojmu"@sl .
 
 ss:pomembno_za a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "important for"@en,
         "pomembno za"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Indicates that a term is important for another process or object"@en,
+        "Označuje da je nek pojem pomemben za nek drug proces ali objekt."@sl .
 
 ss:povezano_z a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "connected to"@en,
         "povezano z"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "It indicates that a concept or. Password in some way related to another password."@en,
+        "Označuje, da je nek pojem oz. geslo na nek način povezano z drugim geslom."@sl .
 
 ss:se_sprosti_ob a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "It releases"@en,
         "se sprosti ob"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Means something is released from or as a result of something else."@en,
+        "Pomeni, da se nekaj sprosti iz ali kot rezultat nečesa drugega."@sl .
 
 ss:vpliva_na a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "it effects"@en,
         "Vpliva na"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Means that a notion has an impact on something"@en,
+        "Pomeni, da ima nek pojem vpliv na nekaj."@sl .
 
 ss:zascita a owl:ObjectProperty ;
-    rdfs:label "TODO"@en,
+    rdfs:label "protection"@en,
         "zaščita"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range owl:Thing ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
+    skos:definition "Means that something offers protection against something"@en,
+        "Pomeni, da nekaj nudi zaščito proti nečemu"@sl .
 
 ##############################################
 # Classes
@@ -756,7 +756,7 @@ ss:menstrualni_tamponi a owl:Class ;
     ss:povezano_z ss:menstruacija ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Tampon"^^xsd:string ;
     rdfs:subClassOf ss:higiena ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q976338> ;
     skos:altLabel "1.4.2"@sl ;
     skos:definition "Tampon: A menstrual product designed for internal insertion into the vaginal canal to absorb menstrual blood. It may increase the risk of toxic shock syndrome if not used properly."@en,
         "Tampon: Menstrualni izdelek, zasnovan za notranjo vstavitev v vaginalni kanal za absorbiranje menstrualne krvi. Če se ne uporablja pravilno, lahko poveča tveganje za sindrom toksičnega šoka."@sl .
@@ -854,7 +854,7 @@ ss:obrezovanje_moških a owl:Class ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Circumcision"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Obrezovanje_moških"^^xsd:string ;
     rdfs:subClassOf ss:kozica ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q83345> ;
     skos:altLabel "8.2.3.2.1."@sl ;
     skos:definition "Male circumcision: A surgical procedure that removes the foreskin from the penis, performed for various reasons, including health benefits and cultural or religious practices."@en,
         "Obrezovanje moških: kirurški poseg, pri katerem se odstrani kožica s penisa, ki se izvaja iz različnih razlogov, vključno z zdravstvenimi koristmi ter kulturnimi ali verskimi praksami."@sl .
@@ -866,7 +866,7 @@ ss:oploditev_z_biomedicinsko_pomocjo a owl:Class ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/In_vitro_fertilisation"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Oploditev_in_vitro"^^xsd:string ;
     rdfs:subClassOf ss:oploditev ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q200117> ;
     skos:altLabel "6.1.2"@sl ;
     skos:definition "In Vitro Fertilization (IVF): A reproductive technology involving the fertilization of an egg with sperm outside the body, followed by the transfer of the resulting embryo into the uterus to establish pregnancy. It is used for infertility treatment, gestational surrogacy, and genetic condition prevention."@en,
         "Oploditev z biomedicinsko pomočjo (IVF): Reproduktivna tehnologija, ki vključuje oploditev jajčeca s semenčico zunaj telesa, čemur sledi prenos nastalega zarodka v maternico za vzpostavitev nosečnosti. Uporablja se za zdravljenje neplodnosti, gestacijsko nadomestno materinstvo in preprečevanje genetskih bolezni."@sl .
@@ -1300,7 +1300,7 @@ ss:ureoplasma_urealyticum a owl:Class ;
         "https://repozitorij.uni-lj.si/Dokument.php?id=91439&lang=eng"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Ureaplasma_urealyticum"^^xsd:string ;
     rdfs:subClassOf ss:mikoplazme_in_ureoplazme ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q137110> ;
     skos:altLabel "1.1.2.7.3"@sl ;
     skos:definition "Ureaplasma urealyticum: A unique bacterium commonly found in human urogenital tracts as commensals but can cause infections when overgrown, notable for its lack of a cell wall."@en,
         "Ureaplasma urealyticum: Edinstvena bakterija brez celične stene, ki jo običajno najdemo v človeških urogenitalnih organih kot komenzale, vendar lahko povzroči okužbe, ko se razraste."@sl .
@@ -1505,7 +1505,7 @@ ss:individualne_spolne_prakse a owl:Class ;
     rdfs:label "Individual sex practices"@en,
         "Individualne spolne prakse"@sl ;
     rdfs:subClassOf ss:spolne_prakse ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q8396> ;
     skos:altLabel "3.2.2"@sl ;
     skos:definition "Individual sex practices: These are sexual practices that are performed independently (alone), most often as a form of masturbation."@en,
         "Individualne spolne prakse: so spolne prakse, ki jih izvajamo samostojno (sami), največkrat kot obliko samozadovoljevanja."@sl .
@@ -1583,7 +1583,7 @@ ss:moski_zunanji_kondom a owl:Class ;
         "Kondom"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/w/index.php?title=Male_condom&redirect=no"^^xsd:string ;
     rdfs:subClassOf ss:kondom ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q14076> ;
     skos:altLabel "1.2.1.1.1"@sl ;
     skos:definition "Condom: is a sheath-shaped barrier device used during sexual intercourse to reduce the probability of pregnancy or a sexually transmitted infection (STI). There are both male and female condoms."@en,
         "Kondom: Kondom (tudi prezervativ) je mehansko kontracepcijsko sredstvo, ki si ga moški pred spolnim odnosom natakne čez spolni ud. S tem prepreči izliv spermalne tekočine v nožnico in tako preprečuje zanositev ter ščiti pred spolno prenosljivimi boleznimi, kot so gonoreja, sifilis in HIV."@sl .
@@ -1594,7 +1594,7 @@ ss:nedolznost a owl:Class ;
     ss:povezano_z ss:spolni_razvoj ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Virginity"^^xsd:string ;
     rdfs:subClassOf ss:spolno_vedenje ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q170538> ;
     skos:altLabel "3.3."@sl ;
     skos:definition "Virginity: Virginity is the state of a person who has never engaged in sexual intercourse.[1][2] The term virgin originally only referred to sexually inexperienced women, but has evolved to encompass a range of definitions, as found in traditional, modern and ethical concepts."@en,
         "Nedolžnost: Deviškost je stanje osebe, ki se nikoli ni vključila v (družni) spolni odnos. Izraz devica je prvotno označeval le spolno neizkušene ženske, vendar se je razvil in zajema različne definicije, kot jih najdemo v tradicionalnih, sodobnih in etičnih konceptih."@sl .
@@ -1604,7 +1604,7 @@ ss:odstranitev_penisa a owl:Class ;
         "Odstranitev penisa"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Penis_removal"^^xsd:string ;
     rdfs:subClassOf ss:spolna_nedotakljivost ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q12969054> ;
     skos:altLabel "5.5."@sl ;
     skos:definition "Penis Removal: Historically, the removal of the human penis was used as a symbol of dominance in warfare. Some groups, like the Skoptsy, practiced castration, which sometimes involved penis removal for religious purposes."@en,
         "Odstranitev penisa: V preteklosti je bila odstranitev človeškega penisa uporabljena kot simbol prevlade v vojskovanju. Nekatere skupine, kot je Skoptsy, so izvajale kastracijo, ki je včasih vključevala odstranitev penisa v verske namene."@sl .
@@ -1615,7 +1615,7 @@ ss:pozelenje a owl:Class ;
     ss:povezano_z ss:spolne_fantazije ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Lust"^^xsd:string ;
     rdfs:subClassOf ss:uzitek ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q1969374> ;
     skos:altLabel "9.2.3"@sl ;
     skos:definition "Last: Lust is an intense and overwhelming sexual desire or craving, often characterized by a strong physical attraction to someone based primarily on their physical appearance or sexual attributes, without necessarily involving deeper emotional or romantic feelings."@en,
         "Poželenje: Poželenje je intenzivna in prevladujoča spolna želja ali hrepenenje, ki ga pogosto zaznamuje močna telesna privlačnost do nekoga, ki temelji predvsem na njihovem fizičnem izgledu ali spolnih značilnostih, ne da bi nujno vključevala globlja čustvena ali romantična čustva."@sl .
@@ -1790,7 +1790,7 @@ ss:kemicna a owl:Class ;
         "Kemična kontracepcija"@sl ;
     schemaorg:isVariantOf_proti ss:semenska_tekocina ;
     rdfs:subClassOf ss:kontracepcija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q9715> ;
     skos:altLabel "1.2.3"@sl ;
     skos:definition "Spermicide: Spermicide is a contraceptive substance that destroys sperm, inserted vaginally prior to intercourse to prevent pregnancy. As a contraceptive, spermicide may be used alone. However, the pregnancy rate experienced by couples using only spermicide is higher than that of couples using other methods. Usually, spermicides are combined with contraceptive barrier methods such as diaphragms, condoms, cervical caps, and sponges."@en,
         "Spermicid: Spermicid je kontracepcijska snov, ki uničuje spermo in se vstavi vaginalno pred spolnim odnosom, da prepreči nosečnost. Kot kontracepcijsko sredstvo se spermicid lahko uporablja samostojno. Vendar je stopnja nosečnosti pri parih, ki uporabljajo samo spermicid, višja kot pri parih, ki uporabljajo druge metode. Običajno se spermicidi kombinirajo z kontracepcijskimi pregradnimi metodami, kot so diafragme, kondomi, maternične kapice in gobice."@sl .
@@ -1824,7 +1824,7 @@ ss:operativna_kontracepcija a owl:Class ;
     rdfs:label "Surgical birth control"@en,
         "Operativna kontracepcija"@sl ;
     rdfs:subClassOf ss:kontracepcija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q324503> ;
     skos:altLabel "1.2.4"@sl ;
     skos:definition "Surgical contracpetion: It includes castration in men (commonly referred to as vasectomy) or sterilization in women."@en,
         "Operativna kontracepcija: vključuje kastracijo pri moških (t.i. vazektomijo) oz. sterilizacijo pri ženskah."@sl .
@@ -1835,7 +1835,7 @@ ss:ovulacija a owl:Class ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Ovulation"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Ovulacija"^^xsd:string ;
     rdfs:subClassOf ss:oploditev ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q187082> ;
     skos:altLabel "6.1.3"@sl ;
     skos:definition "Ovulation: Ovulation is the release of eggs from the ovaries. In women, this event occurs when the ovarian follicles rupture and release the secondary oocyte ovarian cells.[1] After ovulation, during the luteal phase, the egg will be available to be fertilized by sperm. In addition, the uterine lining (endometrium) is thickened to be able to receive a fertilized egg. If no conception occurs, the uterine lining as well as the egg will be shed during menstruation."@en,
         "Ovulacija: Ovulacija (lat. ovulatio) je proces sproščanja zrelega jajčeca (jajčne celice) iz počenega folikla in sledeča izločitev skozi predrto steno ženskega jajčnika. Navadno se ovulacija odvije v sredini obdobja med dvema menstruacijama (na štirinajsti dan)."@sl .
@@ -1845,7 +1845,7 @@ ss:pregradna_kontracepcija a owl:Class ;
         "Pregradna kontracepcijaa"@sl ;
     rdfs:isDefinedBy "https://pubmed.ncbi.nlm.nih.gov/6150780/"^^xsd:string ;
     rdfs:subClassOf ss:kontracepcija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q318529O> ;
     skos:altLabel "1.2.1"@sl ;
     skos:definition "Barrier birth control: Barrier methods of birth control act as barriers to keep sperm from reaching the egg. Some barrier methods also protect against sexually transmitted infections (STIs). A few barrier methods (spermicide, condom, and sponge) can be bought in most drugstores. Others (diaphragm and cervical cap) must be prescribed by a health care professional."@en,
         "Pregradna kontracepcija: Pregrade kontracepcijskih metod delujejo kot ovire, ki preprečujejo, da bi sperma dosegla jajčece. Nekatere pregradne metode prav tako ščitijo pred spolno prenosljivimi okužbami (STI). Nekatere pregradne metode (spermicid, kondom in gobica) je mogoče kupiti v večini lekarn. Druge (diafragma in maternična kapica) mora predpisati zdravnik."@sl .
@@ -1867,7 +1867,7 @@ ss:spolna_industrija a owl:Class ;
         "Spolna industrija"@sl ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sex_industry"^^xsd:string ;
     rdfs:subClassOf ss:socialne_spolne_oblike ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q837322> ;
     skos:altLabel "4.3."@sl ;
     skos:definition "Sex Industry: The sector of businesses providing sex-related products, services, and adult entertainment, including prostitution, strip clubs, pornography, and sex shops."@en,
         "Seks industrija: sektor podjetij, ki ponuja izdelke, storitve in zabavo za odrasle, povezane s spolnostjo, vključno s prostitucijo, striptiz klubi, pornografijo in trgovinami s spolnimi igračami."@sl .
@@ -1878,7 +1878,7 @@ ss:spolne_igracke a owl:Class ;
     ss:povezano_z ss:samozadovoljevanje ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sex_toy"^^xsd:string ;
     rdfs:subClassOf ss:spolna_industrija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q10816> ;
     skos:altLabel "4.3.2"@sl ;
     skos:definition "Sex Toy: An object or device primarily used to enhance sexual pleasure, such as dildos, vibrators, or BDSM apparatus."@en,
         "Seks igračka: predmet ali naprava, ki se uporablja predvsem za povečanje spolnega užitka, kot so dildi, vibratorji ali naprave za BDSM."@sl .
@@ -1897,7 +1897,7 @@ ss:spolnostna_identiteta a owl:Class ;
     rdfs:label "Sexuality identity"@en,
         "Spolnostna identiteta"@sl ;
     rdfs:subClassOf rdf:object ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q71560105> ;
     skos:altLabel "2"@sl ;
     skos:definition "Sexuality identity: includes a wide range of identity characteristics related to gender and sexuality, such as gender identity, sexual orientation, romantic orientation, and sexual fantasies."@en,
         "Spolnostna identiteta: spolnostna identiteta vključuje širok nabor identitetnih lastnosti povezanih s spolom in spolnostjo, kot na primer spolno identiteto, spolno usmerjenost, romantično usmerjenost in spolne fantazije."@sl .
@@ -1917,7 +1917,7 @@ ss:sramne_ustnice a owl:Class ;
         "Naravno načrtovanje družine"@sl ;
     rdfs:isDefinedBy "https://www.tosemjaz.net/razisci/spolnost/naravne-metode/"^^xsd:string ;
     rdfs:subClassOf ss:kontracepcija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q71898414> ;
     skos:altLabel "1.2.5"@sl ;
     skos:definition "Natural family planning (NFP) comprises the family planning methods approved by the Catholic Church and some Protestant denominations for both achieving and postponing or avoiding pregnancy. In accordance with the Church's teachings regarding sexual behavior, NFP excludes the use of other methods of birth control, which it refers to as "artificial contraception"."@en,
         "Naravno načrtovanje družine (NND) se navezuje na metode načrtovanja družine, ki temeljijo na opazovanju telesnih znakov za določanje plodnih in neplodnih dni menstruacijskega ciklusa, ne da bi posegale v naravno telesno dogajanje. Osnovane so na opazovanju znakov, kot so učinki hormonov na bazalno telesno temperaturo in spremembe sluzi ter položaju materničnega vratu. Učinkovitost je zelo raznolika, odvisno od uporabljene metode, ustrezne poučitve in skrbnosti pri upoštevanju postopka."@sl .
@@ -1983,7 +1983,7 @@ ss:socialne_spolne_oblike a owl:Class ;
     rdfs:label "Sociosexuality"@en,
         "Socialne spolne oblike"@sl ;
     rdfs:subClassOf rdf:object ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q17157349> ;
     skos:altLabel "4"@sl ;
     skos:definition "Sociosexuality, sometimes called sociosexual orientation, is the individual difference in the willingness to engage in sexual activity outside of a committed relationship. Individuals who are more restricted sociosexually are less willing to engage in casual sex; they prefer greater love, commitment and emotional closeness before having sex with romantic partners. Individuals who are more unrestricted sociosexually are more willing to have casual sex and are more comfortable engaging in sex without love, commitment or closeness."@en,
         "Socialne spolne oblike: Sociospolnost, včasih imenovana sociospolna usmerjenost, je posamezni različek v pripravljenosti za sodelovanje v spolni dejavnosti zunaj zavezane zveze. Posamezniki, ki so sociospolno bolj omejeni, so manj pripravljeni na sproščen spolni odnos; raje imajo več ljubezni, zavezanosti in čustvene bližine, preden se vključijo v spolne odnose s partnerji. Posamezniki, ki so sociospolno bolj neomejeni, pa so bolj pripravljeni na sproščen spolni odnos in se bolj udobno vključujejo v spolnost brez ljubezni, zavezanosti ali bližine."@sl .
@@ -2017,7 +2017,7 @@ ss:spolni_hormoni a owl:Class ;
         ss:vzburjenje ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Sex_hormone"^^xsd:string ;
     rdfs:subClassOf ss:fiziologija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q3140642> ;
     skos:altLabel "9.6."@sl ;
     skos:definition "Sex Hormones: Sex hormones, also known as sex steroids, are steroid hormones that interact with vertebrate steroid hormone receptors. They include androgens, estrogens, and progestogens. These hormones play essential roles in various aspects of sexual development and function. They have both slow genomic effects through nuclear receptors and fast nongenomic effects through membrane-associated receptors. While associated hormones like luteinizing hormone and follicle-stimulating hormone play major roles in the gonadotropin axis, they are not typically classified as sex hormones."@en,
         "Spolni hormoni: Spolni hormoni, znani tudi kot spolni steroidi, so steroidni hormoni, ki vplivajo na receptorje za steroidne hormone vretenčarjev. Vključujejo androgene, estrogene in progestogene. Ti hormoni igrajo bistveno vlogo pri različnih vidikih spolnega razvoja in delovanja. Imajo tako počasne genomske učinke prek jedrskih receptorjev kot hitre negenomske učinke prek membransko povezanih receptorjev. Medtem ko povezani hormoni, kot sta luteinizirajoči hormon in folikle stimulirajoči hormon, igrajo pomembne vloge v osi gonadotropinov, jih običajno ne uvrščamo med spolne hormone."@sl .
@@ -2102,16 +2102,16 @@ ss:spolni_tip a owl:Class ;
     rdfs:label "Sexual type"@en,
         "Spolni tip"@sl ;
     rdfs:subClassOf ss:spolnostna_identiteta ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q608> ;
     skos:altLabel "2.1"@sl ;
     skos:definition "Sexual type: a part of sexual identity that pertains to gender identity, sexual orientation, and romantic orientation."@en,
         "Spolni tip: del spolnostne identitete, ki se nanaša na spolno identiteto, spolno usmerjenost in romantično usmerjenost."@sl .
 
 ss:hepatitis_virusi a owl:Class ;
-    rdfs:label "HEpatitis"@en,
+    rdfs:label "Hepatitis"@en,
         "Hepatitis virusi"@sl ;
     rdfs:subClassOf ss:virusne ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q131742> ;
     skos:altLabel "1.1.3.6"@sl ;
     skos:definition "Hepatitis: an inflammation of the liver tissue. Some people or animals with hepatitis have no symptoms, whereas others develop yellow discoloration of the skin and whites of the eyes (jaundice), poor appetite, vomiting, tiredness, abdominal pain, and diarrhea. Hepatitis is acute if it resolves within six months, and chronic if it lasts longer than six months."@en,
         "Hepatitis: Hepatítis pomeni vnetje jetrnega tkiva. V nekaterih primerih poteka brezsimptomno, sicer pa se lahko kaže s slabostjo, bruhanjem, zmanjšanjem teka, drisko, utrujenostjo, vročino, bolečinami in napetostjo v trebuhu, zlatenico, povečanimi jetri in moteno jetrno funkcijo."@sl .
@@ -2158,7 +2158,7 @@ ss:spolna_nedotakljivost a owl:Class ;
     rdfs:label "Sexual Integrity"@en,
         "Spolna nedotakljivost"@sl ;
     rdfs:subClassOf rdf:object ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q60920373> ;
     skos:altLabel "5"@sl ;
     skos:definition "Sexual Integrity: Criminal offenses against sexual integrity are acts of sexual, physical, and psychological violence, and represent one of the most serious infringements on the victim's personal integrity."@en,
         "Spolna nedotakljivost: Kazniva dejanja zoper spolno nedotakljivost so dejanja spolnega, fizičnega in psihičnega nasilja in pomenijo za žrtve enega najhujših posegov v njihovo osebnostno celovitost."@sl .
@@ -2181,7 +2181,7 @@ ss:spolne_prakse a owl:Class ;
         ss:spolne_fantazije,
         ss:spolno_zdravje ;
     rdfs:subClassOf ss:spolno_vedenje ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q4620674> ;
     skos:altLabel "3.2"@sl ;
     skos:definition "Sexual practices: a collection of various behavioral patterns that people engage in to satisfy their sexual fantasies."@en,
         "Spolne prakse: nabor najrazličnejših vedenjskih vzorcev, ki jih ljudje izvajamo za zadovoljitev svojih spolnih fantazij."@sl .
@@ -2202,7 +2202,7 @@ ss:uzitek a owl:Class ;
         "Užitek"@sl ;
     ss:povezano_z ss:spolno_vedenje ;
     rdfs:subClassOf ss:fiziologija ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q208195> ;
     skos:altLabel "9.2"@sl ;
     skos:definition "Pleasure: sexual pleasure refers to experience that feels good, that involves the enjoyment of something in conection to sexual activity."@en,
         "Užitek: spolni užitek se nanaša na izkušnjo, ko se dobro počutimo. Vključuje uživanje nečesa v povezavi s spolno dejavnostjo."@sl .
@@ -2268,7 +2268,7 @@ ss:bakterijske a owl:Class ;
         "Bakterijske okužbe"@sl ;
     ss:zascita ss:kondom ;
     rdfs:subClassOf ss:spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q727028> ;
     skos:altLabel "1.1.2"@sl ;
     skos:definition "Bacterial infection: Pathogenic bacteria are bacteria that can cause disease. Most species of bacteria are harmless and are often beneficial but others can cause infectious diseases. The number of these pathogenic species in humans is estimated to be fewer than a hundred. By contrast, several thousand species are part of the gut flora present in the digestive tract."@en,
         "Bakterijska okužba: patogene bakterije so bakterije, ki lahko povzročijo bolezen. Ta članek se osredotoča na bakterije, ki so patogene za ljudi. Večina vrst bakterij je neškodljivih in pogosto koristnih, vendar druge lahko povzročijo nalezljive bolezni. Število teh patogenih vrst pri ljudeh se ocenjuje na manj kot sto. Nasprotno pa je več tisoč vrst del črevesne mikrobiote, prisotne v prebavnem traktu."@sl .
@@ -2277,7 +2277,7 @@ ss:druzne a owl:Class ;
     rdfs:label "Shared sexual practices"@en,
         "Družne spolne prakse"@sl ;
     rdfs:subClassOf ss:spolne_prakse ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q608> ;
     skos:altLabel "3.2.1"@sl ;
     skos:definition "Shared sexual practices: Shared sexual practices are practices that are carried out together with at least one other person."@en,
         "Družne spolne prakse: družne spolne prakse, so prakse, ki jih prakticiramo skupaj še vsaj z eno drugo osebo."@sl .
@@ -2313,7 +2313,7 @@ ss:zascita_pred_spo a owl:Class ;
     rdfs:isDefinedBy "https://www.tosemjaz.net/razisci/spolnost/zascita-naj-bo-zanesljiva/"^^xsd:string,
         "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/stis/prevention"^^xsd:string ;
     rdfs:subClassOf ss:spolno_zdravje ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q12198> ;
     skos:altLabel "1.3"@sl ;
     skos:definition "Safe sex is sexual activity using methods or contraceptive devices (such as condoms) to reduce the risk of transmitting or acquiring sexually transmitted infections (STIs), especially HIV. "Safe sex" is also sometimes referred to as safer sex or protected sex to indicate that some safe sex practices do not eliminate STI risks. It is also sometimes used colloquially to describe methods aimed at preventing pregnancy that may or may not also lower STI risks."@en,
         "Zaščita pred spolno prenosljivimi okužbami: Varni seks je spolna dejavnost, pri kateri se uporabljajo metode ali kontracepcijski pripomočki (kot so kondomi), da se zmanjša tveganje za prenos ali pridobitev spolno prenosljivih okužb (SPO), še posebej HIV. "Varni seks" se včasih imenuje tudi varnejši seks ali zaščiteni seks, da se pokaže, da nekatere prakse varnega seksa ne odpravijo tveganja za STO. Prav tako se včasih kolokvialno uporablja za opis metod, namenjenih preprečevanju nosečnosti, ki lahko ali pa tudi ne zmanjšajo tveganje za SPO."@sl .
@@ -2357,19 +2357,10 @@ ss:spolni_razvoj a owl:Class ;
         "Spolni razvoj"@sl ;
     ss:povezano_z ss:fiziologija ;
     rdfs:subClassOf rdf:object ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q131683> ;
     skos:altLabel "6"@sl ;
     skos:definition "Sexual development is one part of sexuality, and it begins much earlier in life than puberty. Infants and children may not think about sexuality in same way as adults, but they learn and interpret messages related to sexuality that will shape their future actions and attitudes."@en,
         "Spolni razvoj je en del spolnosti in se začne veliko prej v življenju kot puberteta. Dojenčki in otroci morda ne razmišljajo o spolnosti na enak način kot odrasli, vendar se učijo in razlagajo sporočila, povezana s spolnostjo, ki bodo oblikovala njihova prihodnja dejanja in stališča."@sl .
-
-rdf:object a owl:Class ;
-    rdfs:label "TODO"@en,
-        "22-rdf-syntax-ns#object"@sl ;
-    rdfs:subClassOf owl:Thing ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
-    skos:altLabel "22-rdf-syntax-ns#object"@sl ;
-    skos:definition "TODO"@en,
-        "TODO"@sl .
 
 ss:fiziologija a owl:Class ;
     rdfs:label "Sex differences in human physiology"@en,
