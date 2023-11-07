@@ -61,7 +61,8 @@ training_args = TrainingArguments(
     learning_rate=2e-4,
     per_device_train_batch_size=2,
     per_device_eval_batch_size=2,
-    num_train_epochs=5,
+    num_train_epochs=30,
+    save_steps=15000,
     weight_decay=0.01,
     evaluation_strategy="epoch",
     logging_strategy="epoch"
@@ -81,3 +82,7 @@ trainer = Trainer(
 trainer.train()
 
 trainer.save_model('models/ucni_nacrti_model')
+
+test_results = trainer.evaluate(tokenized_test)
+print('===============RESULTS=================')
+print(test_results)
