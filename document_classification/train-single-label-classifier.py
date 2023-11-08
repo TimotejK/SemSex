@@ -12,30 +12,35 @@ from transformers import TrainingArguments, Trainer
 import evaluate
 import numpy as np
 
-from common import split_data
+import dataset_preparation.parse_classification_file
 from document_classification.baseline_classifier import compute_baseline_score
 
-data_path = "ucni_nacrti_oznaceno.csv"
 text_column_name = "text"
 label_column_name = "label"
 
 # model_name = "distilbert-base-uncased"
 model_name = "EMBEDDIA/sloberta"
 test_size = 0.2
-num_labels = 2
 
-df = pd.read_csv(data_path)
+df = dataset_preparation.parse_classification_file.prepare_dataframe()
+
+print("==============BASELINE==============")
+print(compute_baseline_score(df))
+print("====================================")
+
+# # undersample
+# nMin = df.groupby('label').count().min()['text']
+# df = df.groupby('label').apply(lambda x: x.sample(n=min(nMin, len(x))))
+# df = df.sample(frac=1, ignore_index=True)
 
 le = preprocessing.LabelEncoder()
 le.fit(df[label_column_name].tolist())
 df['label'] = le.transform(df[label_column_name].tolist())
 number_of_classes = len(le.classes_)
 
-df_train, df_val, df_test = split_data(df, oversample=True, label_name='label', split_by_documents=False)
-# df_train, df_test = train_test_split(df, test_size=test_size)
+df_train, df_test = train_test_split(df, test_size=test_size)
 
 train_dataset = Dataset.from_pandas(df_train)
-val_dataset = Dataset.from_pandas(df_val)
 test_dataset = Dataset.from_pandas(df_test)
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -43,7 +48,6 @@ def preprocess_function(examples):
     return tokenizer(examples[text_column_name], truncation=True)
 
 tokenized_train = train_dataset.map(preprocess_function, batched=True)
-tokenized_val = val_dataset.map(preprocess_function, batched=True)
 tokenized_test = test_dataset.map(preprocess_function, batched=True)
 
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=number_of_classes)
@@ -61,33 +65,33 @@ training_args = TrainingArguments(
     learning_rate=2e-4,
     per_device_train_batch_size=2,
     per_device_eval_batch_size=2,
-    num_train_epochs=5,
-    save_steps=15000,
+    num_train_epochs=100,
+    save_steps=50,
     weight_decay=0.01,
     evaluation_strategy="epoch",
-    logging_strategy="epoch",
-    save_strategy="no"
+    logging_strategy="epoch"
 )
 
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=tokenized_train,
-    eval_dataset=tokenized_val,
+    eval_dataset=tokenized_test,
     tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics
 
 )
 
-print("==============BASELINE==============")
-print(compute_baseline_score(df_test))
-print("====================================")
-
 trainer.train()
 
-trainer.save_model('models/ucni_nacrti_model')
+trainer.save_model('models/single-label-classifier')
 
 test_results = trainer.evaluate(tokenized_test)
-print('===============RESULTS=================')
+print("===============RESULTS==============")
 print(test_results)
+print("====================================")
+print()
+print("==============BASELINE==============")
+print(compute_baseline_score(df))
+print("====================================")

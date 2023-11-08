@@ -1,5 +1,17 @@
+import pandas as pd
 
-if __name__ == '__main__':
+# mode = random | double
+def convert_to_single_label_classification(samples, mode='random'):
+    result = []
+    for text, labels in samples:
+        if mode == 'random':
+            result.append([text, labels[0]])
+        else:
+            for label in labels:
+                result.append([text, label])
+    return pd.DataFrame(result, columns=['text', 'label'])
+
+def prepare_dataframe():
     with open('klasifikacija_surovo.txt', 'r') as file:
         lines = file.readlines()
 
@@ -17,4 +29,8 @@ if __name__ == '__main__':
             samples.append((description.replace('•', '').strip(), classes))
             description = None
 
-    print(samples)
+    dataset = convert_to_single_label_classification(samples)
+    return dataset
+
+if __name__ == '__main__':
+    prepare_dataframe().to_csv('manually_annotated.csv')
