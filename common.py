@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 import threading
-def split_data(df, oversample=False, label_name='class', train_size=0.6, val_size=0.2, split_by_documents=True):
+def split_data(df, oversample=False, undersample=False, label_name='class', train_size=0.6, val_size=0.2, split_by_documents=True):
     groups = df.groupby(label_name)
     number_of_groups = 3
     number_of_relations = len(groups)
@@ -38,6 +38,12 @@ def split_data(df, oversample=False, label_name='class', train_size=0.6, val_siz
         for i in range(number_of_groups):
             max_class_count = final_dataframes[i][label_name].value_counts().max()
             final_dataframes[i] = final_dataframes[i].groupby(label_name).apply(lambda x: x.sample(max_class_count, replace=True)).reset_index(
+                drop=True)
+    # undersampling
+    if undersample:
+        for i in range(number_of_groups):
+            max_class_count = final_dataframes[i][label_name].value_counts().min()
+            final_dataframes[i] = final_dataframes[i].groupby(label_name).apply(lambda x: x.sample(max_class_count)).reset_index(
                 drop=True)
 
     # shuffle rows
