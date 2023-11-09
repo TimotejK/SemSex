@@ -211,7 +211,7 @@ ss:abstieneca a owl:Class ;
     skos:definition "Sexual Abstinence: The practice of refraining from some or all aspects of sexual activity for various reasons, including medical, moral, religious, or social motivations. It can be voluntary, involuntary, or legally mandated."@en,
         "Spolna abstinenca: praksa vzdržanja nekaterih ali vseh vidikov spolne dejavnosti iz različnih razlogov, vključno z zdravstvenimi, moralnimi, verskimi ali družbenimi. Lahko je prostovoljna, neprostovoljna ali zakonsko določena."@sl .
 
-ss:ameba-entamoeba_histolytica a owl:Class ; TODO
+ss:ameba-entamoeba_histolytica a owl:Class ;
     rdfs:label "Entamoeba histolytica"@en,
         "Entamoeba histolytica"@sl ;
     schemaorg:isSimilarTo ss:higiena ;
@@ -560,7 +560,7 @@ ss:kastracija a owl:Class ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Castrato"^^xsd:string,
         "https://sl.wikipedia.org/wiki/Kastrat"^^xsd:string ;
     rdfs:subClassOf ss:odstranitev_penisa ;
-    owl:sameAs <http://wikidata.org/entity/TODO> ;
+    owl:sameAs <http://wikidata.org/entity/Q58929> ;
     skos:altLabel "5.5.1"@sl ;
     skos:definition "Castration: Castration involves the removal or deactivation of the testicles in males, leading to sterilization and a reduction in hormone production, such as testosterone. It can be performed surgically or chemically."@en,
         "Kastracija: Kastracija vključuje odstranitev ali deaktivacijo testisov pri samcih oz. moških, kar vodi do sterilizacije in zmanjšanja proizvodnje hormonov, kot je testosteron. Lahko se izvaja kirurško ali kemično."@sl .
