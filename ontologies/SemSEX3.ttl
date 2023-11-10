@@ -39,8 +39,7 @@ ss:TimotejKnez
 
 ss:TimPrezelj
     a foaf:Person ;
-    foaf:name "Tim Prezelj"@en ;
-    foaf:name "Tim Prezelj"@sl ;
+    foaf:name "Tim Prezelj" ;
     schemaorg:affiliation [
     	foaf:homepage <https://www.pef.uni-lj.si> ;
     	foaf:name "Univerza v Ljubljani, Pedagoška fakulteta" ;

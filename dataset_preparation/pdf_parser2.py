@@ -49,12 +49,26 @@ def get_non_annotated_text(page):
     sections = list(sections)
     return sections
 
+def filter_negative_examples(negative, positive):
+    new_neg = []
+    for neg in negative:
+        include = True
+        for p in positive:
+            if p in neg:
+                include = False
+        if include:
+            new_neg.append(neg)
+        else:
+            print("izključeno")
+    return new_neg
+
 def generate_dataset(docs):
     dataset = []
     for doc in docs:
         for page in doc:
             neg = get_non_annotated_text(page)
             pos = get_highlights(page)
+            neg = filter_negative_examples(neg, pos)
             for p in pos:
                 dataset.append([p, True])
             for n in neg:
