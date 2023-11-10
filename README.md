@@ -11,11 +11,12 @@ This repository contains an ontology related to sexual education, represented in
 │   └── 📂 docs
 ├── 📂 Concept-Detection
 │   ├── 📂 Curriculum documents
-|   |   ├──
-│   ├── 📄 model_2.h5
-│   └── 📄 model_3.h5
-├── 📄 README.md
-└── 📄 LICENSE
+│   ├── 📂 dataset_preparation
+│   ├── 📂 Classifiers
+│   ├── 📄 common.py
+│   ├── 📄 README.md
+│   └── 📄 requirements.txt
+└── 📄 README.md
 ```
 
 ### 1. Ontology
@@ -30,9 +31,12 @@ The ontology is stored in the "Ontology" folder, which contains the following:
 
 The "Concept-Detection" folder contains machine learning models for detecting concepts defined in the ontology. Each model is stored as an individual file:
 
-- **model_1.h5**
-- **model_2.h5**
-- **model_3.h5**
+- **Curriculum documents**: Contains raw documents with description of curriculums. The documents are annotated with concepts from the ontology.
+- **dataset_preparation**: Contains python code for converting the raw pdf documents into pandas dataframes that can be used for training the classifiers. 
+- **Classifiers**: Contains classifiers written in python for automatically detecting concepts from sexual education.
+- **common.py**: A helper file containing functions useful across other documents
+- **README.md**: Instructions for running the classifiers and the description of their results.
+- **requirements.txt**: A list of required python packages.
 
 Feel free to explore and use these models for concept detection based on the sexual education ontology.
 
@@ -40,22 +44,8 @@ Feel free to explore and use these models for concept detection based on the sex
 
 This file serves as an introduction and guide to the repository, outlining its structure, content, and purpose.
 
-### 4. LICENSE
-
-The license file contains information about the permissions and restrictions associated with using the content in this repository.
-
-## Usage
-
-1. Explore the "Ontology" folder for the sexual education ontology and its documentation.
-
-2. Check the "Concept-Detection" folder for machine learning models that can be utilized to detect concepts defined in the ontology.
-
-3. Refer to the documentation for instructions on how to use the ontology and integrate the provided machine learning models into your projects.
-
 ## License
 
 This repository is licensed under the [LICENSE](LICENSE) - please review it for details on how you can use and share the content.
 
 Feel free to contribute, report issues, or suggest improvements by creating a pull request.
-
-Happy learning and exploring sexual education concepts responsibly!
