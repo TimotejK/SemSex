@@ -1,11 +1,13 @@
 @prefix ss: <http://onto.clarin.si/semsex#> .
+@prefix schemaorg: <https://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix schemaorg: <https://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://onto.clarin.si/semsex>
     a owl:Ontology ;
@@ -18,7 +20,7 @@
     rdfs:label "Shema učnih načrtov za spolno vzgojo"@sl ;
     rdfs:label "Schema for storing concepts about sex education curriculums"@en ;
     schemaorg:creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;
-    schemaorg:publisher ss:Clarin ;
+    schemaorg:publisher ss:Clarin .
 
 ss:Clarin
     a foaf:Organization ;
@@ -31,9 +33,9 @@ ss:TimotejKnez
     a foaf:Person ;
     foaf:name "Timotej Knez" ;
     schemaorg:affiliation [
-    	foaf:homepage <https://www.fri.uni-lj.si> ;
-    	foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
-    ] ;
+        foaf:homepage <https://www.fri.uni-lj.si> ;
+        foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
+    ];
     foaf:mbox "timotej.knez@fri.uni-lj.si" ;
     rdfs:seeAlso <http://orcid.org/0000-0001-7506-5739> .
 
@@ -41,9 +43,9 @@ ss:TimPrezelj
     a foaf:Person ;
     foaf:name "Tim Prezelj" ;
     schemaorg:affiliation [
-    	foaf:homepage <https://www.pef.uni-lj.si> ;
-    	foaf:name "Univerza v Ljubljani, Pedagoška fakulteta" ;
-    ] ;
+        foaf:homepage <https://www.pef.uni-lj.si> ;
+        foaf:name "Univerza v Ljubljani, Pedagoška fakulteta" ;
+    ];
     foaf:mbox "tim.prezelj@pef.uni-lj.si" ;
     rdfs:seeAlso <http://orcid.org/0000-0002-2412-2737> .
 
@@ -51,9 +53,9 @@ ss:SlavkoZitnik
     a foaf:Person ;
     foaf:name "Slavko Žitnik" ;
     schemaorg:affiliation [
-    	foaf:homepage <https://www.fri.uni-lj.si> ;
-    	foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
-    ] ;
+        foaf:homepage <https://www.fri.uni-lj.si> ;
+        foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
+    ];
     foaf:mbox "slavko.zitnik@fri.uni-lj.si" ;
     rdfs:seeAlso <http://orcid.org/0000-0003-3452-1106> .
 
@@ -62,14 +64,13 @@ ss:SlavkoZitnik
 # Data properties
 ##############################################
 
-
 rdf:type a owl:DatatypeProperty ;
     rdfs:label "type"@en ;
     rdfs:label "tip"@sl ;
     rdfs:domain owl:Thing ;
     rdfs:range xsd:string ;
-    skos:definition "it characterizes one of the or. subgroup"@en,
-        "označuje enega izmed oz. podskupino"@sl .
+    skos:definition "it characterizes one of the or a subgroup"@en,
+        "označuje enega izmed oz podskupino"@sl .
 
 rdfs:isDefinedBy a owl:DatatypeProperty ;
     rdfs:label "described at URL"@en ;
@@ -118,6 +119,7 @@ skos:definition a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Explaining the concept."@en,
         "Razlaga pojma."@sl .
+
 
 ##############################################
 # Object properties
@@ -194,6 +196,8 @@ ss:zascita a owl:ObjectProperty ;
     rdfs:range owl:Thing ;
     skos:definition "Means that something offers protection against something"@en,
         "Pomeni, da nekaj nudi zaščito proti nečemu"@sl .
+
+
 
 ##############################################
 # Classes
@@ -288,6 +292,7 @@ ss:dolocitev_bioloskega_spola a owl:Class ;
     skos:definition "Sex-Determination System: A biological system determining the development of sexual characteristics in organisms, such as male and female sexes, hermaphroditism, or sex determination by environmental factors or genetics."@en,
         "Sistem določanja spola: biološki sistem, ki določa razvoj spolnih značilnosti v organizmih, kot sta moški in ženski spol, hermafroditizem ali določanje spola z okoljskimi dejavniki ali genetiko."@sl .
 
+
 ss:drag a owl:Class ;
     rdfs:label "Drag (entertainment)"@en,
         "Drag"@sl ;
@@ -328,8 +333,9 @@ ss:femicid a owl:Class ;
     rdfs:subClassOf ss:spolna_nedotakljivost ;
     owl:sameAs <http://wikidata.org/entity/Q1342425> ;
     skos:altLabel "5.4"@sl ;
-    skos:definition "Femicide: Femicide or feminicide is a hate crime which is broadly defined as "the intentional killing of women or girls because they are female", with definitions varying based on cultural context."@en,
-        "Femicid: Femicid je zločin, ki je opredeljen kot "nameren umor ženske ali dekleta zaradi njihovega spola", pri čemer se definicije razlikujejo glede na kulturni kontekst."@sl .
+    skos:definition "Femicide: Femicide or feminicide is a hate crime which is broadly defined as 'the intentional killing of women or girls because they are female', with definitions varying based on cultural context."@en,
+        "Femicid: Femicid je zločin, ki je opredeljen kot 'nameren umor ženske ali dekleta zaradi njihovega spola', pri čemer se definicije razlikujejo glede na kulturni kontekst."@sl .
+
 
 ss:fetis a owl:Class ;
     rdfs:label "Fetishism"@en,
@@ -1277,7 +1283,7 @@ ss:tribadizem a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q376032> ;
     skos:altLabel "3.2.1.4"@sl ;
     skos:definition "Tribadism: Tribadism or tribbing, commonly known by its scissoring position, is a lesbian sexual practice in which a woman rubs her vulva against her partner's body for sexual stimulation, especially for stimulation of the clitoris."@en,
-        "Tribadizem: Tribadizem ali tribbing, pogosto znan po svojem položaju "škarij", je lezbična spolna praksa, pri kateri ženska drgne svojo vulvo ob partnerjevo_kino telo za spolno stimulacijo, še posebej za stimulacijo klitorisa."@sl .
+        "Tribadizem: Tribadizem ali tribbing, pogosto znan po svojem položaju 'škarij', je lezbična spolna praksa, pri kateri ženska drgne svojo vulvo ob partnerjevo_kino telo za spolno stimulacijo, še posebej za stimulacijo klitorisa."@sl .
 
 ss:trihomonas-trichomonas_vaginalis a owl:Class ;
     rdfs:label "Trichomoniasis"@en,
@@ -1918,7 +1924,7 @@ ss:sramne_ustnice a owl:Class ;
     rdfs:subClassOf ss:kontracepcija ;
     owl:sameAs <http://wikidata.org/entity/Q71898414> ;
     skos:altLabel "1.2.5"@sl ;
-    skos:definition "Natural family planning (NFP) comprises the family planning methods approved by the Catholic Church and some Protestant denominations for both achieving and postponing or avoiding pregnancy. In accordance with the Church's teachings regarding sexual behavior, NFP excludes the use of other methods of birth control, which it refers to as "artificial contraception"."@en,
+    skos:definition "Natural family planning (NFP) comprises the family planning methods approved by the Catholic Church and some Protestant denominations for both achieving and postponing or avoiding pregnancy. In accordance with the Church's teachings regarding sexual behavior, NFP excludes the use of other methods of birth control, which it refers to as 'artificial contraception'."@en,
         "Naravno načrtovanje družine (NND) se navezuje na metode načrtovanja družine, ki temeljijo na opazovanju telesnih znakov za določanje plodnih in neplodnih dni menstruacijskega ciklusa, ne da bi posegale v naravno telesno dogajanje. Osnovane so na opazovanju znakov, kot so učinki hormonov na bazalno telesno temperaturo in spremembe sluzi ter položaju materničnega vratu. Učinkovitost je zelo raznolika, odvisno od uporabljene metode, ustrezne poučitve in skrbnosti pri upoštevanju postopka."@sl .
 
 ss:virtualne a owl:Class ;
@@ -1929,7 +1935,7 @@ ss:virtualne a owl:Class ;
     owl:sameAs <http://wikidata.org/entity/Q2607593> ;
     skos:altLabel "3.2.3"@sl ;
     skos:definition "Virtual sex: Virtual sex is sexual activity where two or more people (or one person and a virtual character) gather together via some form of communications equipment to arouse each other, often by the means of transmitting sexually explicit messages. Virtual sex describes the phenomenon, no matter the communications equipment used."@en,
-        "Virtualni seks je spolna dejavnost, pri kateri se dve ali več oseb (ali ena oseba in virtualni lik) zberejo prek neke vrste komunikacijske opreme, da bi vzbudili drug drugega, pogosto z oddajanjem spolno eksplicitnih sporočil. Izraz "virtualni seks" opisuje pojav, ne glede na uporabljeno komunikacijsko opremo."@sl .
+        "Virtualni seks je spolna dejavnost, pri kateri se dve ali več oseb (ali ena oseba in virtualni lik) zberejo prek neke vrste komunikacijske opreme, da bi vzbudili drug drugega, pogosto z oddajanjem spolno eksplicitnih sporočil. Izraz 'virtualni seks' opisuje pojav, ne glede na uporabljeno komunikacijsko opremo."@sl .
 
 ss:homoseksualna a owl:Class ;
     rdfs:label "Homosexuality"@en,
@@ -2144,7 +2150,7 @@ ss:razmnozevanje a owl:Class ;
         "Razmnoževanje"@sl ;
     schemaorg:isVariantOf ss:rojstvo ;
     ss:povezano_z ss:coitus,
-        ss:moska_ejakulacija,Hepatítis pomeni vnetje jetrnega tkiva.[5][3][6] V nekaterih primerih poteka brezsimptomno, sicer pa se lahko kaže s slabostjo, bruhanjem, zmanjšanjem teka, drisko, utrujenostjo, vročino, bolečinami in napetostjo v trebuhu, zlatenico, povečanimi jetri in moteno jetrno funkcijo.
+        ss:moska_ejakulacija,
         ss:ovulacija ;
     rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Human_reproduction"^^xsd:string ;
     rdfs:subClassOf ss:zrelo_obdobje ;
@@ -2314,8 +2320,8 @@ ss:zascita_pred_spo a owl:Class ;
     rdfs:subClassOf ss:spolno_zdravje ;
     owl:sameAs <http://wikidata.org/entity/Q12198> ;
     skos:altLabel "1.3"@sl ;
-    skos:definition "Safe sex is sexual activity using methods or contraceptive devices (such as condoms) to reduce the risk of transmitting or acquiring sexually transmitted infections (STIs), especially HIV. "Safe sex" is also sometimes referred to as safer sex or protected sex to indicate that some safe sex practices do not eliminate STI risks. It is also sometimes used colloquially to describe methods aimed at preventing pregnancy that may or may not also lower STI risks."@en,
-        "Zaščita pred spolno prenosljivimi okužbami: Varni seks je spolna dejavnost, pri kateri se uporabljajo metode ali kontracepcijski pripomočki (kot so kondomi), da se zmanjša tveganje za prenos ali pridobitev spolno prenosljivih okužb (SPO), še posebej HIV. "Varni seks" se včasih imenuje tudi varnejši seks ali zaščiteni seks, da se pokaže, da nekatere prakse varnega seksa ne odpravijo tveganja za STO. Prav tako se včasih kolokvialno uporablja za opis metod, namenjenih preprečevanju nosečnosti, ki lahko ali pa tudi ne zmanjšajo tveganje za SPO."@sl .
+    skos:definition "Safe sex is sexual activity using methods or contraceptive devices (such as condoms) to reduce the risk of transmitting or acquiring sexually transmitted infections (STIs), especially HIV. 'Safe sex' is also sometimes referred to as safer sex or protected sex to indicate that some safe sex practices do not eliminate STI risks. It is also sometimes used colloquially to describe methods aimed at preventing pregnancy that may or may not also lower STI risks."@en,
+        "Zaščita pred spolno prenosljivimi okužbami: Varni seks je spolna dejavnost, pri kateri se uporabljajo metode ali kontracepcijski pripomočki (kot so kondomi), da se zmanjša tveganje za prenos ali pridobitev spolno prenosljivih okužb (SPO), še posebej HIV. 'Varni seks' se včasih imenuje tudi varnejši seks ali zaščiteni seks, da se pokaže, da nekatere prakse varnega seksa ne odpravijo tveganja za STO. Prav tako se včasih kolokvialno uporablja za opis metod, namenjenih preprečevanju nosečnosti, ki lahko ali pa tudi ne zmanjšajo tveganje za SPO."@sl .
 
 ss:moski a owl:Class ;
     rdfs:label "Male"@en,
