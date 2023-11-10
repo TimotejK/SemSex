@@ -10,9 +10,9 @@ The SemSEX ontology is designed to represent various concepts related to sexual 
 
 ## Ontology Visualization
 
-To better understand the structure of the SemSEX ontology, you can refer to the ontology graph saved as an image. View the graph at `docs/SemSEX ontology.png` for a visual representation of how different concepts in sexual education are connected.
+To better understand the structure of the SemSEX ontology, you can refer to the ontology graph saved as an image. View the graph at `docs/SemSEX ontology.svg` for a visual representation of how different concepts in sexual education are connected.
 
-![SemSEX Ontology Graph](docs/SemSEX%20ontology.png)
+![SemSEX Ontology Graph](docs/SemSEX%20ontology.svg)
 
 ## Repository Structure
 
