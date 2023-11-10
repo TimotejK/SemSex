@@ -1,0 +1,107 @@
+<http://purl.obolibrary.org/obo/TEMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#cc> "license <http://creativecommons.org/licenses/by/4.0/> ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#dct> "created \"2023-10-20\"^^xsd:date ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "homepage <https://www.clarin.si> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "mbox \"slavko.zitnik@fri.uni-lj.si\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "mbox \"tim.prezelj@pef.uni-lj.si\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "mbox \"timotej.knez@fri.uni-lj.si\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "name \"Slavko Žitnik\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "name \"Slovene national consortium of the European research infrastructure CLARIN\"@en ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "name \"Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN\"@sl ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "name \"Tim Prezelj\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#foaf> "name \"Timotej Knez\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#owl> "versionIRI <http://onto.clarin.si/semsex/0.1.0#> ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#owl> "versionInfo \"0.1.0\"@en ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "label \"Clarin.si\" ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "label \"Schema for storing concepts about sex education curriculums\"@en ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "label \"Shema učnih načrtov za spolno vzgojo\"@sl ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "seeAlso <http://orcid.org/0000-0001-7506-5739> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "seeAlso <http://orcid.org/0000-0002-2412-2737> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#rdfs> "seeAlso <http://orcid.org/0000-0003-3452-1106> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#schemaorg> "creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#schemaorg> "publisher ss:Clarin ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#ss> "Clarin" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#ss> "SlavkoZitnik" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#ss> "TimPrezelj" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#ss> "TimotejKnez" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#vann> "preferredNamespacePrefix \"ss\";" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#vann> "preferredNamespaceUri \"http://onto.clarin.si/semsex#\";" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#%3Chttp> "//onto.clarin.si/semsex>" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20owl> "<http://www.w3.org/2002/07/owl#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20rdf> "<http://www.w3.org/1999/02/22-rdf-syntax-ns#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20rdfs> "<http://www.w3.org/2000/01/rdf-schema#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20schemaorg> "<https://schema.org/> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20skos> "<http://www.w3.org/2004/02/skos/core#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20ss> "<http://onto.clarin.si/semsex#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20vann> "<http://purl.org/vocab/vann/> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#@prefix%20xsd> "<http://www.w3.org/2001/XMLSchema#> ." .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#a%20foaf> "Organization ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#a%20foaf> "Person ;" .
+<http://purl.obolibrary.org/obo/TEMP> <http://www.geneontology.org/formats/oboInOwl#a%20owl> "Ontology ;" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.geneontology.org/formats/oboInOwl#cc
+<http://www.geneontology.org/formats/oboInOwl#cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#dct
+<http://www.geneontology.org/formats/oboInOwl#dct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#foaf
+<http://www.geneontology.org/formats/oboInOwl#foaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#owl
+<http://www.geneontology.org/formats/oboInOwl#owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#rdfs
+<http://www.geneontology.org/formats/oboInOwl#rdfs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#schemaorg
+<http://www.geneontology.org/formats/oboInOwl#schemaorg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#ss
+<http://www.geneontology.org/formats/oboInOwl#ss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#vann
+<http://www.geneontology.org/formats/oboInOwl#vann> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#<http
+<http://www.geneontology.org/formats/oboInOwl#%3Chttp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix owl
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix rdf
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix rdfs
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20rdfs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix schemaorg
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20schemaorg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix skos
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20skos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix ss
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20ss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix vann
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20vann> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#@prefix xsd
+<http://www.geneontology.org/formats/oboInOwl#@prefix%20xsd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#a foaf
+<http://www.geneontology.org/formats/oboInOwl#a%20foaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#a owl
+<http://www.geneontology.org/formats/oboInOwl#a%20owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

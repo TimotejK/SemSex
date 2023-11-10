@@ -1,0 +1,225 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://purl.obolibrary.org/obo/TEMP",
+    "other" : {
+      "ss" : [ {
+        "identifier" : "ss",
+        "language" : "undefined",
+        "value" : "TimotejKnez",
+        "type" : "label"
+      }, {
+        "identifier" : "ss",
+        "language" : "undefined",
+        "value" : "SlavkoZitnik",
+        "type" : "label"
+      }, {
+        "identifier" : "ss",
+        "language" : "undefined",
+        "value" : "Clarin",
+        "type" : "label"
+      }, {
+        "identifier" : "ss",
+        "language" : "undefined",
+        "value" : "TimPrezelj",
+        "type" : "label"
+      } ],
+      "cc" : [ {
+        "identifier" : "cc",
+        "language" : "undefined",
+        "value" : "license <http://creativecommons.org/licenses/by/4.0/> ;",
+        "type" : "label"
+      } ],
+      "schemaorg" : [ {
+        "identifier" : "schemaorg",
+        "language" : "undefined",
+        "value" : "publisher ss:Clarin ;",
+        "type" : "label"
+      }, {
+        "identifier" : "schemaorg",
+        "language" : "undefined",
+        "value" : "creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;",
+        "type" : "label"
+      } ],
+      "@prefix rdfs" : [ {
+        "identifier" : "@prefix rdfs",
+        "language" : "undefined",
+        "value" : "<http://www.w3.org/2000/01/rdf-schema#> .",
+        "type" : "label"
+      } ],
+      "a owl" : [ {
+        "identifier" : "a owl",
+        "language" : "undefined",
+        "value" : "Ontology ;",
+        "type" : "label"
+      } ],
+      "@prefix owl" : [ {
+        "identifier" : "@prefix owl",
+        "language" : "undefined",
+        "value" : "<http://www.w3.org/2002/07/owl#> .",
+        "type" : "label"
+      } ],
+      "owl" : [ {
+        "identifier" : "owl",
+        "language" : "undefined",
+        "value" : "versionInfo \"0.1.0\"@en ;",
+        "type" : "label"
+      }, {
+        "identifier" : "owl",
+        "language" : "undefined",
+        "value" : "versionIRI <http://onto.clarin.si/semsex/0.1.0#> ;",
+        "type" : "label"
+      } ],
+      "@prefix schemaorg" : [ {
+        "identifier" : "@prefix schemaorg",
+        "language" : "undefined",
+        "value" : "<https://schema.org/> .",
+        "type" : "label"
+      } ],
+      "@prefix vann" : [ {
+        "identifier" : "@prefix vann",
+        "language" : "undefined",
+        "value" : "<http://purl.org/vocab/vann/> .",
+        "type" : "label"
+      } ],
+      "@prefix xsd" : [ {
+        "identifier" : "@prefix xsd",
+        "language" : "undefined",
+        "value" : "<http://www.w3.org/2001/XMLSchema#> .",
+        "type" : "label"
+      } ],
+      "rdfs" : [ {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "label \"Shema učnih načrtov za spolno vzgojo\"@sl ;",
+        "type" : "label"
+      }, {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "label \"Schema for storing concepts about sex education curriculums\"@en ;",
+        "type" : "label"
+      }, {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "label \"Clarin.si\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "seeAlso <http://orcid.org/0000-0003-3452-1106> .",
+        "type" : "label"
+      }, {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "seeAlso <http://orcid.org/0000-0001-7506-5739> .",
+        "type" : "label"
+      }, {
+        "identifier" : "rdfs",
+        "language" : "undefined",
+        "value" : "seeAlso <http://orcid.org/0000-0002-2412-2737> .",
+        "type" : "label"
+      } ],
+      "@prefix rdf" : [ {
+        "identifier" : "@prefix rdf",
+        "language" : "undefined",
+        "value" : "<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+        "type" : "label"
+      } ],
+      "dct" : [ {
+        "identifier" : "dct",
+        "language" : "undefined",
+        "value" : "created \"2023-10-20\"^^xsd:date ;",
+        "type" : "label"
+      } ],
+      "a foaf" : [ {
+        "identifier" : "a foaf",
+        "language" : "undefined",
+        "value" : "Organization ;",
+        "type" : "label"
+      }, {
+        "identifier" : "a foaf",
+        "language" : "undefined",
+        "value" : "Person ;",
+        "type" : "label"
+      } ],
+      "<http" : [ {
+        "identifier" : "<http",
+        "language" : "undefined",
+        "value" : "//onto.clarin.si/semsex>",
+        "type" : "label"
+      } ],
+      "@prefix skos" : [ {
+        "identifier" : "@prefix skos",
+        "language" : "undefined",
+        "value" : "<http://www.w3.org/2004/02/skos/core#> .",
+        "type" : "label"
+      } ],
+      "@prefix ss" : [ {
+        "identifier" : "@prefix ss",
+        "language" : "undefined",
+        "value" : "<http://onto.clarin.si/semsex#> .",
+        "type" : "label"
+      } ],
+      "vann" : [ {
+        "identifier" : "vann",
+        "language" : "undefined",
+        "value" : "preferredNamespacePrefix \"ss\";",
+        "type" : "label"
+      }, {
+        "identifier" : "vann",
+        "language" : "undefined",
+        "value" : "preferredNamespaceUri \"http://onto.clarin.si/semsex#\";",
+        "type" : "label"
+      } ],
+      "foaf" : [ {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "name \"Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN\"@sl ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "name \"Timotej Knez\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "mbox \"slavko.zitnik@fri.uni-lj.si\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "mbox \"timotej.knez@fri.uni-lj.si\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "homepage <https://www.clarin.si> .",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "mbox \"tim.prezelj@pef.uni-lj.si\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "name \"Slavko Žitnik\" ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "name \"Slovene national consortium of the European research infrastructure CLARIN\"@en ;",
+        "type" : "label"
+      }, {
+        "identifier" : "foaf",
+        "language" : "undefined",
+        "value" : "name \"Tim Prezelj\" ;",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ]
+}

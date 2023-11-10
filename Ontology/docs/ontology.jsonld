@@ -1,0 +1,158 @@
+[ {
+  "@id" : "http://purl.obolibrary.org/obo/TEMP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.geneontology.org/formats/oboInOwl#<http" : [ {
+    "@value" : "//onto.clarin.si/semsex>"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix owl" : [ {
+    "@value" : "<http://www.w3.org/2002/07/owl#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix rdf" : [ {
+    "@value" : "<http://www.w3.org/1999/02/22-rdf-syntax-ns#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix rdfs" : [ {
+    "@value" : "<http://www.w3.org/2000/01/rdf-schema#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix schemaorg" : [ {
+    "@value" : "<https://schema.org/> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix skos" : [ {
+    "@value" : "<http://www.w3.org/2004/02/skos/core#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix ss" : [ {
+    "@value" : "<http://onto.clarin.si/semsex#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix vann" : [ {
+    "@value" : "<http://purl.org/vocab/vann/> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#@prefix xsd" : [ {
+    "@value" : "<http://www.w3.org/2001/XMLSchema#> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#a foaf" : [ {
+    "@value" : "Organization ;"
+  }, {
+    "@value" : "Person ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#a owl" : [ {
+    "@value" : "Ontology ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#cc" : [ {
+    "@value" : "license <http://creativecommons.org/licenses/by/4.0/> ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#dct" : [ {
+    "@value" : "created \"2023-10-20\"^^xsd:date ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#foaf" : [ {
+    "@value" : "homepage <https://www.clarin.si> ."
+  }, {
+    "@value" : "mbox \"slavko.zitnik@fri.uni-lj.si\" ;"
+  }, {
+    "@value" : "mbox \"tim.prezelj@pef.uni-lj.si\" ;"
+  }, {
+    "@value" : "mbox \"timotej.knez@fri.uni-lj.si\" ;"
+  }, {
+    "@value" : "name \"Slavko Žitnik\" ;"
+  }, {
+    "@value" : "name \"Slovene national consortium of the European research infrastructure CLARIN\"@en ;"
+  }, {
+    "@value" : "name \"Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN\"@sl ;"
+  }, {
+    "@value" : "name \"Tim Prezelj\" ;"
+  }, {
+    "@value" : "name \"Timotej Knez\" ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#owl" : [ {
+    "@value" : "versionIRI <http://onto.clarin.si/semsex/0.1.0#> ;"
+  }, {
+    "@value" : "versionInfo \"0.1.0\"@en ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#rdfs" : [ {
+    "@value" : "label \"Clarin.si\" ;"
+  }, {
+    "@value" : "label \"Schema for storing concepts about sex education curriculums\"@en ;"
+  }, {
+    "@value" : "label \"Shema učnih načrtov za spolno vzgojo\"@sl ;"
+  }, {
+    "@value" : "seeAlso <http://orcid.org/0000-0001-7506-5739> ."
+  }, {
+    "@value" : "seeAlso <http://orcid.org/0000-0002-2412-2737> ."
+  }, {
+    "@value" : "seeAlso <http://orcid.org/0000-0003-3452-1106> ."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#schemaorg" : [ {
+    "@value" : "creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;"
+  }, {
+    "@value" : "publisher ss:Clarin ;"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#ss" : [ {
+    "@value" : "Clarin"
+  }, {
+    "@value" : "SlavkoZitnik"
+  }, {
+    "@value" : "TimPrezelj"
+  }, {
+    "@value" : "TimotejKnez"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#vann" : [ {
+    "@value" : "preferredNamespacePrefix \"ss\";"
+  }, {
+    "@value" : "preferredNamespaceUri \"http://onto.clarin.si/semsex#\";"
+  } ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#<http",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix rdf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix rdfs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix schemaorg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix skos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix ss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix vann",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#@prefix xsd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#a foaf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#a owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#dct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#foaf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#rdfs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#schemaorg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#ss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#vann",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
