@@ -2,6 +2,13 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<http://onto.clarin.si/semsex/0.1.0#> a prov:Entity;
+	 prov:wasAttributedTo <http://onto.clarin.si/semsex#SlavkoZitnik>;
+	 dc:creator <http://onto.clarin.si/semsex#SlavkoZitnik>;
+	 prov:wasAttributedTo <http://onto.clarin.si/semsex#TimPrezelj>;
+	 dc:creator <http://onto.clarin.si/semsex#TimPrezelj>;
+	 prov:wasAttributedTo <http://onto.clarin.si/semsex#TimotejKnez>;
+	 dc:creator <http://onto.clarin.si/semsex#TimotejKnez>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2023-10-20";
 .

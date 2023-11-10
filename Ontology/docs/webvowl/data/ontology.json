@@ -1,225 +1,4620 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "http://purl.obolibrary.org/obo/TEMP",
+    "languages" : [ "en", "sl", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://onto.clarin.si/semsex", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://onto.clarin.si/semsex",
+    "version" : "0.1.0",
+    "author" : [ "http://onto.clarin.si/semsex#TimPrezelj", "http://onto.clarin.si/semsex#TimotejKnez", "http://onto.clarin.si/semsex#SlavkoZitnik" ],
+    "labels" : {
+      "en" : "Schema for storing concepts about sex education curriculums",
+      "sl" : "Shema učnih načrtov za spolno vzgojo"
+    },
     "other" : {
-      "ss" : [ {
-        "identifier" : "ss",
+      "license" : [ {
+        "identifier" : "license",
         "language" : "undefined",
-        "value" : "TimotejKnez",
-        "type" : "label"
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#SlavkoZitnik",
+        "type" : "iri"
       }, {
-        "identifier" : "ss",
+        "identifier" : "creator",
         "language" : "undefined",
-        "value" : "SlavkoZitnik",
-        "type" : "label"
+        "value" : "http://onto.clarin.si/semsex#TimotejKnez",
+        "type" : "iri"
       }, {
-        "identifier" : "ss",
+        "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Clarin",
-        "type" : "label"
-      }, {
-        "identifier" : "ss",
+        "value" : "http://onto.clarin.si/semsex#TimPrezelj",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
         "language" : "undefined",
-        "value" : "TimPrezelj",
+        "value" : "2023-10-20",
         "type" : "label"
       } ],
-      "cc" : [ {
-        "identifier" : "cc",
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "license <http://creativecommons.org/licenses/by/4.0/> ;",
+        "value" : "ss",
         "type" : "label"
       } ],
-      "schemaorg" : [ {
-        "identifier" : "schemaorg",
+      "publisher" : [ {
+        "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "publisher ss:Clarin ;",
-        "type" : "label"
-      }, {
-        "identifier" : "schemaorg",
-        "language" : "undefined",
-        "value" : "creator ss:TimotejKnez, ss:TimPrezelj, ss:SlavkoZitnik ;",
+        "value" : "http://onto.clarin.si/semsex#Clarin",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.1.0",
         "type" : "label"
       } ],
-      "@prefix rdfs" : [ {
-        "identifier" : "@prefix rdfs",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "<http://www.w3.org/2000/01/rdf-schema#> .",
-        "type" : "label"
-      } ],
-      "a owl" : [ {
-        "identifier" : "a owl",
-        "language" : "undefined",
-        "value" : "Ontology ;",
-        "type" : "label"
-      } ],
-      "@prefix owl" : [ {
-        "identifier" : "@prefix owl",
-        "language" : "undefined",
-        "value" : "<http://www.w3.org/2002/07/owl#> .",
-        "type" : "label"
-      } ],
-      "owl" : [ {
-        "identifier" : "owl",
-        "language" : "undefined",
-        "value" : "versionInfo \"0.1.0\"@en ;",
-        "type" : "label"
-      }, {
-        "identifier" : "owl",
-        "language" : "undefined",
-        "value" : "versionIRI <http://onto.clarin.si/semsex/0.1.0#> ;",
-        "type" : "label"
-      } ],
-      "@prefix schemaorg" : [ {
-        "identifier" : "@prefix schemaorg",
-        "language" : "undefined",
-        "value" : "<https://schema.org/> .",
-        "type" : "label"
-      } ],
-      "@prefix vann" : [ {
-        "identifier" : "@prefix vann",
-        "language" : "undefined",
-        "value" : "<http://purl.org/vocab/vann/> .",
-        "type" : "label"
-      } ],
-      "@prefix xsd" : [ {
-        "identifier" : "@prefix xsd",
-        "language" : "undefined",
-        "value" : "<http://www.w3.org/2001/XMLSchema#> .",
-        "type" : "label"
-      } ],
-      "rdfs" : [ {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "label \"Shema učnih načrtov za spolno vzgojo\"@sl ;",
-        "type" : "label"
-      }, {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "label \"Schema for storing concepts about sex education curriculums\"@en ;",
-        "type" : "label"
-      }, {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "label \"Clarin.si\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "seeAlso <http://orcid.org/0000-0003-3452-1106> .",
-        "type" : "label"
-      }, {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "seeAlso <http://orcid.org/0000-0001-7506-5739> .",
-        "type" : "label"
-      }, {
-        "identifier" : "rdfs",
-        "language" : "undefined",
-        "value" : "seeAlso <http://orcid.org/0000-0002-2412-2737> .",
-        "type" : "label"
-      } ],
-      "@prefix rdf" : [ {
-        "identifier" : "@prefix rdf",
-        "language" : "undefined",
-        "value" : "<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
-        "type" : "label"
-      } ],
-      "dct" : [ {
-        "identifier" : "dct",
-        "language" : "undefined",
-        "value" : "created \"2023-10-20\"^^xsd:date ;",
-        "type" : "label"
-      } ],
-      "a foaf" : [ {
-        "identifier" : "a foaf",
-        "language" : "undefined",
-        "value" : "Organization ;",
-        "type" : "label"
-      }, {
-        "identifier" : "a foaf",
-        "language" : "undefined",
-        "value" : "Person ;",
-        "type" : "label"
-      } ],
-      "<http" : [ {
-        "identifier" : "<http",
-        "language" : "undefined",
-        "value" : "//onto.clarin.si/semsex>",
-        "type" : "label"
-      } ],
-      "@prefix skos" : [ {
-        "identifier" : "@prefix skos",
-        "language" : "undefined",
-        "value" : "<http://www.w3.org/2004/02/skos/core#> .",
-        "type" : "label"
-      } ],
-      "@prefix ss" : [ {
-        "identifier" : "@prefix ss",
-        "language" : "undefined",
-        "value" : "<http://onto.clarin.si/semsex#> .",
-        "type" : "label"
-      } ],
-      "vann" : [ {
-        "identifier" : "vann",
-        "language" : "undefined",
-        "value" : "preferredNamespacePrefix \"ss\";",
-        "type" : "label"
-      }, {
-        "identifier" : "vann",
-        "language" : "undefined",
-        "value" : "preferredNamespaceUri \"http://onto.clarin.si/semsex#\";",
-        "type" : "label"
-      } ],
-      "foaf" : [ {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "name \"Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN\"@sl ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "name \"Timotej Knez\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "mbox \"slavko.zitnik@fri.uni-lj.si\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "mbox \"timotej.knez@fri.uni-lj.si\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "homepage <https://www.clarin.si> .",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "mbox \"tim.prezelj@pef.uni-lj.si\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "name \"Slavko Žitnik\" ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "name \"Slovene national consortium of the European research infrastructure CLARIN\"@en ;",
-        "type" : "label"
-      }, {
-        "identifier" : "foaf",
-        "language" : "undefined",
-        "value" : "name \"Tim Prezelj\" ;",
+        "value" : "http://onto.clarin.si/semsex#",
         "type" : "label"
       } ]
     }
   },
-  "namespace" : [ ]
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "214",
+    "type" : "owl:Class"
+  }, {
+    "id" : "218",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "228",
+    "type" : "owl:Class"
+  }, {
+    "id" : "230",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "245",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "253",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "268",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "270",
+    "type" : "owl:Class"
+  }, {
+    "id" : "199",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "292",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "305",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "309",
+    "type" : "owl:Class"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "330",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "303",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "355",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "307",
+    "type" : "owl:Class"
+  }, {
+    "id" : "290",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "244",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "331",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "357",
+    "type" : "owl:Class"
+  }, {
+    "id" : "254",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "335",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "363",
+    "type" : "owl:Class"
+  }, {
+    "id" : "294",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "365",
+    "type" : "owl:Class"
+  }, {
+    "id" : "266",
+    "type" : "owl:Class"
+  }, {
+    "id" : "366",
+    "type" : "owl:Class"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "295",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "367",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "285",
+    "type" : "owl:Class"
+  }, {
+    "id" : "247",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "343",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:Class"
+  }, {
+    "id" : "240",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "owl:Class"
+  }, {
+    "id" : "371",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "288",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "315",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "267",
+    "type" : "owl:Class"
+  }, {
+    "id" : "350",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "383",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "249",
+    "type" : "owl:Class"
+  }, {
+    "id" : "271",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "391",
+    "type" : "owl:Class"
+  }, {
+    "id" : "353",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "337",
+    "type" : "owl:Class"
+  }, {
+    "id" : "232",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "362",
+    "type" : "owl:Class"
+  }, {
+    "id" : "364",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
+    "type" : "owl:Class"
+  }, {
+    "id" : "356",
+    "type" : "owl:Class"
+  }, {
+    "id" : "264",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "358",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "owl:Class"
+  }, {
+    "id" : "300",
+    "type" : "owl:Class"
+  }, {
+    "id" : "243",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "404",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "413",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "397",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "369",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "311",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "399",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://onto.clarin.si/semsex#semenska_tekocina",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "semenska_tekocina"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_disfunkcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_disfunkcija"
+    },
+    "subClasses" : [ "22", "23" ],
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#samozadovoljevanje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "samozadovoljevanje"
+    },
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#seksting",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "seksting"
+    },
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pornografija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "pornografija"
+    },
+    "id" : "31",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#sigela-shigella_spp.",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sigela-shigella_spp."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#virtualni_seks",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "virtualni_seks"
+    },
+    "id" : "36",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vazektomija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vazektomija"
+    },
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolni_dimorfizem",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolni_dimorfizem"
+    },
+    "id" : "44",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolno_prenosljive_okuzbe_in_spolno_prenosljive_bolezni"
+    },
+    "subClasses" : [ "59", "60", "33" ],
+    "id" : "58",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#socialne_spolne_oblike",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "socialne_spolne_oblike"
+    },
+    "subClasses" : [ "68", "69", "15" ],
+    "id" : "66",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#poliamorija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "poliamorija"
+    },
+    "id" : "70",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#prostitucija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "prostitucija"
+    },
+    "id" : "71",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#trihomonas-trichomonas_vaginalis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "trihomonas-trichomonas_vaginalis"
+    },
+    "id" : "72",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#fiziologija_spolnega_odnosa",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fiziologija_spolnega_odnosa"
+    },
+    "id" : "73",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pegging",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "pegging"
+    },
+    "id" : "76",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#gej",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gej"
+    },
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#erektilna_disfunkcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "erektilna_disfunkcija"
+    },
+    "id" : "23",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zascita_pred_spo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zascita_pred_spo"
+    },
+    "subClasses" : [ "80", "81", "82" ],
+    "id" : "79",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#cepljenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "annotations" : {
+      "isVariantOf_proti" : [ {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hepatitis_b_virus",
+        "type" : "iri"
+      }, {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hepatitis_e_virus",
+        "type" : "iri"
+      }, {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hpv",
+        "type" : "iri"
+      }, {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hepatitis_a_virus",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "cepljenje"
+    },
+    "id" : "81",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#himen",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "himen"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#frenulum",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "frenulum"
+    },
+    "id" : "96",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#parafilije",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "parafilije"
+    },
+    "id" : "97",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#frot",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "frot"
+    },
+    "id" : "108",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#skenejeve_zleze",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "skenejeve_zleze"
+    },
+    "id" : "109",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#druzne",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "druzne"
+    },
+    "subClasses" : [ "112", "113", "114", "76", "115", "116", "108" ],
+    "id" : "57",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kink",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kink"
+    },
+    "id" : "62",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#moški",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "moški"
+    },
+    "id" : "117",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#modnik",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "modnik"
+    },
+    "id" : "118",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "object"
+    },
+    "subClasses" : [ "19", "21", "127", "88", "128", "129", "66", "130", "45" ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kemicna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "annotations" : {
+      "isVariantOf_proti" : [ {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#semenska_tekocina",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "kemicna"
+    },
+    "subClasses" : [ "146", "147" ],
+    "id" : "144",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_a_virus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_a_virus"
+    },
+    "id" : "148",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#maternica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "maternica"
+    },
+    "subClasses" : [ "150" ],
+    "id" : "149",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#gonoreja-neisseria_gonorrhoeae",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gonoreja-neisseria_gonorrhoeae"
+    },
+    "id" : "152",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_anatomija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_anatomija"
+    },
+    "subClasses" : [ "44", "117", "26" ],
+    "id" : "45",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#travestit",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "travestit"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#menstrualni_vlozki",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "menstrualni_vlozki"
+    },
+    "id" : "168",
+    "superClasses" : [ "166" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#abstieneca",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "abstieneca"
+    },
+    "id" : "139",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolno_zdravje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolno_zdravje"
+    },
+    "subClasses" : [ "145", "166", "173", "174", "175", "20", "58", "97", "79" ],
+    "id" : "21",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_d_virus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_d_virus"
+    },
+    "id" : "176",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pregradna_kontracepcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "pregradna_kontracepcija"
+    },
+    "id" : "177",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hiv",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hiv"
+    },
+    "id" : "132",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolne_prakse",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolne_prakse"
+    },
+    "subClasses" : [ "53", "30", "57" ],
+    "id" : "54",
+    "superClasses" : [ "130" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kontracepcijski_oblizi",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kontracepcijski_oblizi"
+    },
+    "id" : "75",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#orgazem",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "orgazem"
+    },
+    "id" : "196",
+    "superClasses" : [ "141" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolne_fantazije",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolne_fantazije"
+    },
+    "subClasses" : [ "62", "65" ],
+    "id" : "63",
+    "superClasses" : [ "129" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mokre_sanje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mokre_sanje"
+    },
+    "id" : "198",
+    "superClasses" : [ "199" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vulva",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vulva"
+    },
+    "subClasses" : [ "35", "40", "1" ],
+    "id" : "2",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pozelenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "pozelenje"
+    },
+    "id" : "201",
+    "superClasses" : [ "141" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolni_hormoni",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolni_hormoni"
+    },
+    "id" : "124",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#operativna_kontracepcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "operativna_kontracepcija"
+    },
+    "id" : "209",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hormonski_intrauterini_sistem",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hormonski_intrauterini_sistem"
+    },
+    "id" : "47",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vaginalni_obrocek",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vaginalni_obrocek"
+    },
+    "id" : "51",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolno_delo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolno_delo"
+    },
+    "subClasses" : [ "71", "31" ],
+    "id" : "17",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_b_virus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_b_virus"
+    },
+    "id" : "214",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "individuals" : [ {
+      "iri" : "http://onto.clarin.si/semsex#Clarin",
+      "baseIri" : "http://onto.clarin.si/semsex",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "sl",
+          "value" : "Slovenski nacionalni konzorcij v mreži evropske raziskovalne infrastrukture CLARIN",
+          "type" : "label"
+        }, {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "Slovene national consortium of the European research infrastructure CLARIN",
+          "type" : "label"
+        } ],
+        "homepage" : [ {
+          "identifier" : "homepage",
+          "language" : "undefined",
+          "value" : "https://www.clarin.si",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Clarin"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#poliandrija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "poliandrija"
+    },
+    "id" : "226",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#moska_ejakulacija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "moska_ejakulacija"
+    },
+    "id" : "121",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#heteroseksualna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "heteroseksualna"
+    },
+    "id" : "228",
+    "superClasses" : [ "229" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#klamidija-chlamydia_trachomatis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "klamidija-chlamydia_trachomatis"
+    },
+    "id" : "230",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#embrioloski_razvoj",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "embrioloski_razvoj"
+    },
+    "subClasses" : [ "179", "182" ],
+    "id" : "180",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#virtualne",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "virtualne"
+    },
+    "subClasses" : [ "29", "36" ],
+    "id" : "30",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#parazitske",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "parazitske"
+    },
+    "subClasses" : [ "154", "156", "72", "159", "161", "134" ],
+    "id" : "59",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#jajcevod",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "jajcevod"
+    },
+    "id" : "245",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#menstrualni_tamponi",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "menstrualni_tamponi"
+    },
+    "id" : "172",
+    "superClasses" : [ "166" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vedenjska_»naravna«",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vedenjska_»naravna«"
+    },
+    "subClasses" : [ "136", "139" ],
+    "id" : "137",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#fetis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fetis"
+    },
+    "id" : "65",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#virusne",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "virusne"
+    },
+    "subClasses" : [ "126", "132", "85", "103", "105", "107" ],
+    "id" : "60",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kozica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kozica"
+    },
+    "subClasses" : [ "254" ],
+    "id" : "253",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolno_vedenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolno_vedenje"
+    },
+    "subClasses" : [ "54", "8", "267" ],
+    "id" : "130",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#moski_zunanji_kondom",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "moski_zunanji_kondom"
+    },
+    "id" : "268",
+    "superClasses" : [ "269" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#garje-sarcoptes_scabiei",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "garje-sarcoptes_scabiei"
+    },
+    "id" : "134",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#gangbang",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gangbang"
+    },
+    "id" : "270",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#adolescenca",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "adolescenca"
+    },
+    "subClasses" : [ "271", "198" ],
+    "id" : "199",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#male_sramne_ustnice",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "male_sramne_ustnice"
+    },
+    "id" : "211",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_nedotakljivost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_nedotakljivost"
+    },
+    "subClasses" : [ "287", "288", "95", "289", "290" ],
+    "id" : "127",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kontracepcijski_vsadek",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kontracepcijski_vsadek"
+    },
+    "id" : "42",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#monogamija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "monogamija"
+    },
+    "id" : "68",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#posilstvo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "posilstvo"
+    },
+    "id" : "289",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vaginizem",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vaginizem"
+    },
+    "id" : "22",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#progesteronska_tabletka",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "progesteronska_tabletka"
+    },
+    "id" : "292",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#giardia_duodenalis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "giardia_duodenalis"
+    },
+    "id" : "154",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#sramne_usi-pthirus_pubis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sramne_usi-pthirus_pubis"
+    },
+    "id" : "156",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zika",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zika"
+    },
+    "id" : "105",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#tocka_g",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "tocka_g"
+    },
+    "id" : "305",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hpv",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hpv"
+    },
+    "id" : "103",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#noznica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "noznica"
+    },
+    "id" : "309",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mutual_masturbation",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mutual_masturbation"
+    },
+    "id" : "328",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kontracepcijske_tabletke",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kontracepcijske_tabletke"
+    },
+    "subClasses" : [ "329", "292", "330", "331" ],
+    "id" : "49",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#menstrualna_skodelica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "menstrualna_skodelica"
+    },
+    "id" : "170",
+    "superClasses" : [ "166" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kombinirana_tabletka",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kombinirana_tabletka"
+    },
+    "id" : "330",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#klitoris",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "klitoris"
+    },
+    "subClasses" : [ "253" ],
+    "id" : "35",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_virusi",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_virusi"
+    },
+    "subClasses" : [ "343", "176", "214", "148", "84" ],
+    "id" : "85",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_rehabilitacija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_rehabilitacija"
+    },
+    "id" : "175",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zgodovina_seksualnosti",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zgodovina_seksualnosti"
+    },
+    "subClasses" : [ "87" ],
+    "id" : "88",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#razmnozevanje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "razmnozevanje"
+    },
+    "subClasses" : [ "90", "92" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#bartolinijeve_zleze",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "bartolinijeve_zleze"
+    },
+    "id" : "303",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#odstranitev_penisa",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "odstranitev_penisa"
+    },
+    "subClasses" : [ "94" ],
+    "id" : "95",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spermidin",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spermidin"
+    },
+    "id" : "147",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#urgentna_kontracepcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "urgentna_kontracepcija"
+    },
+    "id" : "329",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mycoplasma_genitalum",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mycoplasma_genitalum"
+    },
+    "id" : "355",
+    "superClasses" : [ "356" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#PEP",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "annotations" : {
+      "isVariantOf_proti" : [ {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hiv",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PEP"
+    },
+    "id" : "80",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vaginoplastika",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vaginoplastika"
+    },
+    "id" : "307",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#privoljenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "privoljenje"
+    },
+    "id" : "290",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#prostata",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "prostata"
+    },
+    "id" : "187",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_e_virus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_e_virus"
+    },
+    "id" : "84",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_identiteta",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_identiteta"
+    },
+    "subClasses" : [ "243", "249", "247" ],
+    "id" : "244",
+    "superClasses" : [ "195" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolni_razvoj",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolni_razvoj"
+    },
+    "subClasses" : [ "199", "237", "5", "240", "234", "232", "180" ],
+    "id" : "128",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kemsex",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kemsex"
+    },
+    "id" : "174",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#klistiranje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "klistiranje"
+    },
+    "id" : "165",
+    "superClasses" : [ "166" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#ormeloksifen",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ormeloksifen"
+    },
+    "id" : "331",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#drag",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "drag"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#fingering",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fingering"
+    },
+    "id" : "112",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#menopavza",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "menopavza"
+    },
+    "id" : "357",
+    "superClasses" : [ "358" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#obrezovanje_moških",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "obrezovanje_moških"
+    },
+    "id" : "254",
+    "superClasses" : [ "253" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#homoseksualna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "homoseksualna"
+    },
+    "subClasses" : [ "220", "217", "77" ],
+    "id" : "78",
+    "superClasses" : [ "295" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#romanticna_usmerjenost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "romanticna_usmerjenost"
+    },
+    "id" : "335",
+    "superClasses" : [ "195" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#sramne_ustnice",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sramne_ustnice"
+    },
+    "subClasses" : [ "211", "208" ],
+    "id" : "40",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#diafragma",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "diafragma"
+    },
+    "id" : "363",
+    "superClasses" : [ "364" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#interspolnost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "interspolnost"
+    },
+    "id" : "294",
+    "superClasses" : [ "295" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kontracepcija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "annotations" : {
+      "isVariantOf_proti" : [ {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#razmnozevanje",
+        "type" : "iri"
+      }, {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#rojstvo",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "kontracepcija"
+    },
+    "subClasses" : [ "209", "177", "144", "43", "137" ],
+    "id" : "145",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#intrauterini_sisitem_z_bakrom",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "intrauterini_sisitem_z_bakrom"
+    },
+    "id" : "146",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#seksologija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "seksologija"
+    },
+    "id" : "87",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hemofilus-haemophilus_ducreyi",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hemofilus-haemophilus_ducreyi"
+    },
+    "id" : "365",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#dolocitev_bioloskega_spola",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "dolocitev_bioloskega_spola"
+    },
+    "id" : "266",
+    "superClasses" : [ "237" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#klebsijela-klebsiella_granulomatis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "klebsijela-klebsiella_granulomatis"
+    },
+    "id" : "366",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#oploditev",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "oploditev"
+    },
+    "subClasses" : [ "273", "266", "264" ],
+    "id" : "237",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#anilingus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "anilingus"
+    },
+    "id" : "115",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#semenjak",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "semenjak"
+    },
+    "id" : "189",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#moda",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "moda"
+    },
+    "id" : "191",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_terapija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_terapija"
+    },
+    "id" : "173",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zenske",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zenske"
+    },
+    "subClasses" : [ "2", "315", "305", "303", "309", "307", "245", "149", "109" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zenska_ejakulacija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zenska_ejakulacija"
+    },
+    "id" : "143",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#tribadizem",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "tribadizem"
+    },
+    "id" : "114",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolne_manjsine",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolne_manjsine"
+    },
+    "subClasses" : [ "300", "78", "294" ],
+    "id" : "295",
+    "superClasses" : [ "195" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#sterilizacija_pri_zenskah",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sterilizacija_pri_zenskah"
+    },
+    "id" : "184",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#promiskuitetno_vedenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "promiskuitetno_vedenje"
+    },
+    "subClasses" : [ "70", "270", "285", "328", "350", "226", "353" ],
+    "id" : "69",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kunilingus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kunilingus"
+    },
+    "id" : "113",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#biseskaulna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "biseskaulna"
+    },
+    "id" : "220",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolni_tip",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolni_tip"
+    },
+    "subClasses" : [ "229", "244", "295", "335" ],
+    "id" : "195",
+    "superClasses" : [ "129" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#maternicni_vrat",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "maternicni_vrat"
+    },
+    "id" : "150",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mycoplasma_hominis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mycoplasma_hominis"
+    },
+    "id" : "367",
+    "superClasses" : [ "356" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#uzitek",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "uzitek"
+    },
+    "subClasses" : [ "196", "201", "337" ],
+    "id" : "141",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hormonska",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hormonska"
+    },
+    "subClasses" : [ "362", "75", "42", "47", "49", "51" ],
+    "id" : "43",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolnost_po_porodu",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolnost_po_porodu"
+    },
+    "id" : "90",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#poliginija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "poliginija"
+    },
+    "id" : "285",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#bioloski_spol",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "bioloski_spol"
+    },
+    "id" : "247",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#ameba-entamoeba_histolytica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ameba-entamoeba_histolytica"
+    },
+    "id" : "161",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mcv",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mcv"
+    },
+    "id" : "107",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#hepatitis_c_virus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hepatitis_c_virus"
+    },
+    "id" : "343",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zrelo_obdobje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zrelo_obdobje"
+    },
+    "subClasses" : [ "4" ],
+    "id" : "5",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#lezbijka",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "lezbijka"
+    },
+    "id" : "217",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#starost_in_spolnost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "starost_in_spolnost"
+    },
+    "id" : "240",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolni_izraz",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolni_izraz"
+    },
+    "subClasses" : [ "7", "10", "12" ],
+    "id" : "8",
+    "superClasses" : [ "130" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_industrija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_industrija"
+    },
+    "subClasses" : [ "14", "17" ],
+    "id" : "15",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolno_nadlegovanje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolno_nadlegovanje"
+    },
+    "id" : "287",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#glavica",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "glavica"
+    },
+    "id" : "371",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#obmodek",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "obmodek"
+    },
+    "id" : "203",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#femicid",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "femicid"
+    },
+    "id" : "288",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#moski",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "moski"
+    },
+    "subClasses" : [ "25", "203", "118", "206", "187", "189", "191" ],
+    "id" : "26",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#prep",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "annotations" : {
+      "isVariantOf_proti" : [ {
+        "identifier" : "isVariantOf_proti",
+        "language" : "undefined",
+        "value" : "http://onto.clarin.si/semsex#hiv",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "prep"
+    },
+    "id" : "82",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#jajcniki",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "jajcniki"
+    },
+    "id" : "315",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolnostna_identiteta",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolnostna_identiteta"
+    },
+    "subClasses" : [ "195", "63" ],
+    "id" : "129",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#coitus_interruptus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "coitus_interruptus"
+    },
+    "id" : "136",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#nedolznost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "nedolznost"
+    },
+    "id" : "267",
+    "superClasses" : [ "130" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#orgije",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "orgije"
+    },
+    "id" : "350",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#operativna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "operativna"
+    },
+    "subClasses" : [ "184", "37" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#ureoplasma_urealyticum",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ureoplasma_urealyticum"
+    },
+    "id" : "383",
+    "superClasses" : [ "356" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#higiena",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "higiena"
+    },
+    "subClasses" : [ "165", "168", "170", "172" ],
+    "id" : "166",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#cisspolnost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "cisspolnost"
+    },
+    "id" : "249",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#menstruacija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "menstruacija"
+    },
+    "id" : "271",
+    "superClasses" : [ "199" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#velike_sramne_ustnice",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "velike_sramne_ustnice"
+    },
+    "id" : "208",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://onto.clarin.si/semsex#SlavkoZitnik",
+      "baseIri" : "http://onto.clarin.si/semsex",
+      "annotations" : {
+        "affiliation" : [ {
+          "identifier" : "affiliation",
+          "language" : "undefined",
+          "value" : "_:genid2147483650",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Slavko Žitnik",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "slavko.zitnik@fri.uni-lj.si",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://orcid.org/0000-0003-3452-1106",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SlavkoZitnik"
+      }
+    }, {
+      "iri" : "http://onto.clarin.si/semsex#TimPrezelj",
+      "baseIri" : "http://onto.clarin.si/semsex",
+      "annotations" : {
+        "affiliation" : [ {
+          "identifier" : "affiliation",
+          "language" : "undefined",
+          "value" : "_:genid2147483648",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Tim Prezelj",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "tim.prezelj@pef.uni-lj.si",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://orcid.org/0000-0002-2412-2737",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TimPrezelj"
+      }
+    }, {
+      "iri" : "http://onto.clarin.si/semsex#TimotejKnez",
+      "baseIri" : "http://onto.clarin.si/semsex",
+      "annotations" : {
+        "affiliation" : [ {
+          "identifier" : "affiliation",
+          "language" : "undefined",
+          "value" : "_:genid2147483649",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Timotej Knez",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "timotej.knez@fri.uni-lj.si",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://orcid.org/0000-0001-7506-5739",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TimotejKnez"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "391"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#poligamija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "poligamija"
+    },
+    "id" : "353",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#fiziologija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fiziologija"
+    },
+    "subClasses" : [ "141", "143", "18", "121", "73", "124" ],
+    "id" : "19",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vzburjenje",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vzburjenje"
+    },
+    "id" : "337",
+    "superClasses" : [ "141" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#rojstvo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "rojstvo"
+    },
+    "id" : "232",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#penis",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "penis"
+    },
+    "subClasses" : [ "371", "399", "96" ],
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolna_usmerjenost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolna_usmerjenost"
+    },
+    "subClasses" : [ "228" ],
+    "id" : "229",
+    "superClasses" : [ "195" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolne_igracke",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolne_igracke"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kontracepcijske_injekcije",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kontracepcijske_injekcije"
+    },
+    "id" : "362",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pregradna",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "pregradna"
+    },
+    "subClasses" : [ "363", "269" ],
+    "id" : "364"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#bakterijske",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "bakterijske"
+    },
+    "subClasses" : [ "366", "404", "365", "152", "356", "32", "230" ],
+    "id" : "33",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#razvoj_reproduktivnega_sistema",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "razvoj_reproduktivnega_sistema"
+    },
+    "id" : "179",
+    "superClasses" : [ "180" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#oploditev_z_biomedicinsko_pomocjo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "oploditev_z_biomedicinsko_pomocjo"
+    },
+    "id" : "273",
+    "superClasses" : [ "237" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mikoplazme_in_ureoplazme",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mikoplazme_in_ureoplazme"
+    },
+    "subClasses" : [ "383", "355", "367" ],
+    "id" : "356",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#ovulacija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ovulacija"
+    },
+    "id" : "264",
+    "superClasses" : [ "237" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#spolnost_med_nosecnostjo",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "spolnost_med_nosecnostjo"
+    },
+    "id" : "92",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kastracija",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kastracija"
+    },
+    "id" : "94",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#starost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "starost"
+    },
+    "subClasses" : [ "357" ],
+    "id" : "358"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kriptosporidij-cryptosporidium_spp.",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kriptosporidij-cryptosporidium_spp."
+    },
+    "id" : "159",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#kondom",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "kondom"
+    },
+    "subClasses" : [ "269", "268" ],
+    "id" : "269",
+    "superClasses" : [ "364", "269" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#transspolnost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "transspolnost"
+    },
+    "id" : "300",
+    "superClasses" : [ "295" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#druzbeni_spol",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "druzbeni_spol"
+    },
+    "id" : "243",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zgodnje_otrostvo_in_spolnost",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "zgodnje_otrostvo_in_spolnost"
+    },
+    "id" : "234",
+    "superClasses" : [ "128" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#individualne",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "individualne"
+    },
+    "subClasses" : [ "27" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#sifilis-treponema_palidum",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sifilis-treponema_palidum"
+    },
+    "id" : "404",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#mehurcasta_zleza",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "mehurcasta_zleza"
+    },
+    "id" : "206",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "413",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "397",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "369",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "99",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "311",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "345",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#koren",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "koren"
+    },
+    "id" : "399",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#individualne_spolne_prakse",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "individualne_spolne_prakse"
+    },
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#herpes_simplex",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "herpes_simplex"
+    },
+    "id" : "126",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#transvestit",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "transvestit"
+    },
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#coitus",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "coitus"
+    },
+    "id" : "116",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#razvoj_gonad",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "razvoj_gonad"
+    },
+    "id" : "182",
+    "superClasses" : [ "180" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "306",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "310",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "319",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "322",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "327",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "333",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "368",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "370",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "372",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "373",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "374",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "375",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "376",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "377",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "378",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "379",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "380",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "381",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "382",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "384",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "385",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "386",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "387",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "388",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "389",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "390",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "392",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "393",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "394",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "395",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "396",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "398",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "400",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "401",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "402",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "403",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "405",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "406",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "407",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "408",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "409",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "410",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "411",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "412",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "414",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "415",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "416",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "417",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "418",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "419",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "420",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "421",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "422",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "423",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "424",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "2",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "43",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "43",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "43",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "54",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "54",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "63",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "43",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "85",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "88",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "4",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "95",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#definition",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "definition"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "98"
+  }, {
+    "range" : "60",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "60",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "60",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "60",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#se_sprosti_ob",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "se_sprosti_ob"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "19",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "19",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "19",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "60",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "60",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "59",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "137",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "137",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "19",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "19",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#vpliva_na",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "vpliva_na"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "151"
+  }, {
+    "range" : "59",
+    "domain" : "154",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "59",
+    "domain" : "156",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "59",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "59",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "59",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "30",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "166",
+    "domain" : "165",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "166",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "166",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "166",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "180",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "180",
+    "domain" : "182",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "38",
+    "domain" : "184",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "26",
+    "domain" : "187",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "26",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "26",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "17",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "17",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "129",
+    "domain" : "195",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "129",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#povezano_z",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "povezano_z"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "200"
+  }, {
+    "range" : "26",
+    "domain" : "203",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "26",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "26",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "40",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "40",
+    "domain" : "211",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "66",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "66",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "78",
+    "domain" : "217",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "78",
+    "domain" : "220",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "58",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "58",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "224",
+    "label" : {
+      "IRI-based" : "label"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "223"
+  }, {
+    "range" : "66",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "58",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "128",
+    "domain" : "232",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "128",
+    "domain" : "234",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "128",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "128",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "128",
+    "domain" : "199",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "128",
+    "domain" : "240",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "128",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "244",
+    "domain" : "243",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "244",
+    "domain" : "247",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "244",
+    "domain" : "249",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "range" : "67",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
+  }, {
+    "range" : "67",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "67",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "57",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "57",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "67",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "57",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "57",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "57",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "57",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "57",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "237",
+    "domain" : "264",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "237",
+    "domain" : "266",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "237",
+    "domain" : "273",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "145",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
+  }, {
+    "range" : "145",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "145",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
+  }, {
+    "range" : "145",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "79",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "79",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "145",
+    "domain" : "209",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "range" : "79",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "281"
+  }, {
+    "range" : "69",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "144",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "69",
+    "domain" : "285",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "69",
+    "domain" : "270",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "144",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "295",
+    "domain" : "294",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "295",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "110",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "110",
+    "domain" : "245",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "295",
+    "domain" : "300",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "110",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "110",
+    "domain" : "303",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "110",
+    "domain" : "305",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "110",
+    "domain" : "307",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "110",
+    "domain" : "309",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "311",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "310"
+  }, {
+    "range" : "110",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "range" : "67",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "313"
+  }, {
+    "range" : "110",
+    "domain" : "315",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
+  }, {
+    "range" : "67",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
+  }, {
+    "range" : "67",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
+  }, {
+    "range" : "67",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "318"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "319"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#homologno",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "homologno"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "320"
+  }, {
+    "range" : "21",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "range" : "21",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "322"
+  }, {
+    "range" : "21",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "323"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "324"
+  }, {
+    "range" : "21",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "325"
+  }, {
+    "range" : "21",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "range" : "21",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "327"
+  }, {
+    "iri" : "https://schema.org/isSimilarTo",
+    "baseIri" : "https://schema.org",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isSimilarTo"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "object" ],
+    "id" : "332"
+  }, {
+    "range" : "141",
+    "domain" : "196",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "333"
+  }, {
+    "range" : "195",
+    "domain" : "335",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "141",
+    "domain" : "337",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "336"
+  }, {
+    "range" : "141",
+    "domain" : "201",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "195",
+    "domain" : "229",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "45",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "195",
+    "domain" : "295",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "195",
+    "domain" : "244",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "345",
+    "label" : {
+      "IRI-based" : "isDefinedBy"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "344"
+  }, {
+    "range" : "45",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "45",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "149",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "69",
+    "domain" : "350",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "69",
+    "domain" : "328",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "69",
+    "domain" : "353",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "69",
+    "domain" : "226",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "21",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "21",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "43",
+    "domain" : "362",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "369",
+    "label" : {
+      "IRI-based" : "altLabel"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "368"
+  }, {
+    "iri" : "https://schema.org/isVariantOf",
+    "baseIri" : "https://schema.org",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isVariantOf"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "object" ],
+    "id" : "370"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "372"
+  }, {
+    "range" : "49",
+    "domain" : "329",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "373"
+  }, {
+    "range" : "49",
+    "domain" : "292",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "range" : "49",
+    "domain" : "330",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "375"
+  }, {
+    "range" : "49",
+    "domain" : "331",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "376"
+  }, {
+    "range" : "35",
+    "domain" : "253",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "377"
+  }, {
+    "range" : "85",
+    "domain" : "343",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "378"
+  }, {
+    "range" : "85",
+    "domain" : "176",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "379"
+  }, {
+    "range" : "85",
+    "domain" : "214",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "380"
+  }, {
+    "range" : "85",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "381"
+  }, {
+    "range" : "269",
+    "domain" : "268",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "382"
+  }, {
+    "range" : "127",
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "384"
+  }, {
+    "range" : "127",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "385"
+  }, {
+    "range" : "127",
+    "domain" : "289",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "386"
+  }, {
+    "range" : "127",
+    "domain" : "290",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "387"
+  }, {
+    "range" : "356",
+    "domain" : "383",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "388"
+  }, {
+    "range" : "356",
+    "domain" : "355",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "389"
+  }, {
+    "range" : "356",
+    "domain" : "367",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "390"
+  }, {
+    "range" : "358",
+    "domain" : "357",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "392"
+  }, {
+    "range" : "269",
+    "domain" : "269",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "393"
+  }, {
+    "range" : "33",
+    "domain" : "230",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "394"
+  }, {
+    "range" : "127",
+    "domain" : "287",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "395"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#sameAs",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "397",
+    "label" : {
+      "IRI-based" : "sameAs"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "396"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#zascita",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "zascita"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "398"
+  }, {
+    "range" : "364",
+    "domain" : "363",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "400"
+  }, {
+    "range" : "364",
+    "domain" : "269",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "401"
+  }, {
+    "range" : "33",
+    "domain" : "366",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "402"
+  }, {
+    "range" : "33",
+    "domain" : "404",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "403"
+  }, {
+    "range" : "33",
+    "domain" : "365",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "405"
+  }, {
+    "range" : "33",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "406"
+  }, {
+    "range" : "33",
+    "domain" : "356",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "407"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "408"
+  }, {
+    "range" : "130",
+    "domain" : "267",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "409"
+  }, {
+    "range" : "199",
+    "domain" : "271",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "410"
+  }, {
+    "range" : "199",
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "411"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "413",
+    "label" : {
+      "IRI-based" : "subClassOf"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "412"
+  }, {
+    "range" : "253",
+    "domain" : "254",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "414"
+  }, {
+    "range" : "25",
+    "domain" : "371",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "415"
+  }, {
+    "range" : "25",
+    "domain" : "399",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "416"
+  }, {
+    "range" : "25",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "417"
+  }, {
+    "range" : "229",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "418"
+  }, {
+    "range" : "130",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "419"
+  }, {
+    "range" : "130",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "420"
+  }, {
+    "iri" : "https://schema.org/primaryPrevention",
+    "baseIri" : "https://schema.org",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "primaryPrevention"
+    },
+    "domain" : "99",
+    "attributes" : [ "external", "object" ],
+    "id" : "421"
+  }, {
+    "range" : "20",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "422"
+  }, {
+    "range" : "20",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "423"
+  }, {
+    "iri" : "http://onto.clarin.si/semsex#pomembno_za",
+    "baseIri" : "http://onto.clarin.si/semsex",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "pomembno_za"
+    },
+    "domain" : "99",
+    "attributes" : [ "object" ],
+    "id" : "424"
+  } ]
 }
