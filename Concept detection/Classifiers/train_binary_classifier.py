@@ -41,7 +41,7 @@ test_dataset = Dataset.from_pandas(df_test)
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 def preprocess_function(examples):
-    return tokenizer(examples[text_column_name], truncation=False)
+    return tokenizer(examples[text_column_name], truncation=True)
 
 tokenized_train = train_dataset.map(preprocess_function, batched=True)
 tokenized_val = val_dataset.map(preprocess_function, batched=True)

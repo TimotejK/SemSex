@@ -41,3 +41,9 @@ To train the concept classification model, run the `Classifiers/train_concept_cl
 ```shell
 python Classifiers/train_concept_classification.py
 ```
+
+**Extracting concepts in RDF**
+To extract sex education concepts from a pdf curriculum document, you can use the pipeline presented in the `Classifiers/full_pipeline.py` file. The input for the pipeline is a pdf curriculum. The output is an ontology in the ttl file format representing the extracted concepts connected to the classes from the SemSEX ontology.
+```shell
+python Classifiers/full_pipeline.py
+```

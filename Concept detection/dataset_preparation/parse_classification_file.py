@@ -19,7 +19,7 @@ def prepare_dataframe():
     samples = []
     description = None
     for line in lines:
-        if line.startswith('•'):
+        if line.startswith('-'):
             if description is not None:
                 print("Error", line)
             description = line
