@@ -43,9 +43,3 @@ Feel free to explore and use these models for concept detection based on the sex
 ### 3. README.md
 
 This file serves as an introduction and guide to the repository, outlining its structure, content, and purpose.
-
-## License
-
-This repository is licensed under the [LICENSE](LICENSE) - please review it for details on how you can use and share the content.
-
-Feel free to contribute, report issues, or suggest improvements by creating a pull request.
