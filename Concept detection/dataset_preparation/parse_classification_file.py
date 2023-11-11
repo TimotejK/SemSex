@@ -11,8 +11,8 @@ def convert_to_single_label_classification(samples, mode='random'):
                 result.append([text, label])
     return pd.DataFrame(result, columns=['text', 'label'])
 
-def prepare_dataframe():
-    with open('Curriculum documents/annotated_descriptions.txt', 'r') as file:
+def prepare_dataframe(raw_output=False):
+    with open('Curriculum documents/annotated_descriptions.txt', 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
     lines = list(map(lambda x: x.strip(), lines))
@@ -26,11 +26,12 @@ def prepare_dataframe():
         elif description is not None:
             # classes
             classes = list(map(lambda x: x.strip(), line.split(',')))
-            samples.append((description.replace('•', '').strip(), classes))
+            samples.append((description.replace('-', '').strip(), classes))
             description = None
-
+    if raw_output:
+        return samples
     dataset = convert_to_single_label_classification(samples)
     return dataset
 
 if __name__ == '__main__':
-    prepare_dataframe().to_csv('manually_annotated.csv')
+    prepare_dataframe()
